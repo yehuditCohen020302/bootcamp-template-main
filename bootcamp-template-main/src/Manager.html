@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/src/manager.js"></script>
+    
+    <title>Document</title>
+</head>
+<body onload="login()">
+   <h1>"welcome to Manager"</h1>
+   <h3 id="email"></h3>
+
+   <button onclick="addUser()">add user</button>
+   <div id="userToAdd" style="background-color:bisque; width: 100%; display: none;">
+    <label>firstName</label>
+    <input type="text" id="firstName" /><br />
+    <label>lastName</label>
+    <input type="text" id="lastName" /><br />
+    <label>city</label>
+    <input type="text" id="city" /><br />
+    <label>street</label>
+    <input type="text" id="street" /><br />
+    <label>houseNumber</label>
+    <input type="number" id="houseNumber" /><br />
+    <label>phoneNumber</label>
+    <input type="number" id="phoneNumber" /><br />
+    <label>emailAddress</label>
+    <input type="email" id="emailAddress" /><br />
+    <button onclick="OKaddUser()">ok add user</button>
+</div>
+</body>
+</html>
