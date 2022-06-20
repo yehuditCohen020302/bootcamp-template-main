@@ -1,6 +1,4 @@
  class Manager{
-
- 
     constructor(firstName, lastName, city,street, houseNumber,phoneNumber,emailAddress){
     
         this.firstName   =firstName,
@@ -20,6 +18,39 @@
         this.getUsers();
     }
 
+    sortByName(data){
+        debugger
+        const xhr = new XMLHttpRequest();
+       
+        xhr.open("GET", 'http://localhost:3000/users');
+        xhr.send();
+        xhr.onload = function () {
+            if (xhr.status != 200) {
+                alert(`Error ${xhr.status}: ${xhr.statusText}`);
+            } else {
+                let users = JSON.parse(xhr.responseText);
+                let table = '';
+                users.forEach(user => {
+                    debugger
+                  if(user.firstName===data) 
+                  {
+                     table += `
+                        <tr>
+                            <th>${user.firstName + ' ' + user.lastName}</th>
+                            <th>${ user.email }</th>
+                            <th><button onClick="details()">Details</button></th>
+                        </tr>`
+                  }
+                  const container = document.querySelector('.usersTable');
+                container.innerHTML += table;
+                })
+                
+            }
+        }
+    }
+
+    
+
     getUsers(){
         const xhr = new XMLHttpRequest();
        
@@ -36,7 +67,7 @@
                     <tr>
                         <th>${user.firstName + ' ' + user.lastName}</th>
                         <th>${ user.email }</th>
-                        <th><a href=" ">details</a></th>
+                        <th><button onClick="details()">Details</button></th>
                     </tr>`
                 })
                 const container = document.querySelector('.usersTable');
@@ -45,8 +76,30 @@
         }
     }
 
-    drow(){
-
+    details(){
+        const xhr = new XMLHttpRequest();
+       
+        xhr.open("GET", 'http://localhost:3000/users');
+        xhr.send();
+        xhr.onload = function () {
+            if (xhr.status != 200) {
+                alert(`Error ${xhr.status}: ${xhr.statusText}`);
+            } else {
+                let users = JSON.parse(xhr.responseText);
+                let div='';
+                users.forEach(user => {
+                    //התנאי פה הוא סתם תנאי צריך לראות איך אפשר להציג את המשתמש הזה
+                    if(user.email===sessionStorage.getItem('userEmail')) 
+                    {
+                        console.log(`User: ${user.firstName}`);
+                        div+=`<p>
+                        ${user.firstName + ' ' + user.lastName + ' ' + user.email} </p>`
+                    }
+                })
+                const container = document.querySelector('.div');
+                container.innerHTML += div;
+            }
+        }
     }
 
     OKaddUser(){
@@ -97,6 +150,11 @@
  function OKaddUser(){
     manager.OKaddUser();
  }
-
-
+function details(){ 
+    manager.details();
+}
+function sortByName(){
+    const data=document.getElementById("sortByName").value; 
+    manager.sortByName(data);
+ }
  
