@@ -1,46 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="/src/manager.js"></script>
     <script src="/src/user.js"></script>
-    
+
     <title>Document</title>
-</head>
-<body onload="login()">
-   <h1>"Welcome to Manager"</h1>
-   <h3 id="email"></h3>
-   <table class="usersTable"></table>
-   <div class="div"></div>
-   <button onclick="sortByName()">sortByName</button><br>
-   <input type="text" id="sortByName" >
-<br>
-   <br/>
-   <button onclick="addUser()">add user</button>
-   <div id="userToAdd" style="background-color:bisque; width: 100%; display: none;">
-    <label>id</label>
-    <input type="text" id="userId" /><br />
-    <label>firstName</label>
-    <input type="text" id="firstName" /><br />
-    <label>lastName</label>
-    <input type="text" id="lastName" /><br />
-    <label>city</label>
-    <input type="text" id="city" /><br />
-    <label>street</label>
-    <input type="text" id="street" /><br />
-    <label>houseNumber</label>
-    <input type="number" id="houseNumber" /><br />
-    <label>phoneNumber</label>
-    <input type="number" id="phoneNumber" /><br />
-    <label>emailAddress</label>
-    <input type="email" id="emailAddress" /><br />
-    <label>height</label>
-    <input type="number" id="height" /><br />
-    <label>beginingWeight</label>
-    <input type="number" id="beginingWeight" /><br />
-    <button onclick="OKaddUser()">ok add user</button>
-</div>
-</body>
+  </head>
+  <body onload="login()">
+    <h1>"Welcome to Manager"</h1>
+    <h3 id="email"></h3>
+    <table class="usersTable"></table>
+    <div class="div"></div>
+
+    <br><hr>
+    <div style="background-color:rgb(222, 153, 153); width: 350px; ">
+    
+    <input type="checkbox" id="searchByFirstName" onclick="displayFirstName()">searchByFirstName</input><br />
+    <input type="text" id="textSearchByFirstName" style="display:none"/><br>
+   
+    <input type="checkbox" id="searchByLastName" onclick="displayLastName()">searchByLastName</input><br />
+    <input type="text" id="textSearchByLastName" style="display:none"/><br>
+    
+    <input type="checkbox" id="searchByEmail" onclick="displayEmail()">searchByEmail</input><br />
+    <input type="text" id="textSearchByEmail" style="display:none"/><br>
+    
+    <input type="checkbox" id="searchByPhone" onclick="displayPhone()">searchByPhone</input><br />
+    <input type="text" id="textSearchByPhone" style="display:none"/><br>
+    <input type="button" id="search" value="Start Search" onclick="search()"><br />
+    </div>
+    <hr>
+   
+    <br />
+    <button onclick="addUser()">add user</button>
+    <div
+      id="userToAdd"
+      style="background-color: bisque; width: 100%; display: none"
+    >
+      <label>id</label>
+      <input type="text" id="userId" /><br />
+      <label>firstName</label>
+      <input type="text" id="firstName" /><br />
+      <label>lastName</label>
+      <input type="text" id="lastName" /><br />
+      <label>city</label>
+      <input type="text" id="city" /><br />
+      <label>street</label>
+      <input type="text" id="street" /><br />
+      <label>houseNumber</label>
+      <input type="number" id="houseNumber" /><br />
+      <label>phoneNumber</label>
+      <input type="number" id="phoneNumber" /><br />
+      <label>emailAddress</label>
+      <input type="email" id="emailAddress" /><br />
+      <label>height</label>
+      <input type="number" id="height" /><br />
+      <label>beginingWeight</label>
+      <input type="number" id="beginingWeight" /><br />
+      <button onclick="OKaddUser()">ok add user</button>
+    </div>
+  </body>
 </html>
