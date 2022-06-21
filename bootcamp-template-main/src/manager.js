@@ -65,13 +65,24 @@ class Manager {
       this.filteredUser = this.users.filter((user) => {
         return user.phoneNumber === data;
       });
-
     this.drawTable(this.filteredUser);
   }
 
+  
   details() {
     console.log("details()  called");
   }
+
+
+    goodBMI(user){
+        if(user.weightsHistory.length > 1){
+            if((user.weightsHistory[user.weightsHistory.length-1].weight)/Math.pow(user.height,2)>(user.weightsHistory[user.weightsHistory.length-2].weight)/Math.pow(user.height,2))
+                return true;
+        }
+        return false;
+    }
+    
+
 
   OKaddUser() {
     //create new user object
