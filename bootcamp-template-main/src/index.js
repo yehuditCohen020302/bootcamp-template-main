@@ -10,7 +10,8 @@ function loginManager()
 
 function loginUser()
 {
+    email=document.getElementById("emailAddress").value;
     console.log("in user");
-    window.location.href = "/src/User.html";
+    window.location.href = "/src/userPage.html?emailAddress="+email;
 }
 

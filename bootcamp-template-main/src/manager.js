@@ -28,7 +28,6 @@ class Manager {
   }
 
   drawTable(users) {
-    
     const container = document.querySelector(".usersTable");
     container.innerHTML = "";
     let table = "";
@@ -68,16 +67,16 @@ class Manager {
             });
     
 
-    this.drawTable(this.filteredUser);
-  
-  }
 
 
-
-  details() {
-    console.log("details()  called");
-
-  }
+    goodBMI(user){
+        if(user.weightsHistory.length > 1){
+            if((user.weightsHistory[user.weightsHistory.length-1].weight)/Math.pow(user.height,2)>(user.weightsHistory[user.weightsHistory.length-2].weight)/Math.pow(user.height,2))
+                return true;
+        }
+        return false;
+    }
+    
 
   OKaddUser() {
     //create new user object

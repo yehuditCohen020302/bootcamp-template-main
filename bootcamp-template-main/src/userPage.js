@@ -1,29 +1,67 @@
 
 function loadUser(){
-    this.currentUser=new User("325632563","michal","soloveitchik","jerusalem","mevo-livna",2,"058-3231859","859michal@gmail.com",1.68,60);
-    this.currentUser.addWeight(55);
-    BMI=this.currentUser.weightsHistory[this.currentUser.weightsHistory.length-1].weight/(Math.pow(currentUser.height,2));
-    document.getElementById("id").value=this.currentUser.userId;
-    document.getElementById("firstName").value=this.currentUser.firstName;
-    document.getElementById("lastName").value=this.currentUser.lastName;
-    document.getElementById("city").value=this.currentUser.city;
-    document.getElementById("street").value=this.currentUser.street;
-    document.getElementById("houseNumber").value=this.currentUser.houseNumber;
-    document.getElementById("phoneNumber").value=this.currentUser.phoneNumber;
-    document.getElementById("emailAddress").value=this.currentUser.emailAddress;
-    document.getElementById("height").value=this.currentUser.height;
+    const params = new URLSearchParams(window.location.search)
+    if(params.has("id"))
+        getUserById(params.get("id"));
+    else if(params.has("emailAddress"))
+            getUserByEmail(params.get("emailAddress"));
+    // this.currentUser=new User("325632563","michal","soloveitchik","jerusalem","mevo-livna",2,"058-3231859","859michal@gmail.com",1.68,60);
+    // this.currentUser.addWeight(55);
+        
+  
+
+    // inputs=document.getElementsByClassName("details").style.readonly="true";
+}
+
+function getUserById(id) {
+    const xhr = new XMLHttpRequest();
+        xhr.open("GET", 'http://localhost:3000/users');
+        xhr.send();
+        xhr.onload = function () {
+            if (xhr.status != 200) {
+                alert(`Error ${xhr.status}: ${xhr.statusText}`);
+            } else {
+                const allUsers = JSON.parse(xhr.responseText);
+                const user= allUsers.filter(user => user.id==id);
+                drawUserDetails(user[0])
+            }
+        }
+}
+
+function getUserByEmail(emailAddress) {
+    const xhr = new XMLHttpRequest();
+        xhr.open("GET", 'http://localhost:3000/users');
+        xhr.send();
+        xhr.onload = function () {
+            if (xhr.status != 200) {
+                alert(`Error ${xhr.status}: ${xhr.statusText}`);
+            } else {
+                const allUsers = JSON.parse(xhr.responseText);
+                const user=allUsers.filter(user => user.emailAddress==emailAddress);
+                drawUserDetails(user[0])
+            }
+        }
+}
+
+function drawUserDetails(currentUser) {
+    document.getElementById("userId").value=currentUser.id;
+    document.getElementById("firstName").value=currentUser.firstName;
+    document.getElementById("lastName").value=currentUser.lastName;
+    document.getElementById("city").value=currentUser.city;
+    document.getElementById("street").value=currentUser.street;
+    document.getElementById("houseNumber").value=currentUser.houseNumber;
+    document.getElementById("phoneNumber").value=currentUser.phoneNumber;
+    document.getElementById("emailAddress").value=currentUser.emailAddress;
+    document.getElementById("height").value=currentUser.height;
     // document.getElementById("weight").value=this.currentUser.weightsHistory[this.currentUser.weightsHistory.length-1].weight;
-    document.getElementById("BMI").value=BMI;
-    
-    this.currentUser.weightsHistory.forEach(meeting => {
+    document.getElementById("BMI").value=(currentUser.weightsHistory[currentUser.weightsHistory.length-1].weight)/Math.pow(currentUser.height,2)
+
+    currentUser.weightsHistory.forEach(meeting => {
         const tmp=document.getElementsByTagName("template")[0];
         let element=tmp.content.cloneNode(true);
-        console.log(meeting)
         element.querySelector(".date").innerText=meeting.date;
         element.querySelector(".weight").innerText=meeting.weight;
         const weightsTable=document.getElementById('weights');
-        weightsTable.append(meeting);ד
+        weightsTable.append(element);
     });
-
-    // inputs=document.getElementsByClassName("details").style.readonly="true";
 }
