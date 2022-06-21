@@ -1,7 +1,8 @@
  class User{
     commants;
     weightsHistory=[];
-    constructor(firstName, lastName,city,street,houseNumber,phoneNumber,emailAddress,height,beginingWeight){
+    constructor(id,firstName, lastName,city,street,houseNumber,phoneNumber,emailAddress,height,beginingWeight){
+        this.id=id,
         this.firstName      =firstName,
         this.lastName       =lastName,
         this.city           =city,
@@ -10,10 +11,10 @@
         this.phoneNumber    =phoneNumber,
         this.emailAddress   =emailAddress,
         this.height         =height,
-        this.addWeight(beginingWeight)
+        this.addMeeting(beginingWeight)
     }
-    addWeight(newWeight){
-        var currentWeight=new weight(new Date(),newWeight)
+    addMeeting(newWeight){
+        var currentWeight=new meeting(new Date(),newWeight)
         this.weightsHistory.push(currentWeight)
     }
 }

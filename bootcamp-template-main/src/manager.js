@@ -105,7 +105,8 @@
     OKaddUser(){
 
         //create new user object
-        let user= new User(document.getElementById("firstName").value,
+        let user= new User(document.getElementById("userId").value,
+                            document.getElementById("firstName").value,
                             document.getElementById("lastName").value,
                             document.getElementById("city").value,
                             document.getElementById("street").value,
