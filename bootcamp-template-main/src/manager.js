@@ -19,35 +19,12 @@
     }
 
     sortByName(data){
-        debugger
-        const xhr = new XMLHttpRequest();
-       
-        xhr.open("GET", 'http://localhost:3000/users');
-        xhr.send();
-        xhr.onload = function () {
-            if (xhr.status != 200) {
-                alert(`Error ${xhr.status}: ${xhr.statusText}`);
-            } else {
-                let users = JSON.parse(xhr.responseText);
-                let table = '';
-                users.forEach(user => {
-                    debugger
-                  if(user.firstName===data) 
-                  {
-                     table += `
-                        <tr>
-                            <th>${user.firstName + ' ' + user.lastName}</th>
-                           
-                            <th><button onClick="details()">Details</button></th>
-                        </tr>`
-                  }
-                  const container = document.querySelector('.usersTable');
-                container.innerHTML += table;
-                })
-                
-            }
-        }
+        this.filterdUsers=this.users.filter(function(user){
+            return user.firstName==data;
+        })
+        this.drawTable(this.filterdUsers)
     }
+    
 
     
 
@@ -60,47 +37,43 @@
             if (xhr.status != 200) {
                 alert(`Error ${xhr.status}: ${xhr.statusText}`);
             } else {
-                let users = JSON.parse(xhr.responseText);
-                let table = '';
-                users.forEach(user => {
+                manager.users = JSON.parse(xhr.responseText);
+                manager.drawTable(manager.users);
+               
+            }
+        }
+       
+    }
+    drawTable(users){
+        const container=document.querySelector('.usersTable');
+        container.innerHTML ="";
+        let table = '';
+        users.forEach(user => {
                     table += `
                     <tr>
-                        <th>${user.firstName + ' ' + user.lastName}</th>
-                        <th>${user.weightsHistory[user.weightsHistory.length-1]
-                            .weight/(Math.pow(user.height,2))}</th>
-                        <th><button onClick="details()">Details</button></th>
+                    
+                        <td><a href="/src/userPage.html?id=${user.id}">${user.firstName + ' ' + user.lastName}</a></td>                  
+                        <td style="color:manager.goodBMI(user)==true? red: green;">
+                            ${(user.weightsHistory[user.weightsHistory.length-1].weight)/Math.pow(user.height,2)}</td>
                     </tr>`
                 })
-                const container = document.querySelector('.usersTable');
                 container.innerHTML += table;
             }
+
+    
+        
+    
+
+    goodBMI(user){
+        if(user.weightsHistory.length > 1){
+            if((user.weightsHistory[user.weightsHistory.length-1].weight)/Math.pow(user.height,2)>(user.weightsHistory[user.weightsHistory.length-2].weight)/Math.pow(user.height,2))
+                return true;
         }
+        return false;
     }
 
-    details(){
-        const xhr = new XMLHttpRequest();
-       
-        xhr.open("GET", 'http://localhost:3000/users');
-        xhr.send();
-        xhr.onload = function () {
-            if (xhr.status != 200) {
-                alert(`Error ${xhr.status}: ${xhr.statusText}`);
-            } else {
-                let users = JSON.parse(xhr.responseText);
-                let div='';
-                users.forEach(user => {
-                    //התנאי פה הוא סתם תנאי צריך לראות איך אפשר להציג את המשתמש הזה
-                    if(user.email===sessionStorage.getItem('userEmail')) 
-                    {
-                        console.log(`User: ${user.firstName}`);
-                        div+=`<p>
-                        ${user.firstName + ' ' + user.lastName + ' ' + user.email} </p>`
-                    }
-                })
-                const container = document.querySelector('.div');
-                container.innerHTML += div;
-            }
-        }
+    details(user){
+        window.location.href = "/src/userPage.html?";
     }
 
     OKaddUser(){
