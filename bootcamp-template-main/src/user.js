@@ -1,5 +1,5 @@
  class User{
-    commants;
+    comments;
     weightsHistory=[];
     constructor(id,firstName, lastName,city,street,houseNumber,phoneNumber,emailAddress,height,beginingWeight){
         this.id=id,
