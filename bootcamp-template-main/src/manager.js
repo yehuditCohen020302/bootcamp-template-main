@@ -1,5 +1,5 @@
  class Manager{
-    constructor(firstName, lastName, city,street, houseNumber,phoneNumber,emailAddress){
+    constructor(firstName, lastName ,emailAddress){
     
         this.firstName   =firstName,
         this.lastName    =lastName,
@@ -37,7 +37,7 @@
                      table += `
                         <tr>
                             <th>${user.firstName + ' ' + user.lastName}</th>
-                            <th>${ user.email }</th>
+                           
                             <th><button onClick="details()">Details</button></th>
                         </tr>`
                   }
@@ -66,7 +66,8 @@
                     table += `
                     <tr>
                         <th>${user.firstName + ' ' + user.lastName}</th>
-                        <th>${ user.email }</th>
+                        <th>${user.weightsHistory[user.weightsHistory.length-1]
+                            .weight/(Math.pow(user.height,2))}</th>
                         <th><button onClick="details()">Details</button></th>
                     </tr>`
                 })
