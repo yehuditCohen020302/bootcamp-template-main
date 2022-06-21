@@ -1,8 +1,9 @@
 
 function loadUser(){
-    this.currentUser=new User("michal","soloveitchik","jerusalem","mevo-livna",2,"058-3231859","859michal@gmail.com",1.68,60);
+    this.currentUser=new User("325632563","michal","soloveitchik","jerusalem","mevo-livna",2,"058-3231859","859michal@gmail.com",1.68,60);
     this.currentUser.addWeight(55);
     BMI=this.currentUser.weightsHistory[this.currentUser.weightsHistory.length-1].weight/(Math.pow(currentUser.height,2));
+    document.getElementById("id").value=this.currentUser.userId;
     document.getElementById("firstName").value=this.currentUser.firstName;
     document.getElementById("lastName").value=this.currentUser.lastName;
     document.getElementById("city").value=this.currentUser.city;
