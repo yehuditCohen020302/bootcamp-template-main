@@ -22,7 +22,7 @@ class Manager {
         alert(`Error ${xhr.status}: ${xhr.statusText}`);
       } else {
         manager.users = JSON.parse(xhr.responseText);
-        manager.drawTable( manager.users);
+        manager.drawTable(manager.users);
       }
     };
   }
@@ -46,27 +46,32 @@ class Manager {
     container.innerHTML += table;
   }
 
-  search(data,type) {
-    debugger
-   
-        if (type == "firstName")
-            this.filteredUser=this.users.filter(user => {
-            return user.firstName === data
-            });
-        if (type == "lastName")
-            this.filteredUser=this.users.filter(user => {
-            return user.lastName === data
-            });
-        if (type == "email")
-            this.filteredUser=this.users.filter(user => {
-            return user.emailAddress === data
-            });
-        if (type == "phone")
-            this.filteredUser=this.users.filter(user => {
-            return user.phoneNumber === data
-            });
-    
+  search(data, type) {
+    debugger;
 
+    if (type == "firstName")
+      this.filteredUser = this.users.filter((user) => {
+        return user.firstName === data;
+      });
+    if (type == "lastName")
+      this.filteredUser = this.users.filter((user) => {
+        return user.lastName === data;
+      });
+    if (type == "email")
+      this.filteredUser = this.users.filter((user) => {
+        return user.emailAddress === data;
+      });
+    if (type == "phone")
+      this.filteredUser = this.users.filter((user) => {
+        return user.phoneNumber === data;
+      });
+    this.drawTable(this.filteredUser);
+  }
+
+  
+  details() {
+    console.log("details()  called");
+  }
 
 
     goodBMI(user){
@@ -77,6 +82,7 @@ class Manager {
         return false;
     }
     
+
 
   OKaddUser() {
     //create new user object
@@ -130,66 +136,64 @@ function details() {
   manager.details();
 }
 
+function displayPhone() {
+  var checkBox = document.getElementById("searchByPhone");
+  var text = document.getElementById("textSearchByPhone");
+  if (checkBox.checked == true) {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+function displayEmail() {
+  var checkBox = document.getElementById("searchByEmail");
+  var text = document.getElementById("textSearchByEmail");
+  if (checkBox.checked == true) {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+function displayLastName() {
+  var checkBox = document.getElementById("searchByLastName");
+  var text = document.getElementById("textSearchByLastName");
+  if (checkBox.checked == true) {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+function displayFirstName() {
+  var checkBox = document.getElementById("searchByFirstName");
+  var text = document.getElementById("textSearchByFirstName");
+  if (checkBox.checked == true) {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
 
-function displayPhone(){
-    var checkBox=document.getElementById("searchByPhone");
-    var text= document.getElementById("textSearchByPhone");
-    if (checkBox.checked == true){
-        text.style.display = "block";
-      } else {
-        text.style.display = "none";
-      }
-}
-function displayEmail(){
-    var checkBox=document.getElementById("searchByEmail");
-    var text= document.getElementById("textSearchByEmail");
-    if (checkBox.checked == true){
-        text.style.display = "block";
-      } else {
-        text.style.display = "none";
-      }
-}
-function displayLastName(){
-    var checkBox=document.getElementById("searchByLastName");
-    var text= document.getElementById("textSearchByLastName");
-    if (checkBox.checked == true){
-        text.style.display = "block";
-      } else {
-        text.style.display = "none";
-      }
-}
-function displayFirstName(){
-    var checkBox=document.getElementById("searchByFirstName");
-    var text= document.getElementById("textSearchByFirstName");
-    if (checkBox.checked == true){
-        text.style.display = "block";
-      } else {
-        text.style.display = "none";
-      }
-}
+function search() {
+  const firstName = document.getElementById("searchByFirstName");
+  const lastName = document.getElementById("searchByLastName");
+  const email = document.getElementById("searchByEmail");
+  const phone = document.getElementById("searchByPhone");
+  var data;
+  var type;
+  debugger;
+  if (firstName.checked == true) {
+    data = document.getElementById("textSearchByFirstName").value;
+    type = "firstName";
+  } else if (lastName.checked == true) {
+    data = document.getElementById("textSearchByLastName").value;
+    type = "lastName";
+  } else if (email.checked == true) {
+    data = document.getElementById("textSearchByEmail").value;
+    type = "email";
+  } else if (phone.checked == true) {
+    data = document.getElementById("textSearchByPhone").value;
+    type = "phone";
+  }
 
-function search()
-{
-    const firstName=document.getElementById("searchByFirstName");
-    const lastName=document.getElementById("searchByLastName");
-    const email=document.getElementById("searchByEmail");
-    const phone=document.getElementById("searchByPhone");
-    var data;
-    var type;
-    debugger
-    if(firstName.checked==true)
-     {   data = document.getElementById("textSearchByFirstName").value;
-        type='firstName';}
-        else if(lastName.checked==true)
-        {   data = document.getElementById("textSearchByLastName").value;
-             type='lastName';}
-             else if(email.checked==true)
-              {  data = document.getElementById("textSearchByEmail").value;
-                 type='email';}
-                    else if(phone.checked==true) 
-                     {  data = document.getElementById("textSearchByPhone").value;
-                        type='phone';}
-    
-
-    manager.search(data,type);
+  manager.search(data, type);
 }
