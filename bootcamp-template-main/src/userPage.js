@@ -21,8 +21,8 @@ function loadUser(){
         element.querySelector(".date").innerText=meeting.date;
         element.querySelector(".weight").innerText=meeting.weight;
         const weightsTable=document.getElementById('weights');
-        weightsTable.append(meeting);
+        weightsTable.append(meeting);ד
     });
-    
+
     // inputs=document.getElementsByClassName("details").style.readonly="true";
 }
