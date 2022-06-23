@@ -197,3 +197,8 @@ function search() {
 
   manager.search(data, type);
 }
+
+function Reset(){
+  manager.getUsers();
+  window.location.href = "/src/Manager.html";
+}
