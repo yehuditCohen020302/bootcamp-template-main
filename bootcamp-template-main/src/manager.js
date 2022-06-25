@@ -30,15 +30,18 @@ class Manager {
   drawTable(users) {
     const container = document.querySelector(".usersTable");
     container.innerHTML = "";
+    // const bmiColor= bmi-user.weightsHistory[user.weightsHistory.length - 2]
+    //                         .weight / (Math.pow(user.height, 2));
     let table = "";
+   
     users.forEach((user) => {
       table += `
                 <tr>
                     <td>${user.firstName + " " + user.lastName}</th>
-                    <td style="color:manager.goodBMI(user)==true? red: green;">
-                        ${
-                          user.weightsHistory[user.weightsHistory.length - 1]
-                            .weight / Math.pow(user.height, 2)
+                    <td changeColor((goodBMI(user)),user.id)>
+                        ${"BMI: "+ user.weightsHistory[user.weightsHistory.length - 1]
+     .weight / (Math.pow(user.height, 2))
+
                         }</th>
                     <td><button onClick="details()">Details</button></th>
                 </tr>`;
@@ -68,21 +71,25 @@ class Manager {
     this.drawTable(this.filteredUser);
   }
 
-  
   details() {
     console.log("details()  called");
   }
 
-
-    goodBMI(user){
-        if(user.weightsHistory.length > 1){
-            if((user.weightsHistory[user.weightsHistory.length-1].weight)/Math.pow(user.height,2)>(user.weightsHistory[user.weightsHistory.length-2].weight)/Math.pow(user.height,2))
-                return true;
-        }
-        return false;
+  goodBMI(user){
+    debugger
+      if(user.weightsHistory.length > 1){
+          if((user.weightsHistory[user.weightsHistory.length-1].weight)/Math.pow(user.height,2)
+          >(user.weightsHistory[user.weightsHistory.length-2].weight)/Math.pow(user.height,2))
+              return 1;
+      }
+      if(user.weightsHistory.length > 1){
+        if((user.weightsHistory[user.weightsHistory.length-1].weight)/Math.pow(user.height,2)
+        <(user.weightsHistory[user.weightsHistory.length-2].weight)/Math.pow(user.height,2))
+            return -1;
     }
-    
 
+      return 0;
+  }
 
   OKaddUser() {
     //create new user object
@@ -196,4 +203,22 @@ function search() {
   }
 
   manager.search(data, type);
+}
+
+function Reset() {
+  manager.getUsers();
+  window.location.href = "/src/Manager.html";
+}
+
+function changeColor(bmiColor, id) {
+  debugger
+  if (bmiColor < 0)
+    document.getElementById(id).style.backgroundColor = "lightgreen";
+  else 
+    document.getElementById(id).style.backgroundColor = "red";
+}
+
+function goodBMI(user)
+{
+  manager.goodBMI(user);
 }
