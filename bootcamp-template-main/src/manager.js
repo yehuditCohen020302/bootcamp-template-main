@@ -44,10 +44,11 @@ class Manager {
                 <tr>
                     <th>${user.firstName + " " + user.lastName}</th>
                     <th style="color:${c}">${Math.floor(bmi * 100) / 100}</th>
-                    <th><a href="/details.html?id=${user.id}">details user</a></th>
+                    
                     <td><button onClick="details()">Details</button></th>
                 </tr>`;
     });
+    // <th><a href="/userPage.html?email=${user.email}">details user</a></th>
     container.innerHTML += table;
   }
 
