@@ -35,14 +35,16 @@ class Manager {
     let table = "";
    
     users.forEach((user) => {
+      let bmi = user.weightsHistory[user.weightsHistory.length - 1].weight / Math.pow(user.height, 2);
+      let c = "green";
+      if (user.weightsHistory[user.weightsHistory.length - 1].weight > user.weightsHistory[user.weightsHistory.length - 2].weight) {
+          c = "red";
+      }
       table += `
                 <tr>
-                    <td>${user.firstName + " " + user.lastName}</th>
-                    <td changeColor((goodBMI(user)),user.id)>
-                        ${"BMI: "+ user.weightsHistory[user.weightsHistory.length - 1]
-     .weight / (Math.pow(user.height, 2))
-
-                        }</th>
+                    <th>${user.firstName + " " + user.lastName}</th>
+                    <th style="color:${c}">${Math.floor(bmi * 100) / 100}</th>
+                    <th><a href="/details.html?id=${user.id}">details user</a></th>
                     <td><button onClick="details()">Details</button></th>
                 </tr>`;
     });
