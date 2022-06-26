@@ -43,12 +43,12 @@
             "houseNumber":"5",
             "phoneNumber":"0536985214",
             "emailAddress":"shira@gmail.com",
-            "height":1.64,
+            "height":1.65,
             "weightsHistory":
                 [
-                    {"date":"12/03/2022","weight":56},
-                    {"date":"12/03/2022","weight":55.8},
-                    {"date":"12/03/2022","weight":53.9}
+                    {"date":"12/03/2022","weight":76},
+                    {"date":"12/03/2022","weight":78.8},
+                    {"date":"12/03/2022","weight":80.9}
                 ]
         },
         {
