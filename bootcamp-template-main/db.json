@@ -2,13 +2,13 @@
     "users": [
         {
             "id": "123456789",
-            "firstName":"Miri",
-            "lastName":"Levi",
+            "firstName":"Michal",
+            "lastName":"Shmoel",
             "city":"jerusalem",
-            "street":"arimon",
-            "houseNumber":5,
+            "street":"hapisga",
+            "houseNumber":12,
             "phoneNumber":"0521369874",
-            "emailAddress":"yehudit8824@gmail.com",
+            "emailAddress":"michal@gmail.com",
             "height":1.70,
             "weightsHistory":
                 [
@@ -25,13 +25,13 @@
             "street":"arimon",
             "houseNumber":5,
             "phoneNumber":"0558963214",
-            "emailAddress":"rk@gmail.com",
+            "emailAddress":"rachel@gmail.com",
             "height":1.75,
             "weightsHistory":
                 [
-                    {"date":"12/03/2022","weight":60},
-                    {"date":"12/03/2022","weight":61.8},
-                    {"date":"12/03/2022","weight":60.9}
+                    {"date":"12/03/2022","weight":72},
+                    {"date":"12/03/2022","weight":69.8},
+                    {"date":"12/03/2022","weight":71.1}
                 ]
         },
         {
@@ -42,13 +42,30 @@
             "street":"arimon",
             "houseNumber":"5",
             "phoneNumber":"0536985214",
-            "emailAddress":"sa@gmail.com",
-            "height":1.64,
+            "emailAddress":"shira@gmail.com",
+            "height":1.65,
             "weightsHistory":
                 [
-                    {"date":"12/03/2022","weight":60},
-                    {"date":"12/03/2022","weight":61.8},
-                    {"date":"12/03/2022","weight":60.9}
+                    {"date":"12/03/2022","weight":76},
+                    {"date":"12/03/2022","weight":78.8},
+                    {"date":"12/03/2022","weight":80.9}
+                ]
+        },
+        {
+            "id": "678912345",
+            "firstName":"David",
+            "lastName":"Cohen",
+            "city":"rehovot",
+            "street":"ezra",
+            "houseNumber":"37",
+            "phoneNumber":"0536985214",
+            "emailAddress":"david@gmail.com",
+            "height":1.84,
+            "weightsHistory":
+                [
+                    {"date":"12/03/2022","weight":76},
+                    {"date":"12/03/2022","weight":75.8},
+                    {"date":"12/03/2022","weight":73.9}
                 ]
         }
     ]

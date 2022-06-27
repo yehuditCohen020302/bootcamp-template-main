@@ -30,19 +30,25 @@ class Manager {
   drawTable(users) {
     const container = document.querySelector(".usersTable");
     container.innerHTML = "";
+    // const bmiColor= bmi-user.weightsHistory[user.weightsHistory.length - 2]
+    //                         .weight / (Math.pow(user.height, 2));
     let table = "";
+   
     users.forEach((user) => {
+      let bmi = user.weightsHistory[user.weightsHistory.length - 1].weight / Math.pow(user.height, 2);
+      let c = "green";
+      if (user.weightsHistory[user.weightsHistory.length - 1].weight > user.weightsHistory[user.weightsHistory.length - 2].weight) {
+          c = "red";
+      }
       table += `
                 <tr>
-                    <td>${user.firstName + " " + user.lastName}</th>
-                    <td style="color:manager.goodBMI(user)==true? red: green;">
-                        ${
-                          user.weightsHistory[user.weightsHistory.length - 1]
-                            .weight / Math.pow(user.height, 2)
-                        }</th>
+                    <th>${user.firstName + " " + user.lastName}</th>
+                    <th style="color:${c}">${Math.floor(bmi * 100) / 100}</th>
+                    
                     <td><button onClick="details()">Details</button></th>
                 </tr>`;
     });
+    // <th><a href="/userPage.html?email=${user.email}">details user</a></th>
     container.innerHTML += table;
   }
 
@@ -68,21 +74,25 @@ class Manager {
     this.drawTable(this.filteredUser);
   }
 
-  
   details() {
     console.log("details()  called");
   }
 
-
-    goodBMI(user){
-        if(user.weightsHistory.length > 1){
-            if((user.weightsHistory[user.weightsHistory.length-1].weight)/Math.pow(user.height,2)>(user.weightsHistory[user.weightsHistory.length-2].weight)/Math.pow(user.height,2))
-                return true;
-        }
-        return false;
+  goodBMI(user){
+    debugger
+      if(user.weightsHistory.length > 1){
+          if((user.weightsHistory[user.weightsHistory.length-1].weight)/Math.pow(user.height,2)
+          >(user.weightsHistory[user.weightsHistory.length-2].weight)/Math.pow(user.height,2))
+              return 1;
+      }
+      if(user.weightsHistory.length > 1){
+        if((user.weightsHistory[user.weightsHistory.length-1].weight)/Math.pow(user.height,2)
+        <(user.weightsHistory[user.weightsHistory.length-2].weight)/Math.pow(user.height,2))
+            return -1;
     }
-    
 
+      return 0;
+  }
 
   OKaddUser() {
     //create new user object
@@ -196,4 +206,22 @@ function search() {
   }
 
   manager.search(data, type);
+}
+
+function Reset() {
+  manager.getUsers();
+  window.location.href = "/src/Manager.html";
+}
+
+function changeColor(bmiColor, id) {
+  debugger
+  if (bmiColor < 0)
+    document.getElementById(id).style.backgroundColor = "lightgreen";
+  else 
+    document.getElementById(id).style.backgroundColor = "red";
+}
+
+function goodBMI(user)
+{
+  manager.goodBMI(user);
 }
