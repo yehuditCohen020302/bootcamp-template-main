@@ -61,3 +61,8 @@ function getValue() {
  
   container.innerHTML += div;
 }
+
+function Clear(){
+  document.getElementById("prod").value='';
+  search();
+}
