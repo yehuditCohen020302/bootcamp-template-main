@@ -4,7 +4,7 @@ var autocomplete;
 var autocomplete_result;
 
 function importAllProducts(){
-  console.log("Searching...");
+  console.log("importing the list...");
   const options = {
     method: "GET",
     headers: {},
@@ -22,23 +22,7 @@ function importAllProducts(){
     .then((data) => {
       const containered = document.querySelector(".selectFood");
       containered.innerHTML = `ישנם סך הכל ${data.length} מוצרים`;
-
-      const container = document.querySelector(".selectCheck");
-      container.innerHTML = `
-	  <option>select the food</option>`;
-      let option = " ";
-	  if(data.length == 0) {
-        alert("There is no products");
-      } 
-	  else {
-        // console.log(data);
-		dataOut=data;
-	}
-      data.forEach((d) => {
-        option += `<option>${d.shmmitzrach}</option>`;
-        // console.log(d);
-      });
-      container.innerHTML += option;
+      document.querySelector(".getValues").innerHTML="";
     })
     .then(()=>addAutocomplete())
     
@@ -90,44 +74,22 @@ function search() {
   const data=productsList.filter(p=>p.shmmitzrach.includes(productName));
       const containered = document.querySelector(".selectFood");
       containered.innerHTML = `נמצאו ${data.length} מוצרים`;
-
-      const container = document.querySelector(".selectCheck");
-      container.innerHTML = `
-	  <option>select the food</option>`;
-      let option = " ";
-	  if(data.length == 0) {
-        alert("There is no such product");
-      } 
-	  else {
-        // console.log(data);
-		dataOut=data;
-	}
-      data.forEach((d) => {
-        option += `<option>${d.shmmitzrach}</option>`;
-        // console.log(d);
-      });
-      container.innerHTML += option;
-    
-    
+      const container = document.querySelector(".getValues");
+      container.innerHTML = "";
+      let div = " ";
+      data.forEach(p=>{
+        div += `<br/>
+        <h3>${p.shmmitzrach}</h3>
+        <p>${"סוכרים: " + p.total_sugars}</p>
+			<p>${"נתרן: " + p.sodium}</p>
+			<p>${"אשלגן: " + p.potassium}</p>
+      <p>${"אנרגיה: " + p.food_energy}</p>
+			`;
+      })
+      container.innerHTML += div;
+      
 }
 
-function getValue() {
-//   debugger;
-  let checked = document.querySelector(".selectCheck").value;
-  const container = document.querySelector(".getValues");
-  container.innerHTML = "";
-  let div = " ";
-  dataOut.forEach((d) =>{
-	 if(d.shmmitzrach == checked){
-		div += `<p>${"total_sugars: " + d.total_sugars}</p>
-			<p>${"sodium: " + d.sodium}</p>
-			<p>${"potassium: " + d.potassium}</p>
-			<p>${"food_energy: " + d.food_energy}</p>
-			`;}
-	 })
- 
-  container.innerHTML += div;
-}
 
 function Clear(){
   document.getElementById("searchProduct").value='';
