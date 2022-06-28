@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="/src/userDiary.js"></script>
+  </head>
+  <body onload="showUserDiary()">
+    <div style="background-color: lightgoldenrodyellow; width: 100%" >
+     <span style="font-size: 30px;" id="nameUser"></span>
+      <span style="font-size: 30px;">'s Diary 📑</span>
+
+      <h4>Enter the date (default today) 📅:</h4>
+      <input type="date" id="dateEat" />
+      <h4>Enter all the food that you eat:</h4>
+      <input type="text" class="food0" /><br />
+     
+      <div id="divContainer"></div>
+      <br /><input type="button" id="btnAdd" onclick="btnAddFood()" value="Click To Add Line For Food" />
+
+      <input type="button" id="btnCalculate" onclick="btnCalculateFood()" value="Click To Calculate All"/>
+      
+      <h4> 🥝🍇🍈🍉🍊🍌🍍🍎🌽🍆🍅🍓🥔🍒🍑🍏🍄🥑🥒🧄🥦</h4>
+      
+    </div>
+  </body>
+</html>

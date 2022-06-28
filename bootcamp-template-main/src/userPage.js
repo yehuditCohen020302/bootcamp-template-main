@@ -65,3 +65,12 @@ function drawUserDetails(currentUser) {
         weightsTable.append(element);
     });
 }
+
+
+function UserDiary(){
+    console.log("InUserDiary");
+    debugger
+    email=document.getElementById("emailAddress").value;
+    window.location.href = "/src/userDiary.html?emailAddress="+email;
+
+}
