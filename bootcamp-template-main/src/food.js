@@ -86,6 +86,7 @@ function updPopup() {
 
 function search() {
   console.log("Searching...");
+//   debugger
   const productName=document.getElementById("searchProduct").value;
   const data=productsList.filter(p=>p.shmmitzrach.includes(productName));
       const containered = document.querySelector(".selectFood");

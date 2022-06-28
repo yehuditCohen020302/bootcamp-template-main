@@ -29,26 +29,32 @@ function drawUserDiary(currentUser) {
 
 }
 
-var numberFood=0;
+
+ var allFoods=[];
 function btnAddFood(){
-   document.getElementById("divContainer").innerHTML+=`<input type="text" id="food${++numberFood}"><br>`
+//  document.getElementById("divContainer").innerHTML+=`<input type="text" id="food${numberFood++}"><br>`
+    const food=document.getElementById("searchProduct").value;
+    document.getElementById("divContainer").innerHTML+=`<li>${food}</li>`
+    allFoods+=" "+food;
+    const req = fetch(
+        ` https://data.gov.il/api/3/action/datastore_search?resource_id=c3cb0630-0650-46c1-a068-82d575c094b2&q=${food}`
+      )
+        .then((response) => response.json())
+        .then((response) => {
+          const data = response.result.records;
+          console.log(data);
+          return data;
+      })
 
 }
 
 function btnCalculateFood(){
+    debugger
     console.log("CalculateFood");
-   debugger
-    for(let i=0; i<=numberFood; i++){
-        const prod = document.getElementById(`food${i}`).value;
-        const req = fetch(
-              ` https://data.gov.il/api/3/action/datastore_search?resource_id=c3cb0630-0650-46c1-a068-82d575c094b2&q=${prod}`
-            )
-              .then((response) => response.json())
-              .then((response) => {
-                const data = response.result.records;
-                console.log(data);
-                return data;
-            })
-    }
+
+    const prod = document.getElementById("foodtxt");
+   
+console.log(allFoods);
 
 }
+
