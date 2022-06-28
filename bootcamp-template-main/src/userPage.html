@@ -17,8 +17,8 @@
     </template>
 </head>
 <body onload="loadUser()">
-    <h1 id="title"></h1>
-    <div id="userDetails">
+    <h3 id="title">User Details:</h3>
+    <div id="userDetails" style="background-color:lightpink; width:100%; ">
         <label>id</label>
         <input class="details" type="text" id="userId" readonly/><br />
         <label>first Name</label>
@@ -51,5 +51,7 @@
         <input type="number" id="BMI" readonly/><br/>
     </div>
     <!-- <button onclick="editUser()">edit</button> -->
+
+    <button id="UserDiary" onclick="UserDiary()" >Show The User Diary</button>
 </body>
 </html>
