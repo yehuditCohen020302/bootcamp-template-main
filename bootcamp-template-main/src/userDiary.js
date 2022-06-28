@@ -30,6 +30,7 @@ function drawUserDiary(currentUser) {
 }
 
 
+
  var allFoods=[];
 function btnAddFood(){
 //  document.getElementById("divContainer").innerHTML+=`<input type="text" id="food${numberFood++}"><br>`
@@ -46,15 +47,20 @@ function btnAddFood(){
           return data;
       })
 
+var numberFood=0;
+function btnAddFood(){
+   document.getElementById("divContainer").innerHTML+=`<input type="text" id="food${++numberFood}"><br>`
+
+
 }
 
 function btnCalculateFood(){
-    debugger
-    console.log("CalculateFood");
 
-    const prod = document.getElementById("foodtxt");
-   
+    debugger
+ console.log("CalculateFood");
+ const prod = document.getElementById("foodtxt"); 
 console.log(allFoods);
 
 }
 
+  }
