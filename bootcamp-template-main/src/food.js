@@ -3,6 +3,9 @@ var productsNames;
 var autocomplete;
 var autocomplete_result;
 
+//global arr ->foods
+var foodList=[];
+
 function importAllProducts(){
   console.log("importing the list...");
   const options = {
@@ -68,34 +71,40 @@ function updPopup() {
   popupClearAndHide();
 }
 
+
 function search() {
   console.log("Searching...");
-//   debugger
+  // debugger
   const productName=document.getElementById("searchProduct").value;
   const data=productsList.filter(p=>p.shmmitzrach.includes(productName));
-      const containered = document.querySelector(".selectFood");
-      containered.innerHTML = `נמצאו ${data.length} מוצרים`;
-      const container = document.querySelector(".getValues");
-      container.innerHTML = "";
-      let div = " ";
-      data.forEach(p=>{
-        div += `<br/>
-        <h3>${p.shmmitzrach}</h3>
-        <p>${"סוכרים: " + p.total_sugars}</p>
-			<p>${"נתרן: " + p.sodium}</p>
-			<p>${"אשלגן: " + p.potassium}</p>
-      <p>${"אנרגיה: " + p.food_energy}</p>
-			`;
-      })
-      container.innerHTML += div;
+  foodList.push(data);
+  console.log(foodList);
+
+  // foodList.forEach(food=> {
+  //   console.log(food)
+  //   addToArr(foodList);});
+  
+    const containered = document.querySelector(".selectFood");
+    containered.innerHTML = `נמצאו ${data.length} מוצרים`;
+    const container = document.querySelector(".getValues");
+    container.innerHTML = "";
+    let div = " ";
+    data.forEach(p=>{
+      div += `<br/>
+      <h3>${p.shmmitzrach}</h3>
+      <p>${"סוכרים: " + p.total_sugars}</p>
+	    <p>${"נתרן: " + p.sodium}</p>
+	    <p>${"אשלגן: " + p.potassium}</p>
+      <p>${"אנרגיה: " + p.food_energy}</p>	`;
+    })
+    container.innerHTML += div;
       
 }
 
 
 function Clear(){
   document.getElementById("searchProduct").value='';
+  document.querySelector(".selectFood").value='';
   importAllProducts();
 }
-
-
 
