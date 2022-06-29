@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="/src/food.js"></script>
+<<<<<<< HEAD
     <script src="/src/userDiary.js"></script>    
   </head>
   <body onload="showUserDiary(),importAllProducts()">
+=======
+    <script src="/src/userDiary.js"></script>
+>>>>>>> 2444d9ac34ce98da68c687b4819ab8ce7e05fcd7
    
   </head>
+  
   <body onload="showUserDiary()">
 
     <div style="background-color: lightgoldenrodyellow; width: 100%" >
@@ -21,16 +26,16 @@
       <input type="date" id="dateEat" />
       <h4>Enter all the food that you eat:</h4>
 
-      <iframe src="/src/food.html" title="description" style="width:100%;"></iframe>
+      <iframe src="/src/food.html" title="description" style="width:100%;" id="window"></iframe>
 
-      <ul id="divContainer"></ul>
-      <input type="text" class="food0" /><br />
+      <ul id="container"></ul>
+      <!-- <input type="text" class="food0" /><br /> -->
      
       <div id="divContainer"></div>
 
       <br /><input type="button" id="btnAdd" onclick="btnAddFood()" value="Click To Add Line For Food" />
 
-      <input type="button" id="btnCalculate" onclick="btnCalculateFood()" value="Click To Calculate All"/>
+      <input type="button" id="btnCalculate" onclick="btnOkFood()" value="Click To Ok This Meal"/>
       
       <h4> 🥝🍇🍈🍉🍊🍌🍍🍎🌽🍆🍅🍓🥔🍒🍑🍏🍄🥑🥒🧄🥦</h4>
       
