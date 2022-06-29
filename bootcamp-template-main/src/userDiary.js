@@ -1,3 +1,6 @@
+var allFoods=[];
+var hasAlreadyDiary=true;
+var currentUser;
 
 function showUserDiary(){
     console.log("UserDiary: in showUserDiary");
@@ -7,62 +10,61 @@ function showUserDiary(){
 
 }
 
-function getByEmail(emailAddress) {
-    // debugger
-    const xhr = new XMLHttpRequest();
-        xhr.open("GET", 'http://localhost:3000/users');
-        xhr.send();
-        xhr.onload = function () {
-            if (xhr.status != 200) {
-                alert(`Error ${xhr.status}: ${xhr.statusText}`);
-            } else {
-                const allUsers = JSON.parse(xhr.responseText);
-                const user=allUsers.filter(user => user.emailAddress==emailAddress);
-                drawUserDiary(user[0])
-            }
-        }
+function getByEmail(emailAddress){
+    fetch('http://localhost:3000/users')
+    .then(response => response.json())
+    .then(response => response.filter(user=>user.emailAddress === emailAddress))
+    .then(response=>{
+            currentUser=response[0];
+            drawUserDiary(response[0])
+    })
+    .catch(err => {
+        hasAlreadyDiary=false;
+        console.log(err)})
 }
 
 function drawUserDiary(currentUser) {
     document.getElementById("nameUser").innerHTML=currentUser.firstName+" "+ currentUser.lastName;
-
+    currentUser.diary.forEach(day=>{
+        //להציג את היומן ע"י הטמפלט
+    })
 }
 
- 
-function btnOkFood()
-{
-  debugger
-    console.log("foodList in btnOkFood:");
-    console.log(foodList);
-
+  
+function saveChanges(){
+    if(hasAlreadyDiary){
+        updateUsersDiary()
+    }else{
+        addNewUsersDiary();
+    }
 }
 
+function updateUsersDiary(){
+    
+}
 
-//  var allFoods=[];
-// function btnAddFood(foods){
-//     debugger
-// //  document.getElementById("divContainer").innerHTML+=`<input type="text" id="food${numberFood++}"><br>`
-//     // const food=document.getElementById("window").getElementById("searchProduct").value;
-//     document.getElementById("divContainer").innerHTML+=`<li>${foods}</li>`
-//     allFoods+=" "+foods;
-//     const req = fetch(
-//         ` https://data.gov.il/api/3/action/datastore_search?resource_id=c3cb0630-0650-46c1-a068-82d575c094b2&q=${foods}`
-//       )
-//         .then((response) => response.json())
-//         .then((response) => {
-//           const data = response.result.records;
-//           console.log(data);
-//           return data;
-//       })
-// }
+function addNewUsersDiary(){
+    var today=currentUser.diary.filter(day=>day.date==Date.now())
+    
+const requestOptions = {
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ title: 'Fetch PUT Request Example' })
+};
+fetch('https://reqres.in/api/articles/1', requestOptions)
+    .then(response => response.json())
+    .then(data => element.innerHTML = data.updatedAt );
 
-// function btnCalculateFood(allFoods){
-//     debugger
-//  console.log("CalculateFood");
-//  const prod = document.getElementById("foodtxt"); 
-//  console.log(allFoods);
-//  consol.log(foodList);
-// }
+      fetch('http://localhost:3000/users', {
+        method: "POST",
+        body: JSON.stringify(_data),
+        headers: {"Content-type": "application/json; charset=UTF-8"}
+      })
+      .then(response => response.json()) 
+      .then(json => console.log(json))
+      .catch((err) => console.log(err));
+}
+
 
 function addDate(){
     var modal = document.getElementById("myModal");
@@ -85,3 +87,6 @@ function addDate(){
       }
     }
  }
+
+  
+
