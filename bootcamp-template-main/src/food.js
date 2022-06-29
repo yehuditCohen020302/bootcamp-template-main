@@ -3,6 +3,7 @@ var productsNames;
 var autocomplete;
 var autocomplete_result;
 
+
 function importAllProducts(){
   console.log("importing the list...");
   const options = {

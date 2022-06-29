@@ -1,3 +1,7 @@
+var allFoods=[];
+var usersOldDiary;
+var hasAlreadyDiary=true;
+var usersId;
 
 function showUserDiary(){
     console.log("UserDiary: in showUserDiary");
@@ -7,31 +11,47 @@ function showUserDiary(){
 
 }
 
-function getByEmail(emailAddress) {
-    // debugger
-    const xhr = new XMLHttpRequest();
-        xhr.open("GET", 'http://localhost:3000/users');
-        xhr.send();
-        xhr.onload = function () {
-            if (xhr.status != 200) {
-                alert(`Error ${xhr.status}: ${xhr.statusText}`);
-            } else {
-                const allUsers = JSON.parse(xhr.responseText);
-                const user=allUsers.filter(user => user.emailAddress==emailAddress);
-                drawUserDiary(user[0])
-            }
-        }
+function getByEmail(emailAddress){
+    fetch('http://localhost:3000/users')
+    .then(response => response.json())
+    .then(response => response.filter(user=>user.emailAddress === emailAddress))
+    .then(response=>{
+            usersId=response[0].id;
+            usersOldDiary=response[0].diary;
+            drawUserDiary(response[0])
+    })
+    .catch(err => {
+        hasAlreadyDiary=false;
+        console.log(err)})
 }
+
+// function getByEmail(emailAddress) {
+//     // debugger
+//     const xhr = new XMLHttpRequest();
+//         xhr.open("GET", 'http://localhost:3000/users');
+//         xhr.send();
+//         xhr.onload = function () {
+//             if (xhr.status != 200) {
+//                 alert(`Error ${xhr.status}: ${xhr.statusText}`);
+//             } else {
+//                 const allUsers = JSON.parse(xhr.responseText);
+//                 const user=allUsers.filter(user => user.emailAddress==emailAddress);
+//                 usersId=user[0].id;
+//                 drawUserDiary(user[0])
+//             }
+//         }
+// }
 
 
 function drawUserDiary(currentUser) {
     document.getElementById("nameUser").innerHTML=currentUser.firstName+" "+ currentUser.lastName;
+    currentUser.diary.forEach(diary=>{
 
+    })
 }
 
 
 
- var allFoods=[];
 function btnAddFood(){
 //  document.getElementById("divContainer").innerHTML+=`<input type="text" id="food${numberFood++}"><br>`
     const food=document.getElementById("searchProduct").value;
@@ -64,3 +84,40 @@ console.log(allFoods);
 }
 
   }
+
+function saveChanges(){
+    //לקחת את המערך החדש של האוכל ואת התאריך
+    if(hasAlreadyDiary){
+        updateUsersDiary()
+    }else{
+        addNewUsersDiary();
+    }
+}
+
+function updateUsersDiary(){
+
+}
+
+function addNewUsersDiary(){
+      let _data = {
+          userId:usersId,
+          diary:[
+              {date:document.getElementById("dateEat").value,
+                meals:[
+
+                ]
+            }
+          ]
+      }
+      fetch('http://localhost:3000/diarys', {
+        method: "POST",
+        body: JSON.stringify(_data),
+        headers: {"Content-type": "application/json; charset=UTF-8"}
+      })
+      .then(response => response.json()) 
+      .then(json => console.log(json))
+      .catch((err) => console.log(err));
+}
+
+
+  
