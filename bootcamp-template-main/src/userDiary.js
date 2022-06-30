@@ -14,6 +14,7 @@ function getByEmail(emailAddress){
     .then(response=>{
             currentUser=response[0];
             drawUserDiary()
+
     })
     .catch(err => {
         console.log(err)})
