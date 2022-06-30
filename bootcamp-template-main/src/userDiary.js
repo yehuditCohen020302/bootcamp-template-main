@@ -16,19 +16,13 @@ function getByEmail(emailAddress){
     .then(response => response.filter(user=>user.emailAddress === emailAddress))
     .then(response=>{
             currentUser=response[0];
-            drawUserDiary(response[0])
+            for (let i=0; i<3; i++)
+            drawUserDiary()
+            // drawUserDiary(response[0])
     })
     .catch(err => {
         hasAlreadyDiary=false;
         console.log(err)})
-}
-
-function drawUserDiary(currentUser) {
-    document.getElementById("nameUser").innerHTML=currentUser.firstName+" "+ currentUser.lastName;
-    // currentUser.diary.forEach(day=>{
-    //     //להציג את היומן ע"י הטמפלט
-        
-    // })
 }
 
   
@@ -66,9 +60,42 @@ fetch('https://reqres.in/api/articles/1', requestOptions)
       .catch((err) => console.log(err));
 }
 
+// numFood=1;
+// function drawUserDiary(currentUser) {
+
+//   const element = document.querySelector(".dayEating-card");
+//   const cln = element.content.cloneNode(true);
+  
+//   cln.querySelector(".meal-title").innerText = `meal-${numMeal}`;
+//   cln.querySelector(".container-foods").id=`container-foods-${numMeal}`;
+
+//   numFood++;
+//   document.querySelector(".modal-content").appendChild(cln);
+//   // document.getElementById("nameUser").innerHTML=currentUser.firstName+" "+ currentUser.lastName;
+//   // currentUser.diary.forEach(d=>{
+//   // //     //להציג את היומן ע"י הטמפלט
+//   // document.querySelector(".dateOfMeal").value = new Date().toISOString().split('T')[0];
+//   //    document.querySelector(".1").value =d.meal.shmmitzrach;
+
+//   //   })   
+
+// }
+
+let numFood=1;
+function drawUserDiary(){
+  // let numToCreateInput=numFood;
+  const element = document.querySelector(".dayEating-card");
+  const cln = element.content.cloneNode(true);
+  cln.querySelector(".one-day").innerText = `meal-${numFood}`;
+  cln.querySelector("td").id=`${numFood}`;
+  
+  numMeal++;
+  document.querySelector(".TableContainer").appendChild(cln);
+}
+
 
 let numMeal=1;
-drowMeal=()=>{
+function drowMeal(){
   let numToCreateInput=numMeal;
   const element = document.querySelector(".add-date-card");
   const cln = element.content.cloneNode(true);
