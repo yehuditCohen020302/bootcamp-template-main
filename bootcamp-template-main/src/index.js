@@ -15,3 +15,7 @@ function loginUser()
     window.location.href = "/src/userPage.html?emailAddress="+email;
 }
 
+function goToFood(){
+    window.location.href = "src/food.html"
+}
+
