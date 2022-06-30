@@ -6,7 +6,6 @@ function showUserDiary(){
 // debugger
     const params=new URLSearchParams(window.location.search);
     getByEmail(params.get("emailAddress"));
-
 }
 
 function getByEmail(emailAddress){
@@ -15,23 +14,45 @@ function getByEmail(emailAddress){
     .then(response => response.filter(user=>user.emailAddress === emailAddress))
     .then(response=>{
             currentUser=response[0];
-            for (let i=0; i<3; i++)
             drawUserDiary()
-            // drawUserDiary(response[0])
     })
     .catch(err => {
         console.log(err)})
 }
 
+function drawUserDiary() {
+    document.getElementById("nameUser").innerHTML=currentUser.firstName+" "+ currentUser.lastName;
+
+    currentUser.diary.days.forEach(day=>{
+      const tmp=document.getElementsByTagName("template")[0];
+      let element=tmp.content.cloneNode(true);
+      element.querySelector(".date").innerText=day.date;
+      let mealNumber=1;
+      day.meals.forEach(meal=>{
+        element.querySelector(`.meal${mealNumber}`).innerText=meal.toString();
+        mealNumber++;
+      })
+      const mealsTable=document.getElementById('mealsTable');
+      mealsTable.append(element);
+    });
+}
+
   
 function save(){
+  let foodList=[];
+  let numOfFood=1;
+  while(document.getElementById(numOfFood)!=undefined && document.getElementById(numOfFood).value!=""){
+    foodList.push(document.getElementById(numOfFood).value)
+    numOfFood++;
+  }
   let todayDiary;
-  let todayFullDate=new Date();
-  let today=`${todayFullDate.getDate()}/${todayFullDate.getMonth()}/${todayFullDate.getYear()}`;
-  if(Object.values(currentUser.diary).includes(today)){
-    todayDiary=currentUser.diary.days.filter(day=>day.date==today);
+  let today=document.querySelector('.dateOfMeal').value;
+  // let today=`${todayFullDate.getDate()}/${todayFullDate.getMonth()}/${todayFullDate.getFullYear()}`;
+  let findTodayDiary=currentUser.diary.days.filter(day=>day.date==today);
+  if(findTodayDiary.length>0) {
+    todayDiary=findTodayDiary[0];
     todayDiary.meals.push(foodList);
-    currentUser.diary.days.remove(day=>day.date==today);
+    currentUser.diary.days=currentUser.diary.days.filter(day=>day.date!=today);
   }else{
     todayDiary={
       date:today,
@@ -70,40 +91,40 @@ function save(){
 //   document.querySelector(".modal-content").appendChild(cln);
 // document.getElementById("nameUser").innerHTML=currentUser.firstName+" "+ currentUser.lastName;
 // currentUser.diary.forEach(d=>{
-  // //     //להציג את היומן ע"י הטמפלט
+//   //     //להציג את היומן ע"י הטמפלט
 // document.querySelector(".dateOfMeal").value = new Date().toISOString().split('T')[0];
 //    document.querySelector(".1").value =d.meal.shmmitzrach
 //   })   
 
 // }
 
-let numFood=1;
-function drawUserDiary(){
-  // let numToCreateInput=numFood;
-  const element = document.querySelector(".dayEating-card");
-  const cln = element.content.cloneNode(true);
-  cln.querySelector(".one-day").innerText = `meal-${numFood}`;
-  cln.querySelector("td").id=`${numFood}`;
+// let numFood=1;
+// function drawUserDiary(){
+//   // let numToCreateInput=numFood;
+//   const element = document.querySelector(".dayEating-card");
+//   const cln = element.content.cloneNode(true);
+//   cln.querySelector(".one-day").innerText = `meal-${numFood}`;
+//   cln.querySelector("td").id=`${numFood}`;
   
-  numMeal++;
-  document.querySelector(".TableContainer").appendChild(cln);
-}
+//   numMeal++;
+//   document.querySelector(".TableContainer").appendChild(cln);
+// }
 
 
-let numMeal=1;
+// let numMeal=1;
 function drowMeal(){
-  let numToCreateInput=numMeal;
-  const element = document.querySelector(".add-date-card");
+  // let numToCreateInput=numMeal;
+  const element = document.querySelector(".add-meal-card");
   const cln = element.content.cloneNode(true);
-  cln.querySelector(".meal-title").innerText = `meal-${numMeal}`;
-  cln.querySelector(".container-foods").id=`container-foods-${numMeal}`;
-  cln.querySelector(".addMoreFood").addEventListener("click",()=>createInput(numToCreateInput));
-  numMeal++;
+  cln.querySelector(".meal-title").innerText = `new meal`;
+  // cln.querySelector(".container-foods").id=`container-foods-${numMeal}`;
+  // cln.querySelector(".addMoreFood").addEventListener("click",()=>createInput(numToCreateInput));
+  // numMeal++;
   document.querySelector(".modal-content").appendChild(cln);
 }
 
 
-addDate=()=>{
+addMeal=()=>{
     document.querySelector(".dateOfMeal").value = new Date().toISOString().split('T')[0];
     modal = document.getElementById("myModal");
     let btn = document.getElementById("myBtn");
@@ -119,8 +140,8 @@ addDate=()=>{
         modal.style.display = "none";
       }
     }
-    for (let i=0; i<3; i++)
-        drowMeal()
+    // for (let i=0; i<3; i++)
+    //     drowMeal()
 }
 
   
