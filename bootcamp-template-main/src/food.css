@@ -37,3 +37,12 @@
   #autocomplete_result p:hover {
     background: #e5e5e5;
   }
+
+  .container{
+    text-align:center;
+  width: 400px;
+  height: 50%;
+  background-color: white;
+  opacity: 0.85;
+  margin:auto;
+  }
