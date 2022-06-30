@@ -3,7 +3,6 @@ var currentUser;
 
 function showUserDiary(){
     console.log("UserDiary: in showUserDiary");
-// debugger
     const params=new URLSearchParams(window.location.search);
     getByEmail(params.get("emailAddress"));
 }
@@ -47,7 +46,6 @@ function save(){
   }
   let todayDiary;
   let today=document.querySelector('.dateOfMeal').value;
-  // let today=`${todayFullDate.getDate()}/${todayFullDate.getMonth()}/${todayFullDate.getFullYear()}`;
   let findTodayDiary=currentUser.diary.days.filter(day=>day.date==today);
   if(findTodayDiary.length>0) {
     todayDiary=findTodayDiary[0];
@@ -78,49 +76,26 @@ function save(){
     
 }
 
-// numFood=1;
-// function drawUserDiary(currentUser) {
 
-//   const element = document.querySelector(".dayEating-card");
-//   const cln = element.content.cloneNode(true);
-  
-//   cln.querySelector(".meal-title").innerText = `meal-${numMeal}`;
-//   cln.querySelector(".container-foods").id=`container-foods-${numMeal}`;
-
-//   numFood++;
-//   document.querySelector(".modal-content").appendChild(cln);
-// document.getElementById("nameUser").innerHTML=currentUser.firstName+" "+ currentUser.lastName;
-// currentUser.diary.forEach(d=>{
-//   //     //להציג את היומן ע"י הטמפלט
-// document.querySelector(".dateOfMeal").value = new Date().toISOString().split('T')[0];
-//    document.querySelector(".1").value =d.meal.shmmitzrach
-//   })   
-
-// }
-
-// let numFood=1;
-// function drawUserDiary(){
-//   // let numToCreateInput=numFood;
-//   const element = document.querySelector(".dayEating-card");
-//   const cln = element.content.cloneNode(true);
-//   cln.querySelector(".one-day").innerText = `meal-${numFood}`;
-//   cln.querySelector("td").id=`${numFood}`;
-  
-//   numMeal++;
-//   document.querySelector(".TableContainer").appendChild(cln);
-// }
-
-
-// let numMeal=1;
 function drowMeal(){
-  // let numToCreateInput=numMeal;
+ 
   const element = document.querySelector(".add-meal-card");
   const cln = element.content.cloneNode(true);
   cln.querySelector(".meal-title").innerText = `new meal`;
-  // cln.querySelector(".container-foods").id=`container-foods-${numMeal}`;
-  // cln.querySelector(".addMoreFood").addEventListener("click",()=>createInput(numToCreateInput));
-  // numMeal++;
   document.querySelector(".modal-content").appendChild(cln);
+}
+let foodNumber=2;
+function addMoreFood(){
+  let container = document.getElementById("newMealContainer");
+  let input = document.createElement("input");
+  input.type = "text";
+  input.id = foodNumber;
+  input.value="";
+  input.placeholder="Enter food";
+  container.appendChild(input);
+  container.appendChild(document.createElement("br"));
+  container.appendChild(document.createElement("br"));
+  foodNumber++;
 }
 
 
@@ -140,8 +115,6 @@ addMeal=()=>{
         modal.style.display = "none";
       }
     }
-    // for (let i=0; i<3; i++)
-    //     drowMeal()
 }
 
   
