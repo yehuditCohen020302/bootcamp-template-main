@@ -1,10 +1,12 @@
-var productsList;
-var productsNames;
-var autocomplete;
-var autocomplete_result;
+
+let productsList;
+let productsNames;
+let autocomplete;
+let autocomplete_result;
 let c;
+
 //global arr ->foods
-var foodList=[];
+let foodList=[];
 
 function importAllProducts(){
   console.log("importing the list...");
@@ -48,15 +50,18 @@ function popupClearAndHide() {
 }
 
 function updPopup() {
+  
   if(!autocomplete.value) {
     popupClearAndHide();
     return;
   }
-  var a = new RegExp("^" + autocomplete.value, "i");
-  for(var x = 0, b = document.createDocumentFragment(), c = false; x < productsNames.length; x++) {
+  debugger
+  let a = new RegExp("^" + autocomplete.value, "i");
+  for(let x = 0, b = document.createDocumentFragment(), c = false; x < productsNames.length; x++) {
     if(a.test(productsNames[x])) {
+      debugger
       c = true;
-      var d = document.createElement("p");
+      let d = document.createElement("p");
       d.innerText = productsNames[x];
       d.setAttribute("onclick", "autocomplete.value=this.innerText;autocomplete_result.innerHTML='';autocomplete_result.style.display='none';");
       b.appendChild(d);

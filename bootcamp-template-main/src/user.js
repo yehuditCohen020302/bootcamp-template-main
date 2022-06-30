@@ -15,7 +15,7 @@
         this.addMeeting(beginingWeight)
     }
     addMeeting(newWeight){
-        var currentWeight=new meeting(new Date(),newWeight)
+        let currentWeight=new meeting(new Date(),newWeight)
         this.weightsHistory.push(currentWeight)
     }
 
