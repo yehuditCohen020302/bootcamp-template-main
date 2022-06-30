@@ -2,7 +2,7 @@ var productsList;
 var productsNames;
 var autocomplete;
 var autocomplete_result;
-
+let c;
 //global arr ->foods
 var foodList=[];
 
