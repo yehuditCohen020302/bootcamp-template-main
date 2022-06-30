@@ -12,7 +12,8 @@
         this.phoneNumber    =phoneNumber,
         this.emailAddress   =emailAddress,
         this.height         =height,
-        this.addMeeting(beginingWeight)
+        this.addMeeting(beginingWeight),
+        this.diary=[]
     }
     addMeeting(newWeight){
         let currentWeight=new meeting(new Date(),newWeight)

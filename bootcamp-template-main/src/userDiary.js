@@ -1,6 +1,5 @@
-let allFoods=[];
-let hasAlreadyDiary=true;
-let currentUser;
+var allFoods=[];
+var currentUser;
 
 function showUserDiary(){
     console.log("UserDiary: in showUserDiary");
@@ -21,43 +20,41 @@ function getByEmail(emailAddress){
             // drawUserDiary(response[0])
     })
     .catch(err => {
-        hasAlreadyDiary=false;
         console.log(err)})
 }
 
   
-function saveNewDate(){
-    if(hasAlreadyDiary){
-        updateUsersDiary()
-    }else{
-        addNewUsersDiary();
+function save(){
+  let todayDiary;
+  let todayFullDate=new Date();
+  let today=`${todayFullDate.getDate()}/${todayFullDate.getMonth()}/${todayFullDate.getYear()}`;
+  if(Object.values(currentUser.diary).includes(today)){
+    todayDiary=currentUser.diary.days.filter(day=>day.date==today);
+    todayDiary.meals.push(foodList);
+    currentUser.diary.days.remove(day=>day.date==today);
+  }else{
+    todayDiary={
+      date:today,
+      meals:[
+        foodList
+      ]
     }
-}
-
-function updateUsersDiary(){
-    console.log("in updateUsersDiary");
-}
-
-function addNewUsersDiary(){
-    let today=currentUser.diary.filter(day=>day.date==Date.now())
+  }
+  currentUser.diary.days.push(todayDiary);
+  
+    fetch('http://localhost:3000/users/'+currentUser.id, {
+      method: "put",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(currentUser)
+    }).then(response => {
+      if(response.ok)
+        console.log("update the user's diary run successfully!!")
+      else
+        console.log(response.status)
+    }).catch(err => console.log(err));
     
-const requestOptions = {
-    method: 'PUT',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ title: 'Fetch PUT Request Example' })
-};
-fetch('https://reqres.in/api/articles/1', requestOptions)
-    .then(response => response.json())
-    .then(data => element.innerHTML = data.updatedAt );
-
-      fetch('http://localhost:3000/users', {
-        method: "POST",
-        body: JSON.stringify(_data),
-        headers: {"Content-type": "application/json; charset=UTF-8"}
-      })
-      .then(response => response.json()) 
-      .then(json => console.log(json))
-      .catch((err) => console.log(err));
 }
 
 // numFood=1;
