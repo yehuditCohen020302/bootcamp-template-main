@@ -16,8 +16,8 @@ function getByEmail(emailAddress){
     .then(response=>{
             currentUser=response[0];
             for (let i=0; i<3; i++)
-            drawUserDiary()
-            // drawUserDiary(response[0])
+            // drawUserDiary()
+            drawUserDiary(response[0])
     })
     .catch(err => {
         console.log(err)})
@@ -58,7 +58,7 @@ function save(){
 }
 
 // numFood=1;
-// function drawUserDiary(currentUser) {
+ function drawUserDiary(currentUser) {
 
 //   const element = document.querySelector(".dayEating-card");
 //   const cln = element.content.cloneNode(true);
@@ -68,14 +68,14 @@ function save(){
 
 //   numFood++;
 //   document.querySelector(".modal-content").appendChild(cln);
-// document.getElementById("nameUser").innerHTML=currentUser.firstName+" "+ currentUser.lastName;
-// currentUser.diary.forEach(d=>{
+ document.getElementById("nameUser").innerHTML=currentUser.firstName+" "+ currentUser.lastName;
+ currentUser.diary.forEach(d=>{
   // //     //להציג את היומן ע"י הטמפלט
-// document.querySelector(".dateOfMeal").value = new Date().toISOString().split('T')[0];
+//document.querySelector(".dateOfMeal").value = new Date().toISOString().split('T')[0];
 //    document.querySelector(".1").value =d.meal.shmmitzrach
-//   })   
+   })   
 
-// }
+ }
 
 let numFood=1;
 function drawUserDiary(){
