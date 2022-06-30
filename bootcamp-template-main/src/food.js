@@ -1,7 +1,9 @@
+
 let productsList;
 let productsNames;
 let autocomplete;
 let autocomplete_result;
+let c;
 
 //global arr ->foods
 let foodList=[];
