@@ -1,347 +1,194 @@
 {
-    "users": [
+  "users": [
+    {
+      "id": "123456789",
+      "firstName": "Michal",
+      "lastName": "Shmoel",
+      "city": "jerusalem",
+      "street": "hapisga",
+      "houseNumber": 12,
+      "phoneNumber": "0521369874",
+      "emailAddress": "michal@gmail.com",
+      "height": 1.7,
+      "weightsHistory": [
         {
-            "id": "123456789",
-            "firstName":"Michal",
-            "lastName":"Shmoel",
-            "city":"jerusalem",
-            "street":"hapisga",
-            "houseNumber":12,
-            "phoneNumber":"0521369874",
-            "emailAddress":"michal@gmail.com",
-            "height":1.70,
-            "weightsHistory":
-                [
-                    {"date":"12/03/2022","weight":60},
-                    {"date":"12/03/2022","weight":61.8},
-                    {"date":"12/03/2022","weight":60.9}
-                ],
-            "diary":{"days":[
+          "date": "12/03/2022",
+          "weight": 60
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 61.8
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 60.9
+        }
+      ],
+      "diary": {
+        "days": [
+          {
+            "date": "12/03/2022",
+            "meals": [
+              [
                 {
-                    "date":"12/03/2022",
-                    "meals":[
-                        [
-                            {
-                                "_id": 1,
-                                "shmmitzrach": "מי גבינה, חומצי, נוזלי",
-                                "food_energy": 24,
-                                "potassium": 143,
-                                "sodium": 48,
-                                "total_sugars": 5.1
-                            },
-                            {
-                                "_id": 3306,
-                                "shmmitzrach": "יוגורט לבן/תות, עם תוספת גרנולה, צ'יה/שקדים, אקטיביה, שטראוס",
-                                "food_energy": 113,
-                                "potassium": 259.3,
-                                "sodium": 80,
-                                "total_sugars": 5.5
-                            }
-                        ],
-                        [
-                            {
-                                "_id": 2601,
-                                "shmmitzrach": "קישואים ממולאים אורז ובשר בקר ברוטב עגבניות ושמן זית",
-                                "food_energy": 74,
-                                "potassium": 283.7,
-                                "sodium": 297.6,
-                                "total_sugars": 2.7
-                            }
-                        ]
-                    ]
+                  "shmmitzrach": "מי גבינה, חומצי, נוזלי"
+                  
                 },
                 {
-                    "date":"18/03/2022",
-                    "meals":[
-                        [
-                            {
-                                "_id": 1,
-                                "shmmitzrach": "מי גבינה, חומצי, נוזלי",
-                                "food_energy": 24,
-                                "potassium": 143,
-                                "sodium": 48,
-                                "total_sugars": 5.1
-                            },
-                            {
-                                "_id": 3306,
-                                "shmmitzrach": "יוגורט לבן/תות, עם תוספת גרנולה, צ'יה/שקדים, אקטיביה, שטראוס",
-                                "food_energy": 113,
-                                "potassium": 259.3,
-                                "sodium": 80,
-                                "total_sugars": 5.5
-                            }
-                        ],
-                        [
-                            {
-                                "_id": 2601,
-                                "shmmitzrach": "קישואים ממולאים אורז ובשר בקר ברוטב עגבניות ושמן זית",
-                                "food_energy": 74,
-                                "potassium": 283.7,
-                                "sodium": 297.6,
-                                "total_sugars": 2.7
-                            }
-                        ]
-                    ]
+                  "shmmitzrach": "יוגורט לבן/תות, עם תוספת גרנולה, צ'יה/שקדים, אקטיביה, שטראוס"
+                  
                 }
-            ] }           
+              ],
+              [
+                {
+                  "shmmitzrach": "קישואים ממולאים אורז ובשר בקר ברוטב עגבניות ושמן זית"
+                  
+                }
+              ]
+            ]
+          },
+          {
+            "date": "18/03/2022",
+            "meals": [
+              [
+                {
+                  "shmmitzrach": "מי גבינה, חומצי, נוזלי",
+                  
+                },
+                {
+                  "shmmitzrach": "יוגורט לבן/תות, עם תוספת גרנולה, צ'יה/שקדים, אקטיביה, שטראוס"
+                  
+                }
+              ],
+              [
+                {
+                  "shmmitzrach": "קישואים ממולאים אורז ובשר בקר ברוטב עגבניות ושמן זית"
+                  
+                }
+              ]
+            ]
+          },
+          {
+            "date": "30/5/122",
+            "meals": [
+              []
+            ]
+          },
+          {
+            "date": "30/5/122",
+            "meals": [
+              []
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "987654321",
+      "firstName": "Rachel",
+      "lastName": "Keler",
+      "city": "jerusalem",
+      "street": "arimon",
+      "houseNumber": 5,
+      "phoneNumber": "0558963214",
+      "emailAddress": "rachel@gmail.com",
+      "height": 1.75,
+      "weightsHistory": [
+        {
+          "date": "12/03/2022",
+          "weight": 72
         },
         {
-            "id": "987654321",
-            "firstName":"Rachel",
-            "lastName":"Keler",
-            "city":"jerusalem",
-            "street":"arimon",
-            "houseNumber":5,
-            "phoneNumber":"0558963214",
-            "emailAddress":"rachel@gmail.com",
-            "height":1.75,
-            "weightsHistory":
-                [
-                    {"date":"12/03/2022","weight":72},
-                    {"date":"12/03/2022","weight":69.8},
-                    {"date":"12/03/2022","weight":71.1}
-                ],
-                "diary":
-                {"days":[
-                    {
-                        "date":"12/03/2022",
-                        "meals":[
-                            [
-                                {
-                                    "_id": 1,
-                                    "shmmitzrach": "מי גבינה, חומצי, נוזלי",
-                                    "food_energy": 24,
-                                    "potassium": 143,
-                                    "sodium": 48,
-                                    "total_sugars": 5.1
-                                },
-                                {
-                                    "_id": 3306,
-                                    "shmmitzrach": "יוגורט לבן/תות, עם תוספת גרנולה, צ'יה/שקדים, אקטיביה, שטראוס",
-                                    "food_energy": 113,
-                                    "potassium": 259.3,
-                                    "sodium": 80,
-                                    "total_sugars": 5.5
-                                }
-                            ],
-                            [
-                                {
-                                    "_id": 2601,
-                                    "shmmitzrach": "קישואים ממולאים אורז ובשר בקר ברוטב עגבניות ושמן זית",
-                                    "food_energy": 74,
-                                    "potassium": 283.7,
-                                    "sodium": 297.6,
-                                    "total_sugars": 2.7
-                                }
-                            ]
-                        ]
-                    },
-                    {
-                        "date":"18/03/2022",
-                        "meals":[
-                            [
-                                {
-                                    "_id": 1,
-                                    "shmmitzrach": "מי גבינה, חומצי, נוזלי",
-                                    "food_energy": 24,
-                                    "potassium": 143,
-                                    "sodium": 48,
-                                    "total_sugars": 5.1
-                                },
-                                {
-                                    "_id": 3306,
-                                    "shmmitzrach": "יוגורט לבן/תות, עם תוספת גרנולה, צ'יה/שקדים, אקטיביה, שטראוס",
-                                    "food_energy": 113,
-                                    "potassium": 259.3,
-                                    "sodium": 80,
-                                    "total_sugars": 5.5
-                                }
-                            ],
-                            [
-                                {
-                                    "_id": 2601,
-                                    "shmmitzrach": "קישואים ממולאים אורז ובשר בקר ברוטב עגבניות ושמן זית",
-                                    "food_energy": 74,
-                                    "potassium": 283.7,
-                                    "sodium": 297.6,
-                                    "total_sugars": 2.7
-                                }
-                            ]
-                        ]
-                    }
-                ]  }          
+          "date": "12/03/2022",
+          "weight": 69.8
         },
         {
-            "id": "587412369",
-            "firstName":"Shira",
-            "lastName":"Avitan",
-            "city":"jerusalem",
-            "street":"arimon",
-            "houseNumber":"5",
-            "phoneNumber":"0536985214",
-            "emailAddress":"shira@gmail.com",
-            "height":1.65,
-            "weightsHistory":
-                [
-                    {"date":"12/03/2022","weight":76},
-                    {"date":"12/03/2022","weight":78.8},
-                    {"date":"12/03/2022","weight":80.9}
-                ],
-                "diary":
-                {"days":[
-                    {
-                        "date":"12/03/2022",
-                        "meals":[
-                            [
-                                {
-                                    "_id": 1,
-                                    "shmmitzrach": "מי גבינה, חומצי, נוזלי",
-                                    "food_energy": 24,
-                                    "potassium": 143,
-                                    "sodium": 48,
-                                    "total_sugars": 5.1
-                                },
-                                {
-                                    "_id": 3306,
-                                    "shmmitzrach": "יוגורט לבן/תות, עם תוספת גרנולה, צ'יה/שקדים, אקטיביה, שטראוס",
-                                    "food_energy": 113,
-                                    "potassium": 259.3,
-                                    "sodium": 80,
-                                    "total_sugars": 5.5
-                                }
-                            ],
-                            [
-                                {
-                                    "_id": 2601,
-                                    "shmmitzrach": "קישואים ממולאים אורז ובשר בקר ברוטב עגבניות ושמן זית",
-                                    "food_energy": 74,
-                                    "potassium": 283.7,
-                                    "sodium": 297.6,
-                                    "total_sugars": 2.7
-                                }
-                            ]
-                        ]
-                    },
-                    {
-                        "date":"18/03/2022",
-                        "meals":[
-                            [
-                                {
-                                    "_id": 1,
-                                    "shmmitzrach": "מי גבינה, חומצי, נוזלי",
-                                    "food_energy": 24,
-                                    "potassium": 143,
-                                    "sodium": 48,
-                                    "total_sugars": 5.1
-                                },
-                                {
-                                    "_id": 3306,
-                                    "shmmitzrach": "יוגורט לבן/תות, עם תוספת גרנולה, צ'יה/שקדים, אקטיביה, שטראוס",
-                                    "food_energy": 113,
-                                    "potassium": 259.3,
-                                    "sodium": 80,
-                                    "total_sugars": 5.5
-                                }
-                            ],
-                            [
-                                {
-                                    "_id": 2601,
-                                    "shmmitzrach": "קישואים ממולאים אורז ובשר בקר ברוטב עגבניות ושמן זית",
-                                    "food_energy": 74,
-                                    "potassium": 283.7,
-                                    "sodium": 297.6,
-                                    "total_sugars": 2.7
-                                }
-                            ]
-                        ]
-                    }
-                ] }           
-        },
-        {
-            "id": "678912345",
-            "firstName":"David",
-            "lastName":"Cohen",
-            "city":"rehovot",
-            "street":"ezra",
-            "houseNumber":"37",
-            "phoneNumber":"0536985214",
-            "emailAddress":"david@gmail.com",
-            "height":1.84,
-            "weightsHistory":
-                [
-                    {"date":"12/03/2022","weight":76},
-                    {"date":"12/03/2022","weight":75.8},
-                    {"date":"12/03/2022","weight":73.9}
-                ],
-                "diary":
-                {"days":[
-                    {
-                        "date":"12/03/2022",
-                        "meals":[
-                            [
-                                {
-                                    "_id": 1,
-                                    "shmmitzrach": "מי גבינה, חומצי, נוזלי",
-                                    "food_energy": 24,
-                                    "potassium": 143,
-                                    "sodium": 48,
-                                    "total_sugars": 5.1
-                                },
-                                {
-                                    "_id": 3306,
-                                    "shmmitzrach": "יוגורט לבן/תות, עם תוספת גרנולה, צ'יה/שקדים, אקטיביה, שטראוס",
-                                    "food_energy": 113,
-                                    "potassium": 259.3,
-                                    "sodium": 80,
-                                    "total_sugars": 5.5
-                                }
-                            ],
-                            [
-                                {
-                                    "_id": 2601,
-                                    "shmmitzrach": "קישואים ממולאים אורז ובשר בקר ברוטב עגבניות ושמן זית",
-                                    "food_energy": 74,
-                                    "potassium": 283.7,
-                                    "sodium": 297.6,
-                                    "total_sugars": 2.7
-                                }
-                            ]
-                        ]
-                    },
-                    {
-                        "date":"18/03/2022",
-                        "meals":[
-                            [
-                                {
-                                    "_id": 1,
-                                    "shmmitzrach": "מי גבינה, חומצי, נוזלי",
-                                    "food_energy": 24,
-                                    "potassium": 143,
-                                    "sodium": 48,
-                                    "total_sugars": 5.1
-                                },
-                                {
-                                    "_id": 3306,
-                                    "shmmitzrach": "יוגורט לבן/תות, עם תוספת גרנולה, צ'יה/שקדים, אקטיביה, שטראוס",
-                                    "food_energy": 113,
-                                    "potassium": 259.3,
-                                    "sodium": 80,
-                                    "total_sugars": 5.5
-                                }
-                            ],
-                            [
-                                {
-                                    "_id": 2601,
-                                    "shmmitzrach": "קישואים ממולאים אורז ובשר בקר ברוטב עגבניות ושמן זית",
-                                    "food_energy": 74,
-                                    "potassium": 283.7,
-                                    "sodium": 297.6,
-                                    "total_sugars": 2.7
-                                }
-                            ]
-                        ]
-                    }
-                ]}            
+          "date": "12/03/2022",
+          "weight": 71.1
         }
-    ]
+      ],
+      "diary": {
+        "days": [
+          {
+            "date": "12/03/2022",
+            "meals": [
+                []
+              ]
+            }
+          ]
+        }
+      },
+    {
+      "id": "587412369",
+      "firstName": "Shira",
+      "lastName": "Avitan",
+      "city": "jerusalem",
+      "street": "arimon",
+      "houseNumber": "5",
+      "phoneNumber": "0536985214",
+      "emailAddress": "shira@gmail.com",
+      "height": 1.65,
+      "weightsHistory": [
+        {
+          "date": "12/03/2022",
+          "weight": 76
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 78.8
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 80.9
+        }
+      ],
+      "diary": {
+        "days": [
+          {
+            "date": "12/03/2022",
+            "meals": [
+                []
+              ]
+            }
+          ]
+        }
+       
+          
+    },
+    {
+      "id": "678912345",
+      "firstName": "David",
+      "lastName": "Cohen",
+      "city": "rehovot",
+      "street": "ezra",
+      "houseNumber": "37",
+      "phoneNumber": "0536985214",
+      "emailAddress": "david@gmail.com",
+      "height": 1.84,
+      "weightsHistory": [
+        {
+          "date": "12/03/2022",
+          "weight": 76
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 75.8
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 73.9
+        }
+      ],
+      "diary": {
+        "days": [
+          {
+            "date": "12/03/2022",
+            "meals": [
+                []
+              ]
+            }
+          ]
+        }
+    }
+]
 }
