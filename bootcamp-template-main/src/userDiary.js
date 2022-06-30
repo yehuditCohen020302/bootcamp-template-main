@@ -23,6 +23,16 @@ function getByEmail(emailAddress){
 
 function drawUserDiary(currentUser) {
     document.getElementById("nameUser").innerHTML=currentUser.firstName+" "+ currentUser.lastName;
+
+    // currentUser.diary.day
+  //   currentUser.weightsHistory.forEach(meeting => {
+  //     const tmp=document.getElementsByTagName("template")[0];
+  //     let element=tmp.content.cloneNode(true);
+  //     element.querySelector(".date").innerText=meeting.date;
+  //     element.querySelector(".weight").innerText=meeting.weight;
+  //     const weightsTable=document.getElementById('weights');
+  //     weightsTable.append(element);
+  // });
     // currentUser.diary.forEach(day=>{
     //     //להציג את היומן ע"י הטמפלט
         
@@ -77,7 +87,7 @@ drowMeal=()=>{
 }
 
 
-addDate=()=>{
+addMeal=()=>{
     document.querySelector(".dateOfMeal").value = new Date().toISOString().split('T')[0];
     modal = document.getElementById("myModal");
     let btn = document.getElementById("myBtn");

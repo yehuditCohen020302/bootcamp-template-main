@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="/src/food.js"></script>
+    <!-- <script src="/src/food.js"></script> -->
     <script src="/src/userDiary.js"></script>
-    
+  
     <template class="dayEating-card">
       <tr class="one-day">
           <td class="date"></td>
@@ -36,10 +36,14 @@
   </template>
   </head>
   
-  <body id="body" onload="showUserDiary()">
-
-    <h1>my diary management</h1>
+  <body id="body" onload="showUserDiary()" style="background-color: lightgoldenrodyellow; width: 100%">
+   
+      <span style="font-size: 30px;" id="nameUser"></span>
+      <span style="font-size: 30px;">'s Diary 📑</span>
+<br/><br/><br/>
+      <!-- <h1>my diary management</h1> -->
     <table class="TableContainer">
+      <thead>
         <tr class="titles">
             <th class="title">date</th>
             <th class="title">meal 1</th>
@@ -51,8 +55,10 @@
             <th class="title">meal 7</th>
             <th class="title">meal 8</th>
         </tr>
+      </thead>
+      <tbody id="days"></tbody>
     </table>
-    <button id="myBtn" onclick="addDate()">add date</button>
+    <button id="myBtn" onclick="addMeal()">add a meal</button>
         <div id="myModal" class="modal">
           <div class="modal-content">
                   <span class="close">&times;</span>
@@ -65,8 +71,8 @@
         </div>
 
 
-    <div style="background-color: lightgoldenrodyellow; width: 100%" >
-     <span style="font-size: 30px;" id="nameUser"></span>
+    <!-- <div style="background-color: lightgoldenrodyellow; width: 100%" > 
+       <span style="font-size: 30px;" id="nameUser"></span>
       <span style="font-size: 30px;">'s Diary 📑</span>
 
       <h4>Enter the date (default today) 📅:</h4>
@@ -75,18 +81,18 @@
 
       <iframe src="/src/food.html" title="description" style="width:100%;" id="window"></iframe>
 
-      <ul id="container"></ul>
+      <ul id="container"></ul> -->
       <!-- <input type="text" class="food0" /><br /> -->
-     
+<!--      
       <div id="divContainer"></div>
 
       <br /><input type="button" id="btnAdd" onclick="btnAddFood()" value="Click To Add Line For Food" />
 
-      <input type="button" id="btnCalculate" onclick="save()" value="save the meal"/>
+      <input type="button" id="btnCalculate" onclick="save()" value="save the meal"/> -->
       
       <h4> 🥝🍇🍈🍉🍊🍌🍍🍎🌽🍆🍅🍓🥔🍒🍑🍏🍄🥑🥒🧄🥦</h4>
       
-    </div>
+    <!-- </div> -->
   </body>
   <link href="/src/userDiary.css" rel="stylesheet" />
 </html>
