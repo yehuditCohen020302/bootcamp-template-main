@@ -7,7 +7,7 @@ class Manager {
 
   login() {
     console.log("We Entry");
-    var email = sessionStorage.getItem("userEmail");
+    let email = sessionStorage.getItem("userEmail");
     document.getElementById("email").innerHTML = `hello to ${email}`;
     console.log(email);
     this.getUsers();
@@ -147,8 +147,8 @@ function details() {
 }
 
 function displayPhone() {
-  var checkBox = document.getElementById("searchByPhone");
-  var text = document.getElementById("textSearchByPhone");
+  let checkBox = document.getElementById("searchByPhone");
+  let text = document.getElementById("textSearchByPhone");
   if (checkBox.checked == true) {
     text.style.display = "block";
   } else {
@@ -156,8 +156,8 @@ function displayPhone() {
   }
 }
 function displayEmail() {
-  var checkBox = document.getElementById("searchByEmail");
-  var text = document.getElementById("textSearchByEmail");
+  let checkBox = document.getElementById("searchByEmail");
+  let text = document.getElementById("textSearchByEmail");
   if (checkBox.checked == true) {
     text.style.display = "block";
   } else {
@@ -165,8 +165,8 @@ function displayEmail() {
   }
 }
 function displayLastName() {
-  var checkBox = document.getElementById("searchByLastName");
-  var text = document.getElementById("textSearchByLastName");
+  let checkBox = document.getElementById("searchByLastName");
+  let text = document.getElementById("textSearchByLastName");
   if (checkBox.checked == true) {
     text.style.display = "block";
   } else {
@@ -174,8 +174,8 @@ function displayLastName() {
   }
 }
 function displayFirstName() {
-  var checkBox = document.getElementById("searchByFirstName");
-  var text = document.getElementById("textSearchByFirstName");
+  let checkBox = document.getElementById("searchByFirstName");
+  let text = document.getElementById("textSearchByFirstName");
   if (checkBox.checked == true) {
     text.style.display = "block";
   } else {
@@ -188,8 +188,8 @@ function search() {
   const lastName = document.getElementById("searchByLastName");
   const email = document.getElementById("searchByEmail");
   const phone = document.getElementById("searchByPhone");
-  var data;
-  var type;
+  let data;
+  let type;
   debugger;
   if (firstName.checked == true) {
     data = document.getElementById("textSearchByFirstName").value;
