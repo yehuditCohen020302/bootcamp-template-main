@@ -71,13 +71,12 @@ fetch('https://reqres.in/api/articles/1', requestOptions)
 
 //   numFood++;
 //   document.querySelector(".modal-content").appendChild(cln);
-//   // document.getElementById("nameUser").innerHTML=currentUser.firstName+" "+ currentUser.lastName;
-//   // currentUser.diary.forEach(d=>{
-//   // //     //להציג את היומן ע"י הטמפלט
-//   // document.querySelector(".dateOfMeal").value = new Date().toISOString().split('T')[0];
-//   //    document.querySelector(".1").value =d.meal.shmmitzrach;
-
-//   //   })   
+// document.getElementById("nameUser").innerHTML=currentUser.firstName+" "+ currentUser.lastName;
+// currentUser.diary.forEach(d=>{
+  // //     //להציג את היומן ע"י הטמפלט
+// document.querySelector(".dateOfMeal").value = new Date().toISOString().split('T')[0];
+//    document.querySelector(".1").value =d.meal.shmmitzrach
+//   })   
 
 // }
 
