@@ -5,69 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="/src/food.js"></script>
+    <!-- <script src="/src/food.js"></script> -->
     <script src="/src/userDiary.js"></script>
-    
+  
     <template class="dayEating-card">
       <!-- מייצג שורה בטבלה שזה בעצם יום שלם מה הארוחות שבו -->
       <tr class="one-day">
           <td class="date"></td>
-          <td id="1"></td>
-          <td id="2"></td>
-          <td id="3"></td>
-          <td id="4"></td>
-          <td id="5"></td>
-          <td id="6"></td>
-          <td id="7"></td>
-          <td id="8"></td>
+          <td class="meal1"></td>
+          <td class="meal2"></td>
+          <td class="meal3"></td>
+          <td class="meal4"></td>
+          <td class="meal5"></td>
+          <td class="meal6"></td>
+          <td class="meal7"></td>
+          <td class="meal8"></td>
       </tr>
   </template>
-  <template class="add-date-card" >
+  <!-- <template class="add-meal-card" >
       <div class="meal-container">
           <h2 class="meal-title"></h2>
-          <div class="container-foods" id="">
-              <input type="text" id="1" placeholder="Enter food" autocomplete="off">
-              <input type="text" id="2" placeholder="Enter food" autocomplete="off">
-              <input type="text" id="3" placeholder="Enter food" autocomplete="off">
-              <input type="text" id="4" placeholder="Enter food" autocomplete="off">
-              <input type="text" id="5" placeholder="Enter food" autocomplete="off">
+          <div class="container-foods" id="newMealContainer">
+              <input type="text" id="1" placeholder="Enter food" autocomplete="off"><br>
+              <input type="text" id="2" placeholder="Enter food" autocomplete="off"><br>
+              <input type="text" id="3" placeholder="Enter food" autocomplete="off"><br>
+              <input type="text" id="4" placeholder="Enter food" autocomplete="off"><br>
+              <input type="text" id="5" placeholder="Enter food" autocomplete="off"><br>
           </div>
           <button class="addMoreFood">Add more food</button>
       </div>
-  </template>
+  </template> -->
   </head>
   
-  <body id="body" onload="showUserDiary()">
-
-    <h1>my diary management</h1>
+  <body id="body" onload="showUserDiary()" style="background-color: lightgoldenrodyellow; width: 100%">
+   
+      <span style="font-size: 30px;" id="nameUser"></span>
+      <span style="font-size: 30px;">'s Diary 📑</span>
+<br/><br/><br/>
+      <!-- <h1>my diary management</h1> -->
     <table class="TableContainer">
+      <thead>
         <tr class="titles">
-            <th class="title">date</th>
-            <th class="title">meal 1</th>
-            <th class="title">meal 2</th>
-            <th class="title">meal 3</th>
-            <th class="title">meal 4</th>
-            <th class="title">meal 5</th>
-            <th class="title">meal 6</th>
-            <th class="title">meal 7</th>
-            <th class="title">meal 8</th>
+            <th>date</th>
+            <th>meal 1</th>
+            <th>meal 2</th>
+            <th>meal 3</th>
+            <th>meal 4</th>
+            <th>meal 5</th>
+            <th>meal 6</th>
+            <th>meal 7</th>
+            <th>meal 8</th>
         </tr>
+      </thead>
+      <tbody id="mealsTable"></tbody>
     </table>
-    <button id="myBtn" onclick="addDate()">add date</button>
+    <button id="myBtn" onclick="addMeal()">add a meal</button>
         <div id="myModal" class="modal">
           <div class="modal-content">
                   <span class="close">&times;</span>
-                  <h2>add date eating</h2>
+                  <h2>the date of eating</h2>
                   <span>date</span>
                   <input type="date" class="dateOfMeal">
-                  <button onclick="saveNewDate()" class="btn btn-primary">save the date</button>
-                  <button onclick="drowMeal()" class="btn btn-primary">add meal</button>
+                  <button onclick="save()" class="btn btn-primary">save the meal</button>
+
+                  <h2 class="meal-title"></h2>
+          <div class="container-foods" id="newMealContainer">
+              <input type="text" id="1" placeholder="Enter food" autocomplete="off" value=""><br>
+              <input type="text" id="2" placeholder="Enter food" autocomplete="off" value=""><br>
+              <input type="text" id="3" placeholder="Enter food" autocomplete="off" value=""><br>
+              <input type="text" id="4" placeholder="Enter food" autocomplete="off" value=""><br>
+              <input type="text" id="5" placeholder="Enter food" autocomplete="off" value=""><br>
+          </div>
+          <button class="addMoreFood">Add more food</button>
+
+                  <!-- <button onclick="drowMeal()" class="btn btn-primary">add meal</button> -->
           </div>
         </div>
 
 
-    <div style="background-color: lightgoldenrodyellow; width: 100%" >
-     <span style="font-size: 30px;" id="nameUser"></span>
+    <!-- <div style="background-color: lightgoldenrodyellow; width: 100%" > 
+       <span style="font-size: 30px;" id="nameUser"></span>
       <span style="font-size: 30px;">'s Diary 📑</span>
 
       <h4>Enter the date (default today) 📅:</h4>
@@ -76,18 +93,18 @@
 
       <iframe src="/src/food.html" title="description" style="width:100%;" id="window"></iframe>
 
-      <ul id="container"></ul>
+      <ul id="container"></ul> -->
       <!-- <input type="text" class="food0" /><br /> -->
-     
+<!--      
       <div id="divContainer"></div>
 
       <br /><input type="button" id="btnAdd" onclick="btnAddFood()" value="Click To Add Line For Food" />
 
-      <input type="button" id="btnCalculate" onclick="save()" value="save the meal"/>
+      <input type="button" id="btnCalculate" onclick="save()" value="save the meal"/> -->
       
       <h4> 🥝🍇🍈🍉🍊🍌🍍🍎🌽🍆🍅🍓🥔🍒🍑🍏🍄🥑🥒🧄🥦</h4>
       
-    </div>
+    <!-- </div> -->
   </body>
   <link href="/src/userDiary.css" rel="stylesheet" />
 </html>
