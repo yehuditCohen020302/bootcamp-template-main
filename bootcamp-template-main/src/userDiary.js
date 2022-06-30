@@ -13,10 +13,7 @@ function getByEmail(emailAddress){
     .then(response => response.filter(user=>user.emailAddress === emailAddress))
     .then(response=>{
             currentUser=response[0];
-
-            for (let i=0; i<3; i++)
-            // drawUserDiary()
-            drawUserDiary(response[0])
+            drawUserDiary()
 
     })
     .catch(err => {
@@ -79,6 +76,7 @@ function save(){
     }).catch(err => console.log(err));
     
 }
+
 
 function drowMeal(){
  
