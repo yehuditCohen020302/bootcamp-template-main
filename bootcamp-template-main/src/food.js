@@ -3,7 +3,7 @@ let productsList;
 let productsNames;
 let autocomplete;
 let autocomplete_result;
-let c;
+
 
 //global arr ->foods
 let foodList=[];
@@ -49,19 +49,20 @@ function popupClearAndHide() {
   autocomplete_result.style.display = "none";
 }
 
+let c;
 function updPopup() {
   
   if(!autocomplete.value) {
     popupClearAndHide();
     return;
   }
-  debugger
+  // debugger
   let a = new RegExp("^" + autocomplete.value, "i");
-  for(let x = 0, b = document.createDocumentFragment(), c = false; x < productsNames.length; x++) {
+  for(var x = 0, b = document.createDocumentFragment(), c = false; x < productsNames.length; x++) {
     if(a.test(productsNames[x])) {
-      debugger
+      // debugger
       c = true;
-      let d = document.createElement("p");
+      var d = document.createElement("p");
       d.innerText = productsNames[x];
       d.setAttribute("onclick", "autocomplete.value=this.innerText;autocomplete_result.innerHTML='';autocomplete_result.style.display='none';");
       b.appendChild(d);
