@@ -44,7 +44,7 @@ class Manager {
                 <tr>
                     <th>${user.firstName + " " + user.lastName}</th>
                     <th style="color:${c}">${Math.floor(bmi * 100) / 100}</th>
-                    <td><button onClick="details(${user.emailAddress[0]})">Details</button></th>
+                    <td><button onClick="details(${user.emailAddress})">Details</button></th>
                 </tr>`;
     });
     // <th><a href="/userPage.html?email=${user.email}">details user</a></th>

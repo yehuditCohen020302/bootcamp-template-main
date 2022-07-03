@@ -5,9 +5,6 @@ let autocomplete;
 let autocomplete_result;
 let c;
 
-//global arr ->foods
-let foodList=[];
-
 function importAllProducts(){
   console.log("importing the list...");
   const options = {
@@ -79,15 +76,10 @@ function updPopup() {
 
 function search() {
   console.log("Searching...");
-  // debugger
   const productName=document.getElementById("searchProduct").value;
   const data=productsList.filter(p=>p.shmmitzrach.includes(productName));
   foodList.push(data);
   console.log(foodList);
-
-  // foodList.forEach(food=> {
-  //   console.log(food)
-  //   addToArr(foodList);});
   
     const containered = document.querySelector(".selectFood");
     containered.innerHTML = `נמצאו ${data.length} מוצרים`;

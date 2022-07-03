@@ -6,3 +6,26 @@ body {
     position: fixed;
     width: 100%;
   }
+
+  .details-container-left{
+      width: 20%;
+      margin-left:10%;
+  }
+  .details-container-second{
+      position:fixed;
+      top:15%;
+      left:40%;
+    width: 20%;
+}
+.details-container-right{
+    position:fixed;
+    top:15%;
+    left:70%;
+  width: 20%;
+}
+
+.btn-diary{
+    width:80%;
+    margin-right:10%;
+    margin-left:10%;
+}

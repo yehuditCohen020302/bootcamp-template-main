@@ -4,6 +4,8 @@
     <script src="./meeting.js"></script>
     <script src="./user.js"></script>
     <script src="./userPage.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="everybody.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,25 +20,29 @@
 </head>
 <body onload="loadUser()">
     <h3 id="title">User Details:</h3>
-    <div id="userDetails" style="background-color:lightpink; width:100%; ">
+    <div class="details-container-left" id="userDetails" >
         <label>id</label>
-        <input class="details" type="text" id="userId" readonly/><br />
+        <input class="details form-control" type="text" id="userId" readonly/><br />
         <label>first Name</label>
-        <input class="details" type="text" id="firstName" /><br />
+        <input class="details form-control" type="text" id="firstName" /><br />
         <label>last Name</label>
-        <input class="details" type="text" id="lastName" /><br />
+        <input class="details form-control" type="text" id="lastName" /><br />
         <label>city</label>
-        <input class="details" type="text" id="city" /><br />
+        <input class="details form-control" type="text" id="city" /><br />
         <label>street</label>
-        <input class="details" type="text" id="street" /><br />
+        <input class="details form-control" type="text" id="street" /><br />
+    </div>
+    <div class="details-container-second" id="userDetails2" >
         <label>house Number</label>
-        <input class="details" type="number" id="houseNumber" /><br />
+        <input class="details form-control" type="number" id="houseNumber" /><br />
         <label>phone Number</label>
-        <input class="details" type="text" id="phoneNumber" /><br />
+        <input class="details form-control" type="text" id="phoneNumber" /><br />
         <label>email Address</label>
-        <input class="details" type="email" id="emailAddress" /><br />
+        <input class="details form-control" type="email" id="emailAddress" /><br />
         <label>height</label>
-        <input class="details" type="number" id="height" /><br />
+        <input class="details form-control" type="number" id="height" /><br />
+    </div>
+    <div class="details-container-right" id="userDetails3" >
         <label>Weights</label>
         <table>
             <thead>
@@ -48,10 +54,10 @@
             <tbody id="weights"></tbody>
         </table>
         <label>BMI</label>
-        <input type="number" id="BMI" readonly/><br/>
+        <input type="number" class="form-control" id="BMI" readonly/><br/>
     </div>
     <!-- <button onclick="editUser()">edit</button> -->
-
-    <button id="UserDiary" onclick="UserDiary()" >Show The User Diary</button>
+    <input type="button" class="form-control btn-diary" id="UserDiary" value="Show The User Diary" onclick="UserDiary()">
+    <!-- <button id="UserDiary" onclick="UserDiary()" >Show The User Diary</button> -->
 </body>
 </html>
