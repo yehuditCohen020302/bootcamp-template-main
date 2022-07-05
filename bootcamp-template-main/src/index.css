@@ -34,14 +34,13 @@ h1 {
 
 
 
-
 .wellcome-container{
     text-align:left;
     width: 700px;
     height: 100%;
     position:fixed; 
     top:15%;
-    right: 12%;
+    left: 600px
     
 }
 

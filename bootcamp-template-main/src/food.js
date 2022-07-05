@@ -79,8 +79,8 @@ function search() {
   console.log("Searching...");
   const productName=document.getElementById("searchProduct").value;
   const data=productsList.filter(p=>p.shmmitzrach.includes(productName));
-  foodList.push(data);
-  console.log(foodList);
+  // foodList.push(data);
+  // console.log(foodList);
   
     const containered = document.querySelector(".selectFood");
     containered.innerHTML = `נמצאו ${data.length} מוצרים`;
@@ -103,6 +103,8 @@ function search() {
 function Clear(){
   document.getElementById("searchProduct").value='';
   document.querySelector(".selectFood").value='';
-  importAllProducts();
+  // importAllProducts();
+  const containered = document.querySelector(".selectFood");
+      containered.innerHTML = `ישנם סך הכל ${productsList.length} מוצרים`;
+      document.querySelector(".getValues").innerHTML="";
 }
-
