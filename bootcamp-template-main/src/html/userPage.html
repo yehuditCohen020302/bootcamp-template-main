@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="/src/js/meeting.js"></script>
+    <script src="/src/js/user.js"></script>
+    <script src="/src/js/userPage.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user-page</title>
+    <template>
+        <tr>
+            <td class="date"></td>
+            <td class="weight"></td>
+        </tr>
+​
+    </template>
+</head>
+<body onload="loadUser()">
+    <h3 id="title">User Details:</h3>
+    <div id="userDetails" style="background-color:lightpink; width:100%; ">
+        <label>id</label>
+        <input class="details" type="text" id="userId" readonly/><br />
+        <label>first Name</label>
+        <input class="details" type="text" id="firstName" /><br />
+        <label>last Name</label>
+        <input class="details" type="text" id="lastName" /><br />
+        <label>city</label>
+        <input class="details" type="text" id="city" /><br />
+        <label>street</label>
+        <input class="details" type="text" id="street" /><br />
+        <label>house Number</label>
+        <input class="details" type="number" id="houseNumber" /><br />
+        <label>phone Number</label>
+        <input class="details" type="text" id="phoneNumber" /><br />
+        <label>email Address</label>
+        <input class="details" type="email" id="emailAddress" /><br />
+        <label>height</label>
+        <input class="details" type="number" id="height" /><br />
+        <label>Weights</label>
+        <table>
+            <thead>
+                <tr>
+                    <th>date</th>
+                    <th>weight</th>
+                </tr>
+            </thead>
+            <tbody id="weights"></tbody>
+        </table>
+        <label>BMI</label>
+        <input type="number" id="BMI" readonly/><br/>
+    </div>
+    <!-- <button onclick="editUser()">edit</button> -->
+
+    <button id="UserDiary" onclick="UserDiary()" >Show The User Diary</button>
+</body>
+</html>
