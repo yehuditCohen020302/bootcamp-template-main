@@ -58,7 +58,8 @@ module.exports.deleteUser=async function(req,res, next){
 module.exports.addNewUser=async function(req,res, next){
     try{
         const id = req.params.id;
-        const user= await userService.addNewUser();
+        const add= req.body;
+        const user= await userService.addNewUser(id,add);
       
         await res.send(user);
     }
