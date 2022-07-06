@@ -50,6 +50,1009 @@ info: 07-06-2022 12:21:58.318: Hello server, we are running on 3000
 info: 07-06-2022 12:22:20.418: Hello server, we are running on 3000 
 info: 07-06-2022 12:29:06.561: Hello server, we are running on 3000 
 info: 07-06-2022 12:29:45.341: Hello server, we are running on 3000 
+
+info: 07-06-2022 12:37:38.977: Hello server, we are running on 3000 
+info: 07-06-2022 12:38:13.083: Hello server, we are running on 3000 
+info: 07-06-2022 12:48:03.715: Hello server, we are running on 3000 
+info: 07-06-2022 13:08:16.198: Hello server, we are running on 3000 
+info: 07-06-2022 13:08:53.491: Hello server, we are running on 3000 
+error: 07-06-2022 13:09:00.970: manager is not defined 
+error: 07-06-2022 13:09:00.970: manager is not defined 
+error: 07-06-2022 13:13:27.292: manager is not defined 
+error: 07-06-2022 13:13:27.292: manager is not defined 
+info: 07-06-2022 13:13:58.992: Hello server, we are running on 3000 
+error: 07-06-2022 13:14:03.530: jsonPath is not defined 
+error: 07-06-2022 13:14:03.530: jsonPath is not defined 
+info: 07-06-2022 13:14:39.351: Hello server, we are running on 3000 
+error: 07-06-2022 13:14:42.203: ENOENT: no such file or directory, open '{
+  "users": [
+    {
+      "id": "123456789",
+      "firstName": "Michal",
+      "lastName": "Shmoel",
+      "city": "jerusalem",
+      "street": "hapisga",
+      "houseNumber": 12,
+      "phoneNumber": "0521369874",
+      "emailAddress": "michal@gmail.com",
+      "height": 1.7,
+      "weightsHistory": [
+        {
+          "date": "12/03/2022",
+          "weight": 60
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 61.8
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 60.9
+        }
+      ],
+      "diary": {
+        "days": [
+          {
+            "date": "12/03/2022",
+            "meals": [
+              [
+                "גבינה לבנה",
+                "יוגורט תות"
+              ],
+              [
+                "בשר",
+                "קישואים"
+              ]
+            ]
+          },
+          {
+            "date": "18/03/2022",
+            "meals": [
+              [
+                "בשר",
+                "קישואים"
+              ]
+            ]
+          },
+          {
+            "date": "30-5-2022",
+            "meals": [
+              [
+                "מלפפון",
+                "פלפל",
+                "גזר",
+                "עגבניה"
+              ]
+            ]
+          },
+          {
+            "date": "30/5/122",
+            "meals": [
+              [
+                "סלט חסה עם עגבניות",
+                "יוגורט",
+                "חביתה"
+              ]
+            ]
+          },
+          {
+            "date": "2022-07-01",
+            "meals": [
+              [
+                "לחם",
+                "חלב"
+              ]
+            ]
+          },
+          {
+            "date": "2022-06-30",
+            "meals": [
+              [
+                "gfdgdf"
+              ],
+              [
+                "sagdsfgf"
+              ],
+              [
+                "חביתה",
+                "יוגורט",
+                "גבינה צהובה",
+                "גבינה לבנה",
+                "חלב",
+                "לחם"
+              ],
+              [
+                "גלידה",
+                "ארטיק",
+                "טילון",
+                "לישוןןןןןןןןן"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "987654321",
+      "firstName": "Rachel",
+      "lastName": "Keler",
+      "city": "jerusalem",
+      "street": "arimon",
+      "houseNumber": 5,
+      "phoneNumber": "0558963214",
+      "emailAddress": "rachel@gmail.com",
+      "height": 1.75,
+      "weightsHistory": [
+        {
+          "date": "12/03/2022",
+          "weight": 72
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 69.8
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 71.1
+        }
+      ],
+      "diary": {
+        "days": [
+          {
+            "date": "12/03/2022",
+            "meals": [
+              []
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "587412369",
+      "firstName": "Shira",
+      "lastName": "Avitan",
+      "city": "jerusalem",
+      "street": "arimon",
+      "houseNumber": "5",
+      "phoneNumber": "0536985214",
+      "emailAddress": "shira@gmail.com",
+      "height": 1.65,
+      "weightsHistory": [
+        {
+          "date": "12/03/2022",
+          "weight": 76
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 78.8
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 80.9
+        }
+      ],
+      "diary": {
+        "days": [
+          {
+            "date": "12/03/2022",
+            "meals": [
+              []
+            ]
+          },
+          {
+            "date": "2022-07-02",
+            "meals": [
+              [
+                "ממתקים",
+                "מרק טעיםםםם",
+                "פשטידה מיוחדת"
+              ]
+            ]
+          },
+          {
+            "date": "2022-07-03",
+            "meals": [
+              [
+                "גבינה צהובה",
+                "חביתה",
+                "סט ירקות"
+              ],
+              [
+                "עוף",
+                "פתיתים",
+                "שניצל טעים",
+                "ציפס מטוגן"
+              ],
+              [
+                "טוסט"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "678912345",
+      "firstName": "David",
+      "lastName": "Cohen",
+      "city": "rehovot",
+      "street": "ezra",
+      "houseNumber": "37",
+      "phoneNumber": "0536985214",
+      "emailAddress": "david@gmail.com",
+      "height": 1.84,
+      "weightsHistory": [
+        {
+          "date": "12/03/2022",
+          "weight": 76
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 75.8
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 73.9
+        }
+      ],
+      "diary": {
+        "days": [
+          {
+            "date": "12/03/2022",
+            "meals": [
+              []
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}' 
+error: 07-06-2022 13:14:42.203: ENOENT: no such file or directory, open '{
+  "users": [
+    {
+      "id": "123456789",
+      "firstName": "Michal",
+      "lastName": "Shmoel",
+      "city": "jerusalem",
+      "street": "hapisga",
+      "houseNumber": 12,
+      "phoneNumber": "0521369874",
+      "emailAddress": "michal@gmail.com",
+      "height": 1.7,
+      "weightsHistory": [
+        {
+          "date": "12/03/2022",
+          "weight": 60
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 61.8
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 60.9
+        }
+      ],
+      "diary": {
+        "days": [
+          {
+            "date": "12/03/2022",
+            "meals": [
+              [
+                "גבינה לבנה",
+                "יוגורט תות"
+              ],
+              [
+                "בשר",
+                "קישואים"
+              ]
+            ]
+          },
+          {
+            "date": "18/03/2022",
+            "meals": [
+              [
+                "בשר",
+                "קישואים"
+              ]
+            ]
+          },
+          {
+            "date": "30-5-2022",
+            "meals": [
+              [
+                "מלפפון",
+                "פלפל",
+                "גזר",
+                "עגבניה"
+              ]
+            ]
+          },
+          {
+            "date": "30/5/122",
+            "meals": [
+              [
+                "סלט חסה עם עגבניות",
+                "יוגורט",
+                "חביתה"
+              ]
+            ]
+          },
+          {
+            "date": "2022-07-01",
+            "meals": [
+              [
+                "לחם",
+                "חלב"
+              ]
+            ]
+          },
+          {
+            "date": "2022-06-30",
+            "meals": [
+              [
+                "gfdgdf"
+              ],
+              [
+                "sagdsfgf"
+              ],
+              [
+                "חביתה",
+                "יוגורט",
+                "גבינה צהובה",
+                "גבינה לבנה",
+                "חלב",
+                "לחם"
+              ],
+              [
+                "גלידה",
+                "ארטיק",
+                "טילון",
+                "לישוןןןןןןןןן"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "987654321",
+      "firstName": "Rachel",
+      "lastName": "Keler",
+      "city": "jerusalem",
+      "street": "arimon",
+      "houseNumber": 5,
+      "phoneNumber": "0558963214",
+      "emailAddress": "rachel@gmail.com",
+      "height": 1.75,
+      "weightsHistory": [
+        {
+          "date": "12/03/2022",
+          "weight": 72
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 69.8
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 71.1
+        }
+      ],
+      "diary": {
+        "days": [
+          {
+            "date": "12/03/2022",
+            "meals": [
+              []
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "587412369",
+      "firstName": "Shira",
+      "lastName": "Avitan",
+      "city": "jerusalem",
+      "street": "arimon",
+      "houseNumber": "5",
+      "phoneNumber": "0536985214",
+      "emailAddress": "shira@gmail.com",
+      "height": 1.65,
+      "weightsHistory": [
+        {
+          "date": "12/03/2022",
+          "weight": 76
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 78.8
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 80.9
+        }
+      ],
+      "diary": {
+        "days": [
+          {
+            "date": "12/03/2022",
+            "meals": [
+              []
+            ]
+          },
+          {
+            "date": "2022-07-02",
+            "meals": [
+              [
+                "ממתקים",
+                "מרק טעיםםםם",
+                "פשטידה מיוחדת"
+              ]
+            ]
+          },
+          {
+            "date": "2022-07-03",
+            "meals": [
+              [
+                "גבינה צהובה",
+                "חביתה",
+                "סט ירקות"
+              ],
+              [
+                "עוף",
+                "פתיתים",
+                "שניצל טעים",
+                "ציפס מטוגן"
+              ],
+              [
+                "טוסט"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "678912345",
+      "firstName": "David",
+      "lastName": "Cohen",
+      "city": "rehovot",
+      "street": "ezra",
+      "houseNumber": "37",
+      "phoneNumber": "0536985214",
+      "emailAddress": "david@gmail.com",
+      "height": 1.84,
+      "weightsHistory": [
+        {
+          "date": "12/03/2022",
+          "weight": 76
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 75.8
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 73.9
+        }
+      ],
+      "diary": {
+        "days": [
+          {
+            "date": "12/03/2022",
+            "meals": [
+              []
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}' 
+info: 07-06-2022 13:15:42.421: Hello server, we are running on 3000 
+info: 07-06-2022 13:15:53.018: Hello server, we are running on 3000 
+info: 07-06-2022 13:16:56.072: Hello server, we are running on 3000 
+error: 07-06-2022 13:18:19.820: ENOENT: no such file or directory, open '{
+  "users": [
+    {
+      "id": "123456789",
+      "firstName": "Michal",
+      "lastName": "Shmoel",
+      "city": "jerusalem",
+      "street": "hapisga",
+      "houseNumber": 12,
+      "phoneNumber": "0521369874",
+      "emailAddress": "michal@gmail.com",
+      "height": 1.7,
+      "weightsHistory": [
+        {
+          "date": "12/03/2022",
+          "weight": 60
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 61.8
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 60.9
+        }
+      ],
+      "diary": {
+        "days": [
+          {
+            "date": "12/03/2022",
+            "meals": [
+              [
+                "גבינה לבנה",
+                "יוגורט תות"
+              ],
+              [
+                "בשר",
+                "קישואים"
+              ]
+            ]
+          },
+          {
+            "date": "18/03/2022",
+            "meals": [
+              [
+                "בשר",
+                "קישואים"
+              ]
+            ]
+          },
+          {
+            "date": "30-5-2022",
+            "meals": [
+              [
+                "מלפפון",
+                "פלפל",
+                "גזר",
+                "עגבניה"
+              ]
+            ]
+          },
+          {
+            "date": "30/5/122",
+            "meals": [
+              [
+                "סלט חסה עם עגבניות",
+                "יוגורט",
+                "חביתה"
+              ]
+            ]
+          },
+          {
+            "date": "2022-07-01",
+            "meals": [
+              [
+                "לחם",
+                "חלב"
+              ]
+            ]
+          },
+          {
+            "date": "2022-06-30",
+            "meals": [
+              [
+                "gfdgdf"
+              ],
+              [
+                "sagdsfgf"
+              ],
+              [
+                "חביתה",
+                "יוגורט",
+                "גבינה צהובה",
+                "גבינה לבנה",
+                "חלב",
+                "לחם"
+              ],
+              [
+                "גלידה",
+                "ארטיק",
+                "טילון",
+                "לישוןןןןןןןןן"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "987654321",
+      "firstName": "Rachel",
+      "lastName": "Keler",
+      "city": "jerusalem",
+      "street": "arimon",
+      "houseNumber": 5,
+      "phoneNumber": "0558963214",
+      "emailAddress": "rachel@gmail.com",
+      "height": 1.75,
+      "weightsHistory": [
+        {
+          "date": "12/03/2022",
+          "weight": 72
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 69.8
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 71.1
+        }
+      ],
+      "diary": {
+        "days": [
+          {
+            "date": "12/03/2022",
+            "meals": [
+              []
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "587412369",
+      "firstName": "Shira",
+      "lastName": "Avitan",
+      "city": "jerusalem",
+      "street": "arimon",
+      "houseNumber": "5",
+      "phoneNumber": "0536985214",
+      "emailAddress": "shira@gmail.com",
+      "height": 1.65,
+      "weightsHistory": [
+        {
+          "date": "12/03/2022",
+          "weight": 76
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 78.8
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 80.9
+        }
+      ],
+      "diary": {
+        "days": [
+          {
+            "date": "12/03/2022",
+            "meals": [
+              []
+            ]
+          },
+          {
+            "date": "2022-07-02",
+            "meals": [
+              [
+                "ממתקים",
+                "מרק טעיםםםם",
+                "פשטידה מיוחדת"
+              ]
+            ]
+          },
+          {
+            "date": "2022-07-03",
+            "meals": [
+              [
+                "גבינה צהובה",
+                "חביתה",
+                "סט ירקות"
+              ],
+              [
+                "עוף",
+                "פתיתים",
+                "שניצל טעים",
+                "ציפס מטוגן"
+              ],
+              [
+                "טוסט"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "678912345",
+      "firstName": "David",
+      "lastName": "Cohen",
+      "city": "rehovot",
+      "street": "ezra",
+      "houseNumber": "37",
+      "phoneNumber": "0536985214",
+      "emailAddress": "david@gmail.com",
+      "height": 1.84,
+      "weightsHistory": [
+        {
+          "date": "12/03/2022",
+          "weight": 76
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 75.8
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 73.9
+        }
+      ],
+      "diary": {
+        "days": [
+          {
+            "date": "12/03/2022",
+            "meals": [
+              []
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}' 
+error: 07-06-2022 13:18:19.820: ENOENT: no such file or directory, open '{
+  "users": [
+    {
+      "id": "123456789",
+      "firstName": "Michal",
+      "lastName": "Shmoel",
+      "city": "jerusalem",
+      "street": "hapisga",
+      "houseNumber": 12,
+      "phoneNumber": "0521369874",
+      "emailAddress": "michal@gmail.com",
+      "height": 1.7,
+      "weightsHistory": [
+        {
+          "date": "12/03/2022",
+          "weight": 60
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 61.8
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 60.9
+        }
+      ],
+      "diary": {
+        "days": [
+          {
+            "date": "12/03/2022",
+            "meals": [
+              [
+                "גבינה לבנה",
+                "יוגורט תות"
+              ],
+              [
+                "בשר",
+                "קישואים"
+              ]
+            ]
+          },
+          {
+            "date": "18/03/2022",
+            "meals": [
+              [
+                "בשר",
+                "קישואים"
+              ]
+            ]
+          },
+          {
+            "date": "30-5-2022",
+            "meals": [
+              [
+                "מלפפון",
+                "פלפל",
+                "גזר",
+                "עגבניה"
+              ]
+            ]
+          },
+          {
+            "date": "30/5/122",
+            "meals": [
+              [
+                "סלט חסה עם עגבניות",
+                "יוגורט",
+                "חביתה"
+              ]
+            ]
+          },
+          {
+            "date": "2022-07-01",
+            "meals": [
+              [
+                "לחם",
+                "חלב"
+              ]
+            ]
+          },
+          {
+            "date": "2022-06-30",
+            "meals": [
+              [
+                "gfdgdf"
+              ],
+              [
+                "sagdsfgf"
+              ],
+              [
+                "חביתה",
+                "יוגורט",
+                "גבינה צהובה",
+                "גבינה לבנה",
+                "חלב",
+                "לחם"
+              ],
+              [
+                "גלידה",
+                "ארטיק",
+                "טילון",
+                "לישוןןןןןןןןן"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "987654321",
+      "firstName": "Rachel",
+      "lastName": "Keler",
+      "city": "jerusalem",
+      "street": "arimon",
+      "houseNumber": 5,
+      "phoneNumber": "0558963214",
+      "emailAddress": "rachel@gmail.com",
+      "height": 1.75,
+      "weightsHistory": [
+        {
+          "date": "12/03/2022",
+          "weight": 72
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 69.8
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 71.1
+        }
+      ],
+      "diary": {
+        "days": [
+          {
+            "date": "12/03/2022",
+            "meals": [
+              []
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "587412369",
+      "firstName": "Shira",
+      "lastName": "Avitan",
+      "city": "jerusalem",
+      "street": "arimon",
+      "houseNumber": "5",
+      "phoneNumber": "0536985214",
+      "emailAddress": "shira@gmail.com",
+      "height": 1.65,
+      "weightsHistory": [
+        {
+          "date": "12/03/2022",
+          "weight": 76
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 78.8
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 80.9
+        }
+      ],
+      "diary": {
+        "days": [
+          {
+            "date": "12/03/2022",
+            "meals": [
+              []
+            ]
+          },
+          {
+            "date": "2022-07-02",
+            "meals": [
+              [
+                "ממתקים",
+                "מרק טעיםםםם",
+                "פשטידה מיוחדת"
+              ]
+            ]
+          },
+          {
+            "date": "2022-07-03",
+            "meals": [
+              [
+                "גבינה צהובה",
+                "חביתה",
+                "סט ירקות"
+              ],
+              [
+                "עוף",
+                "פתיתים",
+                "שניצל טעים",
+                "ציפס מטוגן"
+              ],
+              [
+                "טוסט"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "678912345",
+      "firstName": "David",
+      "lastName": "Cohen",
+      "city": "rehovot",
+      "street": "ezra",
+      "houseNumber": "37",
+      "phoneNumber": "0536985214",
+      "emailAddress": "david@gmail.com",
+      "height": 1.84,
+      "weightsHistory": [
+        {
+          "date": "12/03/2022",
+          "weight": 76
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 75.8
+        },
+        {
+          "date": "12/03/2022",
+          "weight": 73.9
+        }
+      ],
+      "diary": {
+        "days": [
+          {
+            "date": "12/03/2022",
+            "meals": [
+              []
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}' 
+info: 07-06-2022 13:19:34.300: Hello server, we are running on 3000 
+info: 07-06-2022 13:20:27.039: Hello server, we are running on 3000 
+info: 07-06-2022 13:20:55.932: Hello server, we are running on 3000 
+info: 07-06-2022 13:21:25.443: Hello server, we are running on 3000 
+info: 07-06-2022 13:22:58.324: Hello server, we are running on 3000 
+info: 07-06-2022 13:23:47.639: Hello server, we are running on 3000 
+info: 07-06-2022 13:30:59.125: Hello server, we are running on 3000 
+info: 07-06-2022 13:31:36.721: Hello server, we are running on 3000 
+info: 07-06-2022 13:57:01.436: Hello server, we are running on 3000 
+=======
 info: 07-06-2022 12:35:36.008: Hello server, we are running on undefined 
 info: 07-06-2022 12:39:05.038: Hello server, we are running on 3000 
 info: 07-06-2022 12:45:58.665: Hello server, we are running on 3000 
@@ -65,3 +1068,4 @@ info: 07-06-2022 13:28:56.976: Hello server, we are running on 3000
 info: 07-06-2022 13:30:28.642: Hello server, we are running on 3000 
 info: 07-06-2022 13:40:59.409: Hello server, we are running on 3000 
 info: 07-06-2022 13:41:05.181: Hello server, we are running on 3000 
+
