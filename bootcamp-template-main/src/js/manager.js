@@ -28,17 +28,26 @@ class Manager {
     //   }
     // };
     fetch('http://localhost:3000/users')
-      .then((response) => {
-        debugger;
-        if (response.ok && response.status == 200) {
-          manager.users = JSON.parse(response.text);
-          manager.drawTable(manager.users);
-         } 
-        else {
-        alert(`Error ${response.status}: ${response.status}`);
-        }
-      });
-  }
+    .then(response => response.json())
+    .then(response=>manager.users=response)
+    .then(
+      response=>manager.drawTable(manager.users)
+    )
+    .catch(err => {
+        console.log(err)})
+}
+
+  //     .then((response) => {
+  //       debugger;
+  //       if (response.ok && response.status == 200) {
+  //         manager.users = response.json()
+  //         manager.drawTable(manager.users);
+  //        } 
+  //       else {
+  //       alert(`Error ${response.status}: ${response.status}`);
+  //       }
+  //     });
+  // }
   
 
   drawTable(users) {

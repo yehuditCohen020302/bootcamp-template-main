@@ -6,8 +6,8 @@ let data=JSON.parse(dataFromFile);
 module.exports=
 {
     getAllUsersService: async ()=>{
-        debugger
-        return await JSON.stringify(data.users);
+        // return await JSON.stringify(data.users);
+        return await data.users;
     },
 
     getOneUser: async(id) => {
