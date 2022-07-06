@@ -7,7 +7,7 @@ module.exports=
 {
     getAllUsersService: async ()=>{
         debugger
-        return await data.users;
+        return await JSON.stringify(data.users);
     },
 
     getOneUser: async(id) => {
