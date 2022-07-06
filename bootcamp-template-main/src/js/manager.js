@@ -14,18 +14,32 @@ class Manager {
   }
 
   getUsers() {
-    const xhr = new XMLHttpRequest();
-    xhr.open("GET", "http://localhost:3000/users");
-    xhr.send();
-    xhr.onload = function () {
-      if (xhr.status != 200) {
-        alert(`Error ${xhr.status}: ${xhr.statusText}`);
-      } else {
-        manager.users = JSON.parse(xhr.responseText);
-        manager.drawTable(manager.users);
-      }
-    };
+    // debugger;
+    // const xhr = new XMLHttpRequest();
+
+    // xhr.open("GET", "http://localhost:3000/users");
+    // xhr.send();
+    // xhr.onload = function () {
+    //   if (xhr.status != 200) {
+    //     alert(`Error ${xhr.status}: ${xhr.statusText}`);
+    //   } else {
+    //     manager.users = JSON.parse(xhr.responseText);
+    //     manager.drawTable(manager.users);
+    //   }
+    // };
+    fetch('http://localhost:3000/users')
+      .then((response) => {
+        debugger;
+        if (response.ok && response.status == 200) {
+          manager.users = JSON.parse(response.text);
+          manager.drawTable(manager.users);
+         } 
+        else {
+        alert(`Error ${response.status}: ${response.status}`);
+        }
+      });
   }
+  
 
   drawTable(users) {
     const container = document.querySelector(".usersTable");
@@ -33,18 +47,25 @@ class Manager {
     // const bmiColor= bmi-user.weightsHistory[user.weightsHistory.length - 2]
     //                         .weight / (Math.pow(user.height, 2));
     let table = "";
-   
+
     users.forEach((user) => {
-      let bmi = user.weightsHistory[user.weightsHistory.length - 1].weight / Math.pow(user.height, 2);
+      let bmi =
+        user.weightsHistory[user.weightsHistory.length - 1].weight /
+        Math.pow(user.height, 2);
       let c = "green";
-      if (user.weightsHistory[user.weightsHistory.length - 1].weight > user.weightsHistory[user.weightsHistory.length - 2].weight) {
-          c = "red";
+      if (
+        user.weightsHistory[user.weightsHistory.length - 1].weight >
+        user.weightsHistory[user.weightsHistory.length - 2].weight
+      ) {
+        c = "red";
       }
       table += `
                 <tr>
                     <th>${user.firstName + " " + user.lastName}</th>
                     <th style="color:${c}">${Math.floor(bmi * 100) / 100}</th>
-                    <td><button onClick="details(${user.emailAddress[0]})">Details</button></th>
+                    <td><button onClick="details(${
+                      user.emailAddress[0]
+                    })">Details</button></th>
                 </tr>`;
     });
     // <th><a href="/userPage.html?email=${user.email}">details user</a></th>
@@ -75,23 +96,31 @@ class Manager {
 
   details(email) {
     console.log("details(email)  called");
-    window.location.href = "/src/userPage.html?emailAddress="+email;
+    window.location.href = "../html/userPage.html?emailAddress=" + email;
   }
 
-  goodBMI(user){
-    debugger
-      if(user.weightsHistory.length > 1){
-          if((user.weightsHistory[user.weightsHistory.length-1].weight)/Math.pow(user.height,2)
-          >(user.weightsHistory[user.weightsHistory.length-2].weight)/Math.pow(user.height,2))
-              return 1;
-      }
-      if(user.weightsHistory.length > 1){
-        if((user.weightsHistory[user.weightsHistory.length-1].weight)/Math.pow(user.height,2)
-        <(user.weightsHistory[user.weightsHistory.length-2].weight)/Math.pow(user.height,2))
-            return -1;
+  goodBMI(user) {
+    debugger;
+    if (user.weightsHistory.length > 1) {
+      if (
+        user.weightsHistory[user.weightsHistory.length - 1].weight /
+          Math.pow(user.height, 2) >
+        user.weightsHistory[user.weightsHistory.length - 2].weight /
+          Math.pow(user.height, 2)
+      )
+        return 1;
+    }
+    if (user.weightsHistory.length > 1) {
+      if (
+        user.weightsHistory[user.weightsHistory.length - 1].weight /
+          Math.pow(user.height, 2) <
+        user.weightsHistory[user.weightsHistory.length - 2].weight /
+          Math.pow(user.height, 2)
+      )
+        return -1;
     }
 
-      return 0;
+    return 0;
   }
 
   OKaddUser() {
@@ -210,18 +239,16 @@ function search() {
 
 function Reset() {
   manager.getUsers();
-  window.location.href = "/src/Manager.html";
+  window.location.href = "/src/html/Manager.html";
 }
 
 function changeColor(bmiColor, id) {
-  debugger
+  debugger;
   if (bmiColor < 0)
     document.getElementById(id).style.backgroundColor = "lightgreen";
-  else 
-    document.getElementById(id).style.backgroundColor = "red";
+  else document.getElementById(id).style.backgroundColor = "red";
 }
 
-function goodBMI(user)
-{
+function goodBMI(user) {
   manager.goodBMI(user);
 }
