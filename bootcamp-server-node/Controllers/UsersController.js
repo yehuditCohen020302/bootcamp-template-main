@@ -7,8 +7,9 @@ const userService =require ('../services/userService.service')
 module.exports.getAllUsers=async (req,res, next)=>{
     try{
         // debugger
+
         const toGet = await userService.getAllUsersService();
-        return res.status(200).json({toGet});
+        return res.status(200).json(toGet);
     }
     catch (error) {
         next(error)
