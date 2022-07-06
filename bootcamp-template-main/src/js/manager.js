@@ -15,29 +15,29 @@ class Manager {
 
   getUsers() {
     // debugger;
-    const xhr = new XMLHttpRequest();
+    // const xhr = new XMLHttpRequest();
 
-    xhr.open("GET", "http://localhost:3000/users");
-    xhr.send();
-    xhr.onload = function () {
-      if (xhr.status != 200) {
-        alert(`Error ${xhr.status}: ${xhr.statusText}`);
-      } else {
-        manager.users = JSON.parse(xhr.responseText);
-        manager.drawTable(manager.users);
-      }
-    };
-    // fetch('http://localhost:3000/users')
-    //   .then((response) => {
-    //     debugger;
-    //     if (response.ok && response.status == 200) {
-    //       manager.users = JSON.parse(response.text);
-    //       manager.drawTable(manager.users);
-    //      } 
-    //     else {
-    //     alert(`Error ${response.status}: ${response.status}`);
-    //     }
-    //   });
+    // xhr.open("GET", "http://localhost:3000/users");
+    // xhr.send();
+    // xhr.onload = function () {
+    //   if (xhr.status != 200) {
+    //     alert(`Error ${xhr.status}: ${xhr.statusText}`);
+    //   } else {
+    //     manager.users = JSON.parse(xhr.responseText);
+    //     manager.drawTable(manager.users);
+    //   }
+    // };
+    fetch('http://localhost:3000/users')
+      .then((response) => {
+        debugger;
+        if (response.ok && response.status == 200) {
+          manager.users = JSON.parse(response.text);
+          manager.drawTable(manager.users);
+         } 
+        else {
+        alert(`Error ${response.status}: ${response.status}`);
+        }
+      });
   }
   
 
