@@ -5,12 +5,6 @@ function loadUser(){
         getUserById(params.get("id"));
     else if(params.has("emailAddress"))
             getUserByEmail(params.get("emailAddress"));
-    // this.currentUser=new User("325632563","michal","soloveitchik","jerusalem","mevo-livna",2,"058-3231859","859michal@gmail.com",1.68,60);
-    // this.currentUser.addWeight(55);
-        
-  
-
-    // inputs=document.getElementsByClassName("details").style.readonly="true";
 }
 
 function getUserById(id) {
