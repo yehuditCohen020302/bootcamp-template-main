@@ -1,5 +1,5 @@
 
-const user=require('./Routs/User')
+const user=require('./routes/user.routes')
 const meeting=require('./routes/meeting.routes');
 const diary=require('./routes/diary.routes');
 const access=require('./routes/access.routes');

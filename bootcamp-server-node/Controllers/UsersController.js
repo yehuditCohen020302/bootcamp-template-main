@@ -2,7 +2,7 @@
 const logger = require('../Log/logger');
 // const module= require('module') ;
 
-const userService =require ('../service/userService')
+const userService =require ('../services/userService.service')
 
 module.exports.getAllUsers=async (req,res, next)=>{
     try{
