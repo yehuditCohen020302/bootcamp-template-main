@@ -71,6 +71,6 @@ function UserDiary(){
     console.log("InUserDiary");
     // debugger
     email=document.getElementById("emailAddress").value;
-    window.location.href = "/src/userDiary.html?emailAddress="+email;
+    window.location.href = "/src/html/userDiary.html?emailAddress="+email;
 
 }
