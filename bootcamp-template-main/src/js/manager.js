@@ -96,7 +96,7 @@ class Manager {
 
   details(email) {
     console.log("details(email)  called");
-    window.location.href = "../html/userPage.html?emailAddress=" + email;
+    window.location.href = "../html/userPage.html?emailAddress="+email;
   }
 
   goodBMI(user) {
@@ -239,7 +239,7 @@ function search() {
 
 function Reset() {
   manager.getUsers();
-  window.location.href = "/src/html/Manager.html";
+  window.location.href = "../html/Manager.html";
 }
 
 function changeColor(bmiColor, id) {
