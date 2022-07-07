@@ -6,8 +6,6 @@ const userService =require ('../services/userService.service')
 
 module.exports.getAllUsers=async (req,res, next)=>{
     try{
-        // debugger
-
         const toGet = await userService.getAllUsersService();
         return res.status(200).json(toGet);
     }
@@ -30,7 +28,6 @@ module.exports.getOneUser=async function(req,res, next){
 
 module.exports.updateUser=async function(req,res, next){
     try{
-        debugger
         const id = req.params.id;
         const update= req.body;
         const user= await userService.updateUser(id, update);
@@ -57,6 +54,7 @@ module.exports.deleteUser=async function(req,res, next){
 
 module.exports.addNewUser=async function(req,res, next){
     try{
+        console.log(req.body, "req.body");
         const id = req.params.id;
         const add= req.body;
         const user= await userService.addNewUser(id,add);

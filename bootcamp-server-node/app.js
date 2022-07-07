@@ -4,6 +4,7 @@ const meeting=require('./routes/meeting.routes');
 const diary=require('./routes/diary.routes');
 const access=require('./routes/access.routes');
 
+const cors=require('cors');
 const logger = require('./Log/logger')
 const express = require('express');
 const path = require('path');
@@ -24,7 +25,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(express.static('Static'))
+// app.use(express.static('Static'))
 app.use(express.json());
 
 app.use('/users', user);
@@ -40,13 +41,13 @@ app.use((err,req,res,next) => {
 
 app.use((req,res) => {
   
-  res.status(404).sendFile(path.join( __dirname, './Static/html/404.html'));
+   res.status(404).sendFile(path.join( __dirname, '/404.html'));
 })
 
 // logger.error('error😳😵🥴');
 app.listen(port, () => logger.info(`Hello server, we are running on ${port}`))
 
-
+app.use(cors());
 
 
 app.get('/', function(req, res) {
