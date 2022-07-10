@@ -1068,5 +1068,140 @@ info: 07-06-2022 13:30:28.642: Hello server, we are running on 3000
 info: 07-06-2022 13:40:59.409: Hello server, we are running on 3000 
 info: 07-06-2022 13:41:05.181: Hello server, we are running on 3000 
 
-info: 07-06-2022 14:15:39.400: Hello server, we are running on 3000 
-info: 07-06-2022 17:25:11.158: Hello server, we are running on 3000 
+info: 07-06-2022 14:09:48.369: Hello server, we are running on 3000 
+error: 07-06-2022 14:12:09.866: Unexpected token , in JSON at position 3124 
+error: 07-06-2022 14:12:09.866: Unexpected token , in JSON at position 3124 
+info: 07-06-2022 14:17:10.628: Hello server, we are running on 3000 
+error: 07-06-2022 14:17:53.180: The "path" argument must be of type string or an instance of Buffer or URL. Received an instance of Object 
+error: 07-06-2022 14:17:53.180: The "path" argument must be of type string or an instance of Buffer or URL. Received an instance of Object 
+info: 07-06-2022 14:18:20.281: Hello server, we are running on 3000 
+error: 07-06-2022 14:18:33.215: ENOENT: no such file or directory, open '{"users":[{"id":"123456789","firstName":"Michal","lastName":"Shmoel","city":"jerusalem","street":"hapisga","houseNumber":12,"phoneNumber":"0521369874","emailAddress":"michal@gmail.com","height":1.7,"weightsHistory":[{"date":"12/03/2022","weight":60},{"date":"12/03/2022","weight":61.8},{"date":"12/03/2022","weight":60.9}],"diary":{"days":[{"date":"12/03/2022","meals":[["גבינה לבנה","יוגורט תות"],["בשר","קישואים"]]},{"date":"18/03/2022","meals":[["בשר","קישואים"]]},{"date":"30-5-2022","meals":[["מלפפון","פלפל","גזר","עגבניה"]]},{"date":"30/5/122","meals":[["סלט חסה עם עגבניות","יוגורט","חביתה"]]},{"date":"2022-07-01","meals":[["לחם","חלב"]]},{"date":"2022-06-30","meals":[["gfdgdf"],["sagdsfgf"],["חביתה","יוגורט","גבינה צהובה","גבינה לבנה","חלב","לחם"],["גלידה","ארטיק","טילון","לישוןןןןןןןןן"]]}]}},{"id":"587412369","firstName":"Shira","lastName":"Avitan","city":"jerusalem","street":"arimon","houseNumber":"5","phoneNumber":"0536985214","emailAddress":"shira@gmail.com","height":1.65,"weightsHistory":[{"date":"12/03/2022","weight":76},{"date":"12/03/2022","weight":78.8},{"date":"12/03/2022","weight":80.9}],"diary":{"days":[{"date":"12/03/2022","meals":[[]]},{"date":"2022-07-02","meals":[["ממתקים","מרק טעיםםםם","פשטידה מיוחדת"]]},{"date":"2022-07-03","meals":[["גבינה צהובה","חביתה","סט ירקות"],["עוף","פתיתים","שניצל טעים","ציפס מטוגן"],["טוסט"]]}]}},{"id":"678912345","firstName":"David","lastName":"Cohen","city":"rehovot","street":"ezra","houseNumber":"37","phoneNumber":"0536985214","emailAddress":"david@gmail.com","height":1.84,"weightsHistory":[{"date":"12/03/2022","weight":76},{"date":"12/03/2022","weight":75.8},{"date":"12/03/2022","weight":73.9}],"diary":{"days":[{"date":"12/03/2022","meals":[[]]}]}},{"id":"987654321","firstName":"Rachely","lastName":"Kelery","city":"jerusalem","street":"arimon","houseNumber":5,"phoneNumber":"0558963214","emailAddress":"rachel@gmail.com","height":1.75,"weightsHistory":[{"date":"12/03/2022","weight":72},{"date":"12/03/2022","weight":69.8},{"date":"12/03/2022","weight":71.1}],"diary":{"days":[{"date":"12/03/2022","meals":[[]]}]}}]}' 
+error: 07-06-2022 14:18:33.215: ENOENT: no such file or directory, open '{"users":[{"id":"123456789","firstName":"Michal","lastName":"Shmoel","city":"jerusalem","street":"hapisga","houseNumber":12,"phoneNumber":"0521369874","emailAddress":"michal@gmail.com","height":1.7,"weightsHistory":[{"date":"12/03/2022","weight":60},{"date":"12/03/2022","weight":61.8},{"date":"12/03/2022","weight":60.9}],"diary":{"days":[{"date":"12/03/2022","meals":[["גבינה לבנה","יוגורט תות"],["בשר","קישואים"]]},{"date":"18/03/2022","meals":[["בשר","קישואים"]]},{"date":"30-5-2022","meals":[["מלפפון","פלפל","גזר","עגבניה"]]},{"date":"30/5/122","meals":[["סלט חסה עם עגבניות","יוגורט","חביתה"]]},{"date":"2022-07-01","meals":[["לחם","חלב"]]},{"date":"2022-06-30","meals":[["gfdgdf"],["sagdsfgf"],["חביתה","יוגורט","גבינה צהובה","גבינה לבנה","חלב","לחם"],["גלידה","ארטיק","טילון","לישוןןןןןןןןן"]]}]}},{"id":"587412369","firstName":"Shira","lastName":"Avitan","city":"jerusalem","street":"arimon","houseNumber":"5","phoneNumber":"0536985214","emailAddress":"shira@gmail.com","height":1.65,"weightsHistory":[{"date":"12/03/2022","weight":76},{"date":"12/03/2022","weight":78.8},{"date":"12/03/2022","weight":80.9}],"diary":{"days":[{"date":"12/03/2022","meals":[[]]},{"date":"2022-07-02","meals":[["ממתקים","מרק טעיםםםם","פשטידה מיוחדת"]]},{"date":"2022-07-03","meals":[["גבינה צהובה","חביתה","סט ירקות"],["עוף","פתיתים","שניצל טעים","ציפס מטוגן"],["טוסט"]]}]}},{"id":"678912345","firstName":"David","lastName":"Cohen","city":"rehovot","street":"ezra","houseNumber":"37","phoneNumber":"0536985214","emailAddress":"david@gmail.com","height":1.84,"weightsHistory":[{"date":"12/03/2022","weight":76},{"date":"12/03/2022","weight":75.8},{"date":"12/03/2022","weight":73.9}],"diary":{"days":[{"date":"12/03/2022","meals":[[]]}]}},{"id":"987654321","firstName":"Rachely","lastName":"Kelery","city":"jerusalem","street":"arimon","houseNumber":5,"phoneNumber":"0558963214","emailAddress":"rachel@gmail.com","height":1.75,"weightsHistory":[{"date":"12/03/2022","weight":72},{"date":"12/03/2022","weight":69.8},{"date":"12/03/2022","weight":71.1}],"diary":{"days":[{"date":"12/03/2022","meals":[[]]}]}}]}' 
+info: 07-06-2022 14:19:49.826: Hello server, we are running on 3000 
+error: 07-06-2022 14:20:05.901: ENOENT: no such file or directory, open '{"users":[{"id":"123456789","firstName":"Michal","lastName":"Shmoel","city":"jerusalem","street":"hapisga","houseNumber":12,"phoneNumber":"0521369874","emailAddress":"michal@gmail.com","height":1.7,"weightsHistory":[{"date":"12/03/2022","weight":60},{"date":"12/03/2022","weight":61.8},{"date":"12/03/2022","weight":60.9}],"diary":{"days":[{"date":"12/03/2022","meals":[["גבינה לבנה","יוגורט תות"],["בשר","קישואים"]]},{"date":"18/03/2022","meals":[["בשר","קישואים"]]},{"date":"30-5-2022","meals":[["מלפפון","פלפל","גזר","עגבניה"]]},{"date":"30/5/122","meals":[["סלט חסה עם עגבניות","יוגורט","חביתה"]]},{"date":"2022-07-01","meals":[["לחם","חלב"]]},{"date":"2022-06-30","meals":[["gfdgdf"],["sagdsfgf"],["חביתה","יוגורט","גבינה צהובה","גבינה לבנה","חלב","לחם"],["גלידה","ארטיק","טילון","לישוןןןןןןןןן"]]}]}},{"id":"587412369","firstName":"Shira","lastName":"Avitan","city":"jerusalem","street":"arimon","houseNumber":"5","phoneNumber":"0536985214","emailAddress":"shira@gmail.com","height":1.65,"weightsHistory":[{"date":"12/03/2022","weight":76},{"date":"12/03/2022","weight":78.8},{"date":"12/03/2022","weight":80.9}],"diary":{"days":[{"date":"12/03/2022","meals":[[]]},{"date":"2022-07-02","meals":[["ממתקים","מרק טעיםםםם","פשטידה מיוחדת"]]},{"date":"2022-07-03","meals":[["גבינה צהובה","חביתה","סט ירקות"],["עוף","פתיתים","שניצל טעים","ציפס מטוגן"],["טוסט"]]}]}},{"id":"678912345","firstName":"David","lastName":"Cohen","city":"rehovot","street":"ezra","houseNumber":"37","phoneNumber":"0536985214","emailAddress":"david@gmail.com","height":1.84,"weightsHistory":[{"date":"12/03/2022","weight":76},{"date":"12/03/2022","weight":75.8},{"date":"12/03/2022","weight":73.9}],"diary":{"days":[{"date":"12/03/2022","meals":[[]]}]}},{"id":"987654321","firstName":"Rachely","lastName":"Kelery","city":"jerusalem","street":"arimon","houseNumber":5,"phoneNumber":"0558963214","emailAddress":"rachel@gmail.com","height":1.75,"weightsHistory":[{"date":"12/03/2022","weight":72},{"date":"12/03/2022","weight":69.8},{"date":"12/03/2022","weight":71.1}],"diary":{"days":[{"date":"12/03/2022","meals":[[]]}]}}]}' 
+error: 07-06-2022 14:20:05.901: ENOENT: no such file or directory, open '{"users":[{"id":"123456789","firstName":"Michal","lastName":"Shmoel","city":"jerusalem","street":"hapisga","houseNumber":12,"phoneNumber":"0521369874","emailAddress":"michal@gmail.com","height":1.7,"weightsHistory":[{"date":"12/03/2022","weight":60},{"date":"12/03/2022","weight":61.8},{"date":"12/03/2022","weight":60.9}],"diary":{"days":[{"date":"12/03/2022","meals":[["גבינה לבנה","יוגורט תות"],["בשר","קישואים"]]},{"date":"18/03/2022","meals":[["בשר","קישואים"]]},{"date":"30-5-2022","meals":[["מלפפון","פלפל","גזר","עגבניה"]]},{"date":"30/5/122","meals":[["סלט חסה עם עגבניות","יוגורט","חביתה"]]},{"date":"2022-07-01","meals":[["לחם","חלב"]]},{"date":"2022-06-30","meals":[["gfdgdf"],["sagdsfgf"],["חביתה","יוגורט","גבינה צהובה","גבינה לבנה","חלב","לחם"],["גלידה","ארטיק","טילון","לישוןןןןןןןןן"]]}]}},{"id":"587412369","firstName":"Shira","lastName":"Avitan","city":"jerusalem","street":"arimon","houseNumber":"5","phoneNumber":"0536985214","emailAddress":"shira@gmail.com","height":1.65,"weightsHistory":[{"date":"12/03/2022","weight":76},{"date":"12/03/2022","weight":78.8},{"date":"12/03/2022","weight":80.9}],"diary":{"days":[{"date":"12/03/2022","meals":[[]]},{"date":"2022-07-02","meals":[["ממתקים","מרק טעיםםםם","פשטידה מיוחדת"]]},{"date":"2022-07-03","meals":[["גבינה צהובה","חביתה","סט ירקות"],["עוף","פתיתים","שניצל טעים","ציפס מטוגן"],["טוסט"]]}]}},{"id":"678912345","firstName":"David","lastName":"Cohen","city":"rehovot","street":"ezra","houseNumber":"37","phoneNumber":"0536985214","emailAddress":"david@gmail.com","height":1.84,"weightsHistory":[{"date":"12/03/2022","weight":76},{"date":"12/03/2022","weight":75.8},{"date":"12/03/2022","weight":73.9}],"diary":{"days":[{"date":"12/03/2022","meals":[[]]}]}},{"id":"987654321","firstName":"Rachely","lastName":"Kelery","city":"jerusalem","street":"arimon","houseNumber":5,"phoneNumber":"0558963214","emailAddress":"rachel@gmail.com","height":1.75,"weightsHistory":[{"date":"12/03/2022","weight":72},{"date":"12/03/2022","weight":69.8},{"date":"12/03/2022","weight":71.1}],"diary":{"days":[{"date":"12/03/2022","meals":[[]]}]}}]}' 
+info: 07-06-2022 14:27:06.075: Hello server, we are running on 3000 
+error: 07-06-2022 14:29:19.453: EPERM: operation not permitted, open '/db.json' 
+error: 07-06-2022 14:29:19.453: EPERM: operation not permitted, open '/db.json' 
+info: 07-06-2022 14:35:10.285: Hello server, we are running on 3000 
+error: 07-06-2022 14:36:57.949: ENOENT: no such file or directory, open '{"users":[{"id":"123456789","firstName":"Michal","lastName":"Shmoel","city":"jerusalem","street":"hapisga","houseNumber":12,"phoneNumber":"0521369874","emailAddress":"michal@gmail.com","height":1.7,"weightsHistory":[{"date":"12/03/2022","weight":60},{"date":"12/03/2022","weight":61.8},{"date":"12/03/2022","weight":60.9}],"diary":{"days":[{"date":"12/03/2022","meals":[["גבינה לבנה","יוגורט תות"],["בשר","קישואים"]]},{"date":"18/03/2022","meals":[["בשר","קישואים"]]},{"date":"30-5-2022","meals":[["מלפפון","פלפל","גזר","עגבניה"]]},{"date":"30/5/122","meals":[["סלט חסה עם עגבניות","יוגורט","חביתה"]]},{"date":"2022-07-01","meals":[["לחם","חלב"]]},{"date":"2022-06-30","meals":[["gfdgdf"],["sagdsfgf"],["חביתה","יוגורט","גבינה צהובה","גבינה לבנה","חלב","לחם"],["גלידה","ארטיק","טילון","לישוןןןןןןןןן"]]}]}},{"id":"587412369","firstName":"Shira","lastName":"Avitan","city":"jerusalem","street":"arimon","houseNumber":"5","phoneNumber":"0536985214","emailAddress":"shira@gmail.com","height":1.65,"weightsHistory":[{"date":"12/03/2022","weight":76},{"date":"12/03/2022","weight":78.8},{"date":"12/03/2022","weight":80.9}],"diary":{"days":[{"date":"12/03/2022","meals":[[]]},{"date":"2022-07-02","meals":[["ממתקים","מרק טעיםםםם","פשטידה מיוחדת"]]},{"date":"2022-07-03","meals":[["גבינה צהובה","חביתה","סט ירקות"],["עוף","פתיתים","שניצל טעים","ציפס מטוגן"],["טוסט"]]}]}},{"id":"678912345","firstName":"David","lastName":"Cohen","city":"rehovot","street":"ezra","houseNumber":"37","phoneNumber":"0536985214","emailAddress":"david@gmail.com","height":1.84,"weightsHistory":[{"date":"12/03/2022","weight":76},{"date":"12/03/2022","weight":75.8},{"date":"12/03/2022","weight":73.9}],"diary":{"days":[{"date":"12/03/2022","meals":[[]]}]}},{"id":"987654321","firstName":"Rachely","lastName":"Kelery","city":"jerusalem","street":"arimon","houseNumber":5,"phoneNumber":"0558963214","emailAddress":"rachel@gmail.com","height":1.75,"weightsHistory":[{"date":"12/03/2022","weight":72},{"date":"12/03/2022","weight":69.8},{"date":"12/03/2022","weight":71.1}],"diary":{"days":[{"date":"12/03/2022","meals":[[]]}]}}]}' 
+error: 07-06-2022 14:36:57.949: ENOENT: no such file or directory, open '{"users":[{"id":"123456789","firstName":"Michal","lastName":"Shmoel","city":"jerusalem","street":"hapisga","houseNumber":12,"phoneNumber":"0521369874","emailAddress":"michal@gmail.com","height":1.7,"weightsHistory":[{"date":"12/03/2022","weight":60},{"date":"12/03/2022","weight":61.8},{"date":"12/03/2022","weight":60.9}],"diary":{"days":[{"date":"12/03/2022","meals":[["גבינה לבנה","יוגורט תות"],["בשר","קישואים"]]},{"date":"18/03/2022","meals":[["בשר","קישואים"]]},{"date":"30-5-2022","meals":[["מלפפון","פלפל","גזר","עגבניה"]]},{"date":"30/5/122","meals":[["סלט חסה עם עגבניות","יוגורט","חביתה"]]},{"date":"2022-07-01","meals":[["לחם","חלב"]]},{"date":"2022-06-30","meals":[["gfdgdf"],["sagdsfgf"],["חביתה","יוגורט","גבינה צהובה","גבינה לבנה","חלב","לחם"],["גלידה","ארטיק","טילון","לישוןןןןןןןןן"]]}]}},{"id":"587412369","firstName":"Shira","lastName":"Avitan","city":"jerusalem","street":"arimon","houseNumber":"5","phoneNumber":"0536985214","emailAddress":"shira@gmail.com","height":1.65,"weightsHistory":[{"date":"12/03/2022","weight":76},{"date":"12/03/2022","weight":78.8},{"date":"12/03/2022","weight":80.9}],"diary":{"days":[{"date":"12/03/2022","meals":[[]]},{"date":"2022-07-02","meals":[["ממתקים","מרק טעיםםםם","פשטידה מיוחדת"]]},{"date":"2022-07-03","meals":[["גבינה צהובה","חביתה","סט ירקות"],["עוף","פתיתים","שניצל טעים","ציפס מטוגן"],["טוסט"]]}]}},{"id":"678912345","firstName":"David","lastName":"Cohen","city":"rehovot","street":"ezra","houseNumber":"37","phoneNumber":"0536985214","emailAddress":"david@gmail.com","height":1.84,"weightsHistory":[{"date":"12/03/2022","weight":76},{"date":"12/03/2022","weight":75.8},{"date":"12/03/2022","weight":73.9}],"diary":{"days":[{"date":"12/03/2022","meals":[[]]}]}},{"id":"987654321","firstName":"Rachely","lastName":"Kelery","city":"jerusalem","street":"arimon","houseNumber":5,"phoneNumber":"0558963214","emailAddress":"rachel@gmail.com","height":1.75,"weightsHistory":[{"date":"12/03/2022","weight":72},{"date":"12/03/2022","weight":69.8},{"date":"12/03/2022","weight":71.1}],"diary":{"days":[{"date":"12/03/2022","meals":[[]]}]}}]}' 
+info: 07-06-2022 14:49:04.733: Hello server, we are running on 3000 
+error: 07-06-2022 14:49:18.120: getAllUsersService is not defined 
+error: 07-06-2022 14:49:18.120: getAllUsersService is not defined 
+info: 07-06-2022 14:49:59.996: Hello server, we are running on 3000 
+error: 07-06-2022 14:50:08.102: getAllUsersService is not defined 
+error: 07-06-2022 14:50:08.102: getAllUsersService is not defined 
+info: 07-06-2022 14:50:19.789: Hello server, we are running on 3000 
+error: 07-06-2022 14:50:45.773: getAllUsersService is not defined 
+error: 07-06-2022 14:50:45.773: getAllUsersService is not defined 
+info: 07-06-2022 14:51:40.987: Hello server, we are running on 3000 
+error: 07-06-2022 14:51:47.555: getAllUsersService is not defined 
+error: 07-06-2022 14:51:47.555: getAllUsersService is not defined 
+info: 07-06-2022 14:52:31.782: Hello server, we are running on 3000 
+error: 07-06-2022 14:52:39.148: Cannot convert undefined or null to object 
+error: 07-06-2022 14:52:39.148: Cannot convert undefined or null to object 
+info: 07-06-2022 14:53:06.628: Hello server, we are running on 3000 
+info: 07-06-2022 14:53:43.409: Hello server, we are running on 3000 
+error: 07-06-2022 14:54:03.947: updateJson is not defined 
+error: 07-06-2022 14:54:03.947: updateJson is not defined 
+info: 07-06-2022 14:55:32.686: Hello server, we are running on 3000 
+info: 07-06-2022 14:56:31.799: Hello server, we are running on 3000 
+info: 07-06-2022 14:57:16.498: Hello server, we are running on 3000 
+info: 07-06-2022 14:59:02.590: Hello server, we are running on 3000 
+info: 07-06-2022 15:00:11.779: Hello server, we are running on 3000 
+info: 07-06-2022 15:03:29.942: Hello server, we are running on 3000 
+info: 07-06-2022 15:05:30.802: Hello server, we are running on 3000 
+info: 07-06-2022 15:05:57.349: Hello server, we are running on 3000 
+error: 07-06-2022 15:06:57.946: json is not defined 
+error: 07-06-2022 15:06:57.946: json is not defined 
+info: 07-06-2022 15:07:32.861: Hello server, we are running on 3000 
+info: 07-06-2022 17:11:27.416: Hello server, we are running on 3000 
+info: 07-06-2022 17:11:31.660: Hello server, we are running on 3000 
+info: 07-06-2022 17:23:40.893: Hello server, we are running on 3000 
+info: 07-06-2022 17:25:47.077: Hello server, we are running on 3000 
+info: 07-06-2022 17:25:54.672: Hello server, we are running on 3000 
+info: 07-06-2022 17:27:33.103: Hello server, we are running on 3000 
+info: 07-06-2022 17:32:03.406: Hello server, we are running on 3000 
+info: 07-06-2022 17:36:06.707: Hello server, we are running on 3000 
+info: 07-06-2022 17:39:21.883: Hello server, we are running on 3000 
+info: 07-06-2022 22:46:43.814: Hello server, we are running on 3000 
+info: 07-06-2022 22:47:13.940: Hello server, we are running on 3000 
+info: 07-06-2022 22:48:58.788: Hello server, we are running on 3000 
+info: 07-06-2022 22:50:03.760: Hello server, we are running on 3000 
+info: 07-06-2022 22:50:46.253: Hello server, we are running on 3000 
+info: 07-06-2022 22:53:29.788: Hello server, we are running on 3000 
+info: 07-06-2022 22:53:53.339: Hello server, we are running on 3000 
+info: 07-06-2022 22:54:17.616: Hello server, we are running on 3000 
+info: 07-07-2022 01:46:57.040: Hello server, we are running on 3000 
+info: 07-07-2022 09:29:10.884: Hello server, we are running on 3000 
+info: 07-07-2022 09:56:21.814: Hello server, we are running on 3000 
+info: 07-07-2022 09:57:47.410: Hello server, we are running on 3000 
+error: 07-07-2022 09:58:31.114: data.users.foreach is not a function 
+error: 07-07-2022 09:58:31.114: data.users.foreach is not a function 
+info: 07-07-2022 09:58:54.641: Hello server, we are running on 3000 
+error: 07-07-2022 09:58:58.854: meetings.foreach is not a function 
+error: 07-07-2022 09:58:58.854: meetings.foreach is not a function 
+info: 07-07-2022 09:59:38.273: Hello server, we are running on 3000 
+info: 07-07-2022 10:00:01.669: Hello server, we are running on 3000 
+info: 07-07-2022 10:01:08.692: Hello server, we are running on 3000 
+error: 07-07-2022 10:01:27.244: data.users.foreach is not a function 
+error: 07-07-2022 10:01:27.244: data.users.foreach is not a function 
+info: 07-07-2022 10:08:23.625: Hello server, we are running on 3000 
+error: 07-07-2022 10:08:40.423: data.users.foreach is not a function 
+error: 07-07-2022 10:08:40.423: data.users.foreach is not a function 
+info: 07-07-2022 10:12:05.474: Hello server, we are running on 3000 
+error: 07-07-2022 10:12:19.820: meeting is not defined 
+error: 07-07-2022 10:12:19.820: meeting is not defined 
+info: 07-07-2022 10:12:30.311: Hello server, we are running on 3000 
+error: 07-07-2022 10:12:39.310: Cannot read properties of undefined (reading 'push') 
+error: 07-07-2022 10:12:39.310: Cannot read properties of undefined (reading 'push') 
+info: 07-07-2022 10:14:29.526: Hello server, we are running on 3000 
+error: 07-07-2022 10:14:41.517: data.users.foreach is not a function 
+error: 07-07-2022 10:14:41.517: data.users.foreach is not a function 
+error: 07-07-2022 10:15:29.261: data.users.foreach is not a function 
+error: 07-07-2022 10:15:29.261: data.users.foreach is not a function 
+info: 07-07-2022 10:16:44.262: Hello server, we are running on 3000 
+error: 07-07-2022 10:17:02.823: Array.from(...).foreach is not a function 
+error: 07-07-2022 10:17:02.823: Array.from(...).foreach is not a function 
+info: 07-07-2022 10:19:47.788: Hello server, we are running on 3000 
+info: 07-07-2022 10:20:34.285: Hello server, we are running on 3000 
+info: 07-07-2022 10:21:38.373: Hello server, we are running on 3000 
+info: 07-07-2022 13:55:59.813: Hello server, we are running on 3000 
+info: 07-07-2022 16:31:46.626: Hello server, we are running on 3000 
+info: 07-07-2022 16:32:00.598: Hello server, we are running on 3000 
+info: 07-07-2022 16:50:00.700: Hello server, we are running on 3000 
+info: 07-07-2022 16:50:44.974: Hello server, we are running on 3000 
+info: 07-07-2022 16:53:31.914: Hello server, we are running on 3000 
+info: 07-07-2022 16:59:15.602: Hello server, we are running on 3000 
+error: 07-07-2022 16:59:33.488: JSON.stringify(...) is not a function 
+error: 07-07-2022 16:59:33.488: JSON.stringify(...) is not a function 
+info: 07-07-2022 17:00:03.108: Hello server, we are running on 3000 
+error: 07-07-2022 17:00:13.604: JSON.stringify(...) is not a function 
+error: 07-07-2022 17:00:13.604: JSON.stringify(...) is not a function 
+info: 07-07-2022 17:01:13.746: Hello server, we are running on 3000 
+error: 07-07-2022 17:02:23.833: JSON.stringify(...) is not a function 
+error: 07-07-2022 17:02:23.833: JSON.stringify(...) is not a function 
+info: 07-07-2022 17:03:10.116: Hello server, we are running on 3000 
+error: 07-07-2022 17:03:32.520: JSON.stringify(...) is not a function 
+error: 07-07-2022 17:03:32.520: JSON.stringify(...) is not a function 
+info: 07-07-2022 17:03:59.354: Hello server, we are running on 3000 
+info: 07-07-2022 17:05:45.053: Hello server, we are running on 3000 
+error: 07-07-2022 17:06:02.964: Unexpected token o in JSON at position 1 
+error: 07-07-2022 17:06:02.964: Unexpected token o in JSON at position 1 
+info: 07-07-2022 17:07:46.378: Hello server, we are running on 3000 
+info: 07-07-2022 19:56:59.724: Hello server, we are running on 3000 
+info: 07-07-2022 20:06:39.555: Hello server, we are running on 3000 
+info: 07-07-2022 20:22:28.079: Hello server, we are running on 3000 
+info: 07-07-2022 20:22:41.522: Hello server, we are running on 3000 
+info: 07-07-2022 20:23:24.328: Hello server, we are running on 3000 
+info: 07-07-2022 20:25:00.113: Hello server, we are running on 3000 
+info: 07-07-2022 20:25:41.524: Hello server, we are running on 3000 
+info: 07-07-2022 20:30:14.797: Hello server, we are running on 3000 
+error: 07-07-2022 20:31:58.522: users is not defined 
+error: 07-07-2022 20:31:58.522: users is not defined 
+info: 07-07-2022 20:32:45.379: Hello server, we are running on 3000 
+error: 07-07-2022 20:33:14.244: users is not defined 
+error: 07-07-2022 20:33:14.244: users is not defined 
+info: 07-07-2022 20:33:38.086: Hello server, we are running on 3000 
+info: 07-07-2022 20:40:14.016: Hello server, we are running on 3000 
