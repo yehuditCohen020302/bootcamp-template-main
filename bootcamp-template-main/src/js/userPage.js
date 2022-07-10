@@ -40,7 +40,7 @@ function getUserByEmail(emailAddress) {
 }
 
 function drawUserDetails(currentUser) {
-    debugger
+    // debugger
     document.getElementById("userId").value=currentUser.id;
     document.getElementById("firstName").value=currentUser.firstName;
     document.getElementById("lastName").value=currentUser.lastName;
