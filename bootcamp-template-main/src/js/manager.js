@@ -7,18 +7,17 @@ class Manager {
 
   login() {
     console.log("We Entry");
-    // let email = sessionStorage.getItem("userEmail");
-    let email;
-debugger
-    fetch('http://localhost:3000/users')
-    .then(response => response.json())
-    // .then(response=> manager.users=response)
-    .then(
-      response=>manager.drawTable(manager.users)
-    )
-    .then(response=>email=response.emailAddress)
-    .catch(err => {
-        console.log(err)})
+    let email = sessionStorage.getItem("userEmail");
+    // let email;
+    debugger;
+    fetch("http://localhost:3000/users")
+      .then((response) => response.json())
+      // .then(response=> manager.users=response)
+      .then((response) => manager.drawTable(manager.users))
+      .then((response) => (email = response.emailAddress))
+      .catch((err) => {
+        console.log(err);
+      });
 
     document.getElementById("email").innerHTML = `hello to ${email}`;
     console.log(email);
@@ -39,37 +38,26 @@ debugger
     //     manager.drawTable(manager.users);
     //   }
     // };
-    fetch('http://localhost:3000/users')
-    .then(response => response.json())
-    .then(response=>manager.users=response)
-    .then(
-      response=>manager.drawTable(manager.users)
-    )
-    .catch(err => {
-        console.log(err)})
-}
+    fetch("http://localhost:3000/users")
+      .then((response) => response.json())
+      .then((response) => {
+      //  console.log(response);
+        (manager.users = response)})
+      .then((response) => manager.drawTable(manager.users))
+      .catch((err) => {
+        console.log(err);
+      });
+  }
 
-  //     .then((response) => {
-  //       debugger;
-  //       if (response.ok && response.status == 200) {
-  //         manager.users = response.json()
-  //         manager.drawTable(manager.users);
-  //        } 
-  //       else {
-  //       alert(`Error ${response.status}: ${response.status}`);
-  //       }
-  //     });
-  // }
-  
 
   drawTable(users) {
+    // debugger
     const container = document.querySelector(".usersTable");
     container.innerHTML = "";
-    // const bmiColor= bmi-user.weightsHistory[user.weightsHistory.length - 2]
-    //                         .weight / (Math.pow(user.height, 2));
     let table = "";
 
     users.forEach((user) => {
+      // console.log(user);
       let bmi =
         user.weightsHistory[user.weightsHistory.length - 1].weight /
         Math.pow(user.height, 2);
@@ -84,12 +72,10 @@ debugger
                 <tr>
                     <th>${user.firstName + " " + user.lastName}</th>
                     <th style="color:${c}">${Math.floor(bmi * 100) / 100}</th>
-                    <td><button onClick="details(${
-                      user.emailAddress[0]
-                    })">Details</button></th>
+                    <th><a href="../html/userPage.html?password=${user.id}">details user</a></th>
                 </tr>`;
     });
-    // <th><a href="/userPage.html?email=${user.email}">details user</a></th>
+    
     container.innerHTML += table;
   }
 
@@ -116,8 +102,9 @@ debugger
   }
 
   details(email) {
+    debugger;
     console.log("details(email)  called");
-    window.location.href = "../html/userPage.html?emailAddress="+email;
+    window.location.href = "../html/userPage.html?emailAddress=" + email;
   }
 
   goodBMI(user) {
@@ -167,17 +154,53 @@ debugger
   }
 
   addedUser() {
-    debugger;
-    const xhr = new XMLHttpRequest();
 
-    let body = JSON.stringify(sessionStorage.getItem("currentUser"));
-    debugger;
-    console.log(body);
-    xhr.open("POST", "http://localhost:3000/users");
-    xhr.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+    
+    var raw = JSON.stringify({
+      "id": document.getElementById("userId").value,
+      "firstName": document.getElementById("firstName").value,
+      "lastName": document.getElementById("lastName").value,
+      "city": document.getElementById("city").value,
+      "street": document.getElementById("street").value,
+      "houseNumber": document.getElementById("houseNumber").value,
+      "phoneNumber": document.getElementById("phoneNumber").value,
+      "emailAddress": document.getElementById("emailAddress").value,
+      "height": 1.6,
+  "weightsHistory": [
+    {
+      "date": "12/03/2022",
+      "weight": 60
+    },
+    {
+      "date": "12/03/2022",
+      "weight": 61.8
+    },
+    {
+      "date": "12/03/2022",
+      "weight": 60.9
+    }
+  ],
+  "diary": { }
+ 
+});
+    
+    var requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: raw,
+      redirect: 'follow'
+    };
+    
+    fetch("http://localhost:3000/users", requestOptions)
+      .then(response => response.text())
+      .then(result => console.log(result))
+      .catch(error => console.log('error', error));
 
-    xhr.send(body);
-  }
+    document.getElementById("userToAdd").style.display="none"; 
+    this.getUsers();  
+   }
 }
 
 let manager = new Manager();
