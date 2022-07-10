@@ -1,6 +1,10 @@
 const express= require('express');
 const router= express.Router();
-const userController= require('../Controllers/UsersController')
+const userController= require('../controllers/users.controller')
+
+// const diary=require('./diary.routes')
+// const app = express();
+// app.use('/:id/diary',diary);
 
 //get All Users
 router.get('/', userController.getAllUsers);
