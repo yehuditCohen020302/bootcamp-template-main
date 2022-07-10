@@ -49,3 +49,7 @@ h1 {
     font-size:80px;
     font-family: 'Lucida Handwriting';
 }
+
+.form-input{
+  margin-bottom:7px;
+}

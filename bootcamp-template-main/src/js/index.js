@@ -3,10 +3,10 @@
 function loginManager()
 {
     console.log("in manager");
-    // const email=document.getElementById("emailAddress").value;
+    const email=document.getElementById("email-manager").value;
     const password=document.getElementById("password").value;
     sessionStorage.setItem("password",password);
-
+    sessionStorage.setItem("email",email);
     //hear need a fetch request
      
     
@@ -15,10 +15,10 @@ function loginManager()
 
 function loginUser()
 {
-    const password=document.getElementById("password").value;
+    const userId=document.getElementById("user-id").value;
     
     console.log("in user");
-    window.location.href = "../html/userPage.html?password="+password;
+    window.location.href = "../html/userPage.html?userId="+userId;
 }
 
 function goToFood(){
