@@ -2,7 +2,7 @@ const express = require('express');
 const controller=require('../controllers/access.controller')
 const router=express.Router();
 
-router.get('/',controller.loginManager);
+router.post('/',controller.loginManager);
 
 
 module.exports = router;

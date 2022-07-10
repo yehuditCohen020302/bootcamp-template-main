@@ -1,39 +1,79 @@
-const fs=require('fs');
-const dataFromFile=require('src')
+const fs= require("fs");
+const dataFromFile= fs.readFileSync('db.json');
+let data=JSON.parse(dataFromFile);
 
-module.exports.getAllTheMeetings=()=>{
-   return 'getAllTheMeetings'
+
+module.exports.getAllTheMeetings=async()=>{
+
+   console.log( 'getAllTheMeetings');
+
+   // debugger
+   let users = await Array.from(data.users);
+   let meetings=[];
+   users.forEach(user => {meetings.push(user.weightsHistory)})
+
+   return await meetings;
+   
 }
 
-module.exports.getMeetingById=()=> {
-   return 'getMeetingById'
+module.exports.getMeetingById= async(id)=> {
+   console.log( 'getMeetingById');
+   const user = await Array.from(data.users).find(user => user.id === id);
+   let meeting;
+   meeting=user.weightsHistory;
+
+   return await meeting;
+
 }
 
-module.exports.addMeeting=async function(req, res, next) {
-    try{
-        const insertedMeeting=await MeetingService.addMeeting(req.body);
-        res.send(insertedMeeting);
-    }
-    catch(error){
-        next(error)
-    }
+module.exports.addMeeting=async (meeting)=> {
+   console.log( 'addMeeting');
+   debugger
+   let id= meeting.id;
+   let weightsHistory= meeting.weightsHistory;
+   const user = await Array.from(data.users).find(user => user.id === id);
+   user.weightsHistory.push(weightsHistory);
+   
+   
+   // ((data.users).find(user => user.id === id))=json;
+
+   return await `The new meeting add: ${JSON.parse(JSON.stringify(user))}`;
+
 }
 
-module.exports.updateMeeting=async function(req, res, next) {
-    try{
-        const updateMeeting=await MeetingService.updateMeeting(req.params.id,req.body);
-    }
-    catch(error){
-        next(error)
-    }
+module.exports.updateMeeting=async (id,updateMeeting)=> {
+   debugger
+   let user=await Array.from(data.users).find(user => user.id === id);
+   user.weightsHistory=updateMeeting.weightsHistory;
+
+   const json =  JSON.stringify({  'user':user })
+   // data.users = user;
+
+   return await`update , now the all user: ${JSON.stringify(user)}`;
 }
 
-module.exports.removeMeeting=async function(req, res, next) {
-    try{
-        await MeetingService.removeMeeting(req.params.id);
-        res.send(`delete meeting ${req.params.id}`)
-    }
-    catch(error){
-        next(error)
-    }
-}
+// module.exports.updateUser= async (id, update)=> {
+//    debugger
+//   let users = await Array.from(data.users)
+//   users = users.filter(user => user.id != id);
+//   users.push(update)
+//   // 'manager': manager,
+//   const json =  JSON.stringify({  'users':users })
+//   data.users = users;
+//   // await fs.writeFileSync('db.json', json);
+//   return `update user, now the all users: ${JSON.stringify(data.users)}`;
+  
+// },
+
+
+
+
+// module.exports.removeMeeting=async function(req, res, next) {
+//     try{
+//         await MeetingService.removeMeeting(req.params.id);
+//         res.send(`delete meeting ${req.params.id}`)
+//     }
+//     catch(error){
+//         next(error)
+//     }
+// }

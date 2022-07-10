@@ -3,16 +3,22 @@
 function loginManager()
 {
     console.log("in manager");
-    email=document.getElementById("emailAddress").value;
-    sessionStorage.setItem("userEmail",email);
+    const email=document.getElementById("email-manager").value;
+    const password=document.getElementById("password").value;
+    sessionStorage.setItem("password",password);
+    sessionStorage.setItem("email",email);
+    //hear need a fetch request
+     
+    
     window.location.href = "../html/Manager.html";
 }
 
 function loginUser()
 {
-    email=document.getElementById("emailAddress").value;
+    const userId=document.getElementById("user-id").value;
+    
     console.log("in user");
-    window.location.href = "../html/userPage.html?emailAddress="+email;
+    window.location.href = "../html/userPage.html?userId="+userId;
 }
 
 function goToFood(){
