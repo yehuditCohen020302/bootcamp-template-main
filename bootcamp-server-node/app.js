@@ -16,21 +16,13 @@ const app = express();
 
 const port = process.env.PORT || 3000;
 
-app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  );
-  next();
-});
-
-// app.use(express.static('Static'))
+app.use(cors());
+app.use(express.static('Static'));
 app.use(express.json());
 
+// app.use('/users/:id/diary',diary);
 app.use('/users', user);
 app.use('/meeting',meeting);
-app.use('/user/:id/diary',diary);
 app.use('/login',access);
 
 app.use((err,req,res,next) => {
@@ -39,20 +31,19 @@ app.use((err,req,res,next) => {
   res.status(500).send('oooooof Something broke! 😒')
 })
 
-app.use((req,res) => {
+// app.use((req,res) => {
   
-   res.status(404).sendFile(path.join( __dirname, '/404.html'));
-})
+//   res.status(404).sendFile(path.join( __dirname, './Static/html/404.html'));
+// })
 
 // logger.error('error😳😵🥴');
 app.listen(port, () => logger.info(`Hello server, we are running on ${port}`))
 
 app.use(cors());
 
-
-app.get('/', function(req, res) {
-  res.send('Hello World!')
-});
+// app.get('/', function(req, res) {
+//   res.send('Hello World!')
+// });
 
 // app.listen(port, function() {
 //   console.log(`Example app listening on port ${port}!`)
