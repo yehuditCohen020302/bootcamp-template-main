@@ -49,7 +49,7 @@ module.exports.updateMeeting=async (id,updateMeeting)=> {
    const json =  JSON.stringify({  'user':user })
    // data.users = user;
 
-   return `update , now the all user: ${JSON.stringify(user)}`;
+   return await`update , now the all user: ${JSON.stringify(user)}`;
 }
 
 // module.exports.updateUser= async (id, update)=> {

@@ -1,25 +1,39 @@
 
 function loadUser(){
+    // debugger
     const params = new URLSearchParams(window.location.search)
-    if(params.has("id"))
-        getUserById(params.get("id"));
-    else if(params.has("emailAddress"))
-            getUserByEmail(params.get("emailAddress"));
+    if(params.has("password"))
+        getUserById(params.get("password"));
+    // else if(params.has("emailAddress"))
+    //         getUserByEmail(params.get("emailAddress"));
 }
 
 function getUserById(id) {
-    const xhr = new XMLHttpRequest();
-        xhr.open("GET", 'http://localhost:3000/users');
-        xhr.send();
-        xhr.onload = function () {
-            if (xhr.status != 200) {
-                alert(`Error ${xhr.status}: ${xhr.statusText}`);
-            } else {
-                const allUsers = JSON.parse(xhr.responseText);
-                const user= allUsers.filter(user => user.id==id);
-                drawUserDetails(user[0])
-            }
-        }
+    // debugger
+
+fetch(`http://localhost:3000/users`)
+  .then(response => response.json())
+
+  .then((response) => { 
+    const allUsers = response;
+    console.log(allUsers);
+    const user= allUsers.filter(user => user.id==id);
+    drawUserDetails(user[0])
+  })
+  .catch(error => console.log('error', error));
+
+    // const xhr = new XMLHttpRequest();
+    //     xhr.open("GET", 'http://localhost:3000/users');
+    //     xhr.send();
+    //     xhr.onload = function () {
+    //         if (xhr.status != 200) {
+    //             alert(`Error ${xhr.status}: ${xhr.statusText}`);
+    //         } else {
+    //             const allUsers = JSON.parse(xhr.responseText);
+    //             const user= allUsers.filter(user => user.id==id);
+    //             drawUserDetails(user[0])
+    //         }
+    //     }
 }
 
 function getUserByEmail(emailAddress) {
@@ -38,6 +52,7 @@ function getUserByEmail(emailAddress) {
 }
 
 function drawUserDetails(currentUser) {
+    // debugger
     document.getElementById("userId").value=currentUser.id;
     document.getElementById("firstName").value=currentUser.firstName;
     document.getElementById("lastName").value=currentUser.lastName;
