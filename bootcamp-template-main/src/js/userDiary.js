@@ -1,5 +1,6 @@
-var allFoods=[];
-var currentUser;
+const baseUrl = "http://localhost:3000/";
+let allFoods=[];
+let currentUser;
 
 function showUserDiary(){
     console.log("UserDiary: in showUserDiary");
@@ -8,7 +9,7 @@ function showUserDiary(){
 }
 
 function getByEmail(emailAddress){
-    fetch('http://localhost:3000/users')
+    fetch(baseUrl +'users')
     .then(response => response.json())
     .then(response => response.filter(user=>user.emailAddress === emailAddress))
     .then(response=>{
@@ -62,7 +63,7 @@ function save(){
   }
   currentUser.diary.days.push(todayDiary);
   
-    fetch('http://localhost:3000/users/'+currentUser.id, {
+    fetch(`${baseUrl}users/${currentUser.id}`, {
       method: "put",
       headers: {
         "Content-Type": "application/json"
