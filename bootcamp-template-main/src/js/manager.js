@@ -72,7 +72,7 @@ class Manager {
                 <tr>
                     <th>${user.firstName + " " + user.lastName}</th>
                     <th style="color:${c}">${Math.floor(bmi * 100) / 100}</th>
-                    <th><a href="../html/userPage.html?userId=${user.id}">details user</a></th>
+                    <th><a href="../html/userPage.html?password=${user.id}">details user</a></th>
                 </tr>`;
     });
     

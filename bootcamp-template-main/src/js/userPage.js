@@ -9,7 +9,7 @@ function loadUser(){
 }
 
 function getUserById(id) {
-    // debugger
+    debugger
 
 fetch(`http://localhost:3000/users`)
   .then(response => response.json())
