@@ -1211,3 +1211,4 @@ error: 07-07-2022 20:48:48.974: Unexpected token " in JSON at position 0
 error: 07-07-2022 20:48:48.974: Unexpected token " in JSON at position 0 
 error: 07-10-2022 13:21:42.764: Unexpected token " in JSON at position 0 
 error: 07-10-2022 13:21:42.764: Unexpected token " in JSON at position 0 
+info: 07-10-2022 14:27:08.473: Hello server, we are running on 3000 
