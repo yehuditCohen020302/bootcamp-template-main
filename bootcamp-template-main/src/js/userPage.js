@@ -1,17 +1,14 @@
-
+const baseUrl = "http://localhost:3000/";
 function loadUser(){
     debugger
     const params = new URLSearchParams(window.location.search)
     if(params.has("userId"))
         getUserById(params.get("userId"));
-    // else if(params.has("emailAddress"))
-    //         getUserByEmail(params.get("emailAddress"));
 }
 
 function getUserById(id) {
-    debugger
 
-fetch(`http://localhost:3000/users`)
+fetch(`${baseUrl}users`)
   .then(response => response.json())
 
   .then((response) => { 
@@ -24,20 +21,20 @@ fetch(`http://localhost:3000/users`)
 
 }
 
-function getUserByEmail(emailAddress) {
-    const xhr = new XMLHttpRequest();
-        xhr.open("GET", 'http://localhost:3000/users');
-        xhr.send();
-        xhr.onload = function () {
-            if (xhr.status != 200) {
-                alert(`Error ${xhr.status}: ${xhr.statusText}`);
-            } else {
-                const allUsers = JSON.parse(xhr.responseText);
-                const user=allUsers.filter(user => user.emailAddress==emailAddress);
-                drawUserDetails(user[0])
-            }
-        }
-}
+// function getUserByEmail(emailAddress) {
+//     const xhr = new XMLHttpRequest();
+//         xhr.open("GET", 'http://localhost:3000/users');
+//         xhr.send();
+//         xhr.onload = function () {
+//             if (xhr.status != 200) {
+//                 alert(`Error ${xhr.status}: ${xhr.statusText}`);
+//             } else {
+//                 const allUsers = JSON.parse(xhr.responseText);
+//                 const user=allUsers.filter(user => user.emailAddress==emailAddress);
+//                 drawUserDetails(user[0])
+//             }
+//         }
+// }
 
 function drawUserDetails(currentUser) {
     debugger
