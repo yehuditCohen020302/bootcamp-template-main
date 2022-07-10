@@ -46,3 +46,8 @@ app.listen(port, () => logger.info(`Hello server, we are running on ${port}`))
 // app.listen(port, function() {
 //   console.log(`Example app listening on port ${port}!`)
 // });
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger.json');
+// const customCss = fs.readFileSync((process.cwd()+"/swagger.css"), 'utf8');
+// let express to use this
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));

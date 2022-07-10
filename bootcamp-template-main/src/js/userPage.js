@@ -1,6 +1,6 @@
 const baseUrl = "http://localhost:3000/";
 function loadUser(){
-    // debugger
+    debugger
     const params = new URLSearchParams(window.location.search)
     if(params.has("userId"))
         getUserById(params.get("userId"));
@@ -37,7 +37,7 @@ fetch(`${baseUrl}users`)
 // }
 
 function drawUserDetails(currentUser) {
-    // debugger
+    debugger
     document.getElementById("userId").value=currentUser.id;
     document.getElementById("firstName").value=currentUser.firstName;
     document.getElementById("lastName").value=currentUser.lastName;
