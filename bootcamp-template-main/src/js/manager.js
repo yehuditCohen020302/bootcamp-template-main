@@ -7,7 +7,19 @@ class Manager {
 
   login() {
     console.log("We Entry");
-    let email = sessionStorage.getItem("userEmail");
+    // let email = sessionStorage.getItem("userEmail");
+    let email;
+debugger
+    fetch('http://localhost:3000/users')
+    .then(response => response.json())
+    // .then(response=> manager.users=response)
+    .then(
+      response=>manager.drawTable(manager.users)
+    )
+    .then(response=>email=response.emailAddress)
+    .catch(err => {
+        console.log(err)})
+
     document.getElementById("email").innerHTML = `hello to ${email}`;
     console.log(email);
     this.getUsers();

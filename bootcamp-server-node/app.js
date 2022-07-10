@@ -41,7 +41,6 @@ app.listen(port, () => logger.info(`Hello server, we are running on ${port}`))
 
 app.use(cors());
 
-
 // app.get('/', function(req, res) {
 //   res.send('Hello World!')
 // });

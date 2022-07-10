@@ -3,8 +3,12 @@
 function loginManager()
 {
     console.log("in manager");
-    email=document.getElementById("emailAddress").value;
-    sessionStorage.setItem("userEmail",email);
+    const email=document.getElementById("emailAddress").value;
+    // sessionStorage.setItem("userEmail",email);
+
+    //hear need a fetch request
+     
+    
     window.location.href = "../html/Manager.html";
 }
 
