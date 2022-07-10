@@ -1,11 +1,24 @@
 // alert("Hello😀");
-
+const baseUrl="http://localhost:3000/"
 function loginManager()
 {
     console.log("in manager");
     const email=document.getElementById("email-manager").value;
     const password=document.getElementById("password").value;
-    sessionStorage.setItem("password",password);
+   
+    var requestOptions = {
+        method: 'POST',
+        headers: myHeaders,
+        body: raw,
+        redirect: 'follow'
+      };
+      
+      fetch(baseUrl+"account/login", requestOptions)
+        .then(response => response.text())
+        .then(result => console.log(result))
+        .catch(error => console.log('error', error));
+  
+
     sessionStorage.setItem("email",email);
     //hear need a fetch request
      

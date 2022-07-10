@@ -2,7 +2,7 @@
 const user=require('./routes/user.routes')
 const meeting=require('./routes/meeting.routes');
 const diary=require('./routes/diary.routes');
-const access=require('./routes/access.routes');
+const account=require('./routes/account.routes');
 
 const cors=require('cors');
 const logger = require('./Log/logger')
@@ -21,9 +21,10 @@ app.use(express.static('Static'));
 app.use(express.json());
 
 // app.use('/users/:id/diary',diary);
+
 app.use('/users', user);
 app.use('/meeting',meeting);
-app.use('/login',access);
+app.use('/account',account);
 
 app.use((err,req,res,next) => {
   if(process.env.ENVIROMENT== "development")
@@ -39,7 +40,7 @@ app.use((err,req,res,next) => {
 // logger.error('error😳😵🥴');
 app.listen(port, () => logger.info(`Hello server, we are running on ${port}`))
 
-app.use(cors());
+// app.use(cors());
 
 // app.get('/', function(req, res) {
 //   res.send('Hello World!')
