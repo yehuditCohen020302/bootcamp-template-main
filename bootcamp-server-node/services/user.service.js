@@ -23,6 +23,9 @@ module.exports.getAllUsersService= async ()=>{
         // 'manager': manager,
         const json =  JSON.stringify({  'users':users })
         data.users = users;
+        await fs.writeFile('db.json', JSON.stringify(data), (err)=> {
+            if (err) return console.log(err);
+          })
         // await fs.writeFileSync('db.json', json);
         return `update user, now the all users: ${JSON.stringify(data.users)}`;
         
@@ -34,6 +37,9 @@ module.exports.getAllUsersService= async ()=>{
         // users.push(dlt)
         const json =  JSON.stringify({  'users':users })
         data.users = users;
+        await fs.writeFile('db.json', JSON.stringify(data), (err)=> {
+            if (err) return console.log(err);
+          })
         return `delete user, now the all users: ${json}`;
     
         
@@ -45,6 +51,9 @@ module.exports.getAllUsersService= async ()=>{
         
         const json =  JSON.stringify({  'users':users })
         data.users = users;
+        await fs.writeFile('db.json', JSON.stringify(data), (err)=> {
+            if (err) return console.log(err);
+          })
         return `add user, now the all users: ${json}`;
     }
 
