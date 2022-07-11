@@ -1273,3 +1273,18 @@ info: 07-11-2022 22:42:56.421: Hello server, we are running on 3000
 info: 07-11-2022 22:43:16.295: Hello server, we are running on 3000 
 info: 07-11-2022 22:57:27.905: Hello server, we are running on 3000 
 info: 07-11-2022 23:00:04.903: Hello server, we are running on 3000 
+info: 07-11-2022 23:18:21.639: Hello server, we are running on 3000 
+info: 07-11-2022 23:19:17.050: Hello server, we are running on 3000 
+error: 07-11-2022 23:19:23.974: ENOENT: no such file or directory, stat 'C:\Users\Owner\Desktop\מיכל\לימודים\בוטקאמפ\ex1\bootcamp-server-node\Static\html\404.html' 
+error: 07-11-2022 23:19:23.974: ENOENT: no such file or directory, stat 'C:\Users\Owner\Desktop\מיכל\לימודים\בוטקאמפ\ex1\bootcamp-server-node\Static\html\404.html' 
+error: 07-11-2022 23:19:24.029: ENOENT: no such file or directory, stat 'C:\Users\Owner\Desktop\מיכל\לימודים\בוטקאמפ\ex1\bootcamp-server-node\Static\html\404.html' 
+error: 07-11-2022 23:19:24.029: ENOENT: no such file or directory, stat 'C:\Users\Owner\Desktop\מיכל\לימודים\בוטקאמפ\ex1\bootcamp-server-node\Static\html\404.html' 
+info: 07-11-2022 23:21:02.792: Hello server, we are running on 3000 
+info: 07-11-2022 23:22:14.648: Hello server, we are running on 3000 
+info: 07-11-2022 23:23:38.954: Hello server, we are running on 3000 
+info: 07-11-2022 23:24:18.631: Hello server, we are running on 3000 
+info: 07-11-2022 23:25:12.402: Hello server, we are running on 3000 
+info: 07-11-2022 23:26:36.512: Hello server, we are running on 3000 
+info: 07-11-2022 23:26:54.523: Hello server, we are running on 3000 
+info: 07-11-2022 23:30:08.587: Hello server, we are running on 3000 
+info: 07-11-2022 23:32:06.657: Hello server, we are running on 3000 
