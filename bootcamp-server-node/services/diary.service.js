@@ -16,6 +16,9 @@ module.exports.addNewDaySummary=async (userId, summary)=>{
     // 'manager': manager,
     const json =  JSON.stringify({'users':users })
     data.users = users;
+    await fs.writeFile('db.json', JSON.stringify(data), (err)=> {
+        if (err) return console.log(err);
+      })
     // await fs.writeFileSync('db.json', json);
     return `update user's diary, now the all users: ${JSON.stringify(data.users)}`;
 }
@@ -30,6 +33,9 @@ module.exports.updateDaySummary=async (userId,dayId,newDaySummary)=> {
     // 'manager': manager,
     const json =  JSON.stringify({'users':users })
     data.users = users;
+    await fs.writeFile('db.json', JSON.stringify(data), (err)=> {
+        if (err) return console.log(err);
+      })
     // await fs.writeFileSync('db.json', json);
     return `update the day summery of the user ${userId}, now the all users: ${JSON.stringify(data.users)}`;
 }
@@ -43,6 +49,9 @@ module.exports.removeDaySummary=async (userId,dayId)=> {
     // 'manager': manager,
     const json =  JSON.stringify({'users':users })
     data.users = users;
+    await fs.writeFile('db.json', JSON.stringify(data), (err)=> {
+        if (err) return console.log(err);
+      })
     // await fs.writeFileSync('db.json', json);
     return `deleted user day summary, now the users are : ${JSON.stringify(data.users)}`;
 }

@@ -1260,3 +1260,16 @@ info: 07-10-2022 17:46:49.624: Hello server, we are running on 3000
 
 >>>>>>> ad1c4b04c1a9229d8ae962491f0f577a18715a5a
 info: 07-11-2022 21:48:42.525: Hello server, we are running on 3000 
+info: 07-11-2022 22:12:30.739: Hello server, we are running on 3000 
+info: 07-11-2022 22:36:42.516: Hello server, we are running on 3000 
+error: 07-11-2022 22:39:15.554: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Object 
+error: 07-11-2022 22:39:15.554: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Object 
+info: 07-11-2022 22:40:38.051: Hello server, we are running on 3000 
+error: 07-11-2022 22:40:42.448: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Object 
+error: 07-11-2022 22:40:42.448: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Object 
+error: 07-11-2022 22:42:08.572: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Object 
+error: 07-11-2022 22:42:08.572: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Object 
+info: 07-11-2022 22:42:56.421: Hello server, we are running on 3000 
+info: 07-11-2022 22:43:16.295: Hello server, we are running on 3000 
+info: 07-11-2022 22:57:27.905: Hello server, we are running on 3000 
+info: 07-11-2022 23:00:04.903: Hello server, we are running on 3000 
