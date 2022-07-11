@@ -1227,6 +1227,14 @@ info: 07-10-2022 15:57:37.109: Hello server, we are running on 3000
 info: 07-10-2022 17:44:07.479: Hello server, we are running on 3000 
 info: 07-10-2022 17:44:17.882: Hello server, we are running on 3000 
 info: 07-10-2022 17:47:21.634: Hello server, we are running on 3000 
+<<<<<<< HEAD
+info: 07-10-2022 18:20:07.465: Hello server, we are running on 3000 
+info: 07-10-2022 18:22:07.721: Hello server, we are running on 3000 
+info: 07-10-2022 18:25:55.748: Hello server, we are running on 3000 
+info: 07-10-2022 18:26:31.002: Hello server, we are running on 3000 
+info: 07-11-2022 18:49:36.859: Hello server, we are running on 3000 
+info: 07-11-2022 20:28:55.258: Hello server, we are running on 3000 
+=======
 
 info: 07-10-2022 16:00:07.923: Hello server, we are running on 3000 
 info: 07-10-2022 16:09:09.547: Hello server, we are running on 3000 
@@ -1250,3 +1258,5 @@ error: 07-10-2022 17:42:58.797: userService is not defined
 info: 07-10-2022 17:44:48.962: Hello server, we are running on 3000 
 info: 07-10-2022 17:46:49.624: Hello server, we are running on 3000 
 
+>>>>>>> ad1c4b04c1a9229d8ae962491f0f577a18715a5a
+info: 07-11-2022 21:48:42.525: Hello server, we are running on 3000 

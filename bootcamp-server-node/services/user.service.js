@@ -16,7 +16,7 @@ module.exports.getAllUsersService= async ()=>{
     },
 
     module.exports.updateUser= async (id, update)=> {
-         debugger
+        //  debugger
         let users = await Array.from(data.users)
         users = users.filter(user => user.id != id);
         users.push(update)

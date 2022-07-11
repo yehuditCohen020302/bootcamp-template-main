@@ -75,6 +75,8 @@ function save(){
       else
         console.log(response.status)
     }).catch(err => console.log(err));
+   
+    showUserDiary()
     
 }
 
