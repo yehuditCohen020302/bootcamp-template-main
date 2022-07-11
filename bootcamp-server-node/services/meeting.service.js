@@ -33,11 +33,16 @@ module.exports.addMeeting=async (meeting)=> {
    let weightsHistory= meeting.weightsHistory;
    const user = await Array.from(data.users).find(user => user.id === id);
    user.weightsHistory.push(weightsHistory);
-   
+   let users=data.filter(user => user.id!=id);
+   users.push(user);
+   data.users = users;
+   await fs.writeFile('db.json', JSON.stringify(data), (err)=> {
+      if (err) return console.log(err);
+    })
    
    // ((data.users).find(user => user.id === id))=json;
 
-   return await `The new meeting add: ${JSON.parse(JSON.stringify(user))}`;
+   return `The new meeting add: ${JSON.parse(JSON.stringify(user))}`;
 
 }
 
@@ -45,11 +50,13 @@ module.exports.updateMeeting=async (id,updateMeeting)=> {
    debugger
    let user=await Array.from(data.users).find(user => user.id === id);
    user.weightsHistory=updateMeeting.weightsHistory;
-
+   let users=data.filter(user => user.id!=id);
+   users.push(user);
+   data.users = users;
    const json =  JSON.stringify({  'user':user })
    // data.users = user;
 
-   return await`update , now the all user: ${JSON.stringify(user)}`;
+   return `update , now the all user: ${JSON.stringify(user)}`;
 }
 
 // module.exports.updateUser= async (id, update)=> {
