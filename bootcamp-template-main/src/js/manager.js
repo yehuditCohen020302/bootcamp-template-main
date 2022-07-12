@@ -81,7 +81,7 @@ class Manager {
   }
 
   search(data, type) {
-    debugger;
+    // debugger;
 
     if (type == "firstName")
       this.filteredUser = this.users.filter((user) => {
@@ -103,13 +103,13 @@ class Manager {
   }
 
   details(email) {
-    debugger;
+    // debugger;
     console.log("details(email)  called");
     window.location.href = "../html/userPage.html?emailAddress=" + email;
   }
 
   goodBMI(user) {
-    debugger;
+    // debugger;
     if (user.weightsHistory.length > 1) {
       if (
         user.weightsHistory[user.weightsHistory.length - 1].weight /
@@ -264,7 +264,7 @@ function search() {
   const phone = document.getElementById("searchByPhone");
   let data;
   let type;
-  debugger;
+  // debugger;
   if (firstName.checked == true) {
     data = document.getElementById("textSearchByFirstName").value;
     type = "firstName";
@@ -288,7 +288,7 @@ function Reset() {
 }
 
 function changeColor(bmiColor, id) {
-  debugger;
+  // debugger;
   if (bmiColor < 0)
     document.getElementById(id).style.backgroundColor = "lightgreen";
   else document.getElementById(id).style.backgroundColor = "red";

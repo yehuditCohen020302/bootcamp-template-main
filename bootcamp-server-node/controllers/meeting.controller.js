@@ -23,7 +23,7 @@ module.exports.getMeetingById=async function(req, res, next) {
 module.exports.addMeeting=async function(req, res, next) {
     try{
         let meeting=req.body;
-        debugger
+        // debugger
         const insertedMeeting=await MeetingService.addMeeting(meeting);
         res.send(insertedMeeting);
     }
