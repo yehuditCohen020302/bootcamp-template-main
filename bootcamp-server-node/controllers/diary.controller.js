@@ -27,7 +27,7 @@ module.exports.updateDaySummary=async function(req, res, next) {
     try{
         const userId=req.params.idU;
         const dayId=req.params.idD;
-        let daySummaryId=`${dayId[0]}${dayId[1]}/${dayId[2]}${dayId[3]}/${dayId[4]}${dayId[5]}${dayId[6]}${dayId[7]}`
+        let daySummaryId=`${dayId[0]}${dayId[1]}${dayId[2]}${dayId[3]}-${dayId[4]}${dayId[5]}-${dayId[6]}${dayId[7]}`
         const newDaySummary=req.body;
         const updatedDaySummary=await DiaryService.updateDaySummary(userId,daySummaryId,newDaySummary);
         res.send(updatedDaySummary);
@@ -41,7 +41,7 @@ module.exports.removeDaySummary=async function(req, res, next) {
     try{
         const userId=req.params.idU;
         const dayId=req.params.idD;
-        let daySummaryId=`${dayId[0]}${dayId[1]}/${dayId[2]}${dayId[3]}/${dayId[4]}${dayId[5]}${dayId[6]}${dayId[7]}`
+        let daySummaryId=`${dayId[0]}${dayId[1]}${dayId[2]}${dayId[3]}-${dayId[4]}${dayId[5]}-${dayId[6]}${dayId[7]}`
         await DiaryService.removeDaySummary(userId, daySummaryId);
         res.send(`delete day summary ${daySummaryId} for user ${userId}`);
     }
