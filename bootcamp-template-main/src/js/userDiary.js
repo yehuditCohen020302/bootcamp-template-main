@@ -1,3 +1,4 @@
+
 const baseUrl = 'https://pacific-headland-08901.herokuapp.com/';
 let allFoods=[];
 let currentUserId;

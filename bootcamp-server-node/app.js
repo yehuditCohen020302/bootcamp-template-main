@@ -37,6 +37,12 @@ app.use((err,req,res,next) => {
   res.status(500).send('oooooof Something broke! 😒')
 })
 
+
+app.use((req,res) => {
+  
+  res.status(404).sendFile(path.join( __dirname, '404.html'));
+})
+
 // logger.error('error😳😵🥴');
 app.listen(port, () => logger.info(`Hello server, we are running on ${port}`))
 

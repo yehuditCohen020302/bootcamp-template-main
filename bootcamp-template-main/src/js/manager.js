@@ -1,3 +1,4 @@
+
 const baseUrl = "https://pacific-headland-08901.herokuapp.com/";
 class Manager {
   constructor(firstName, lastName, emailAddress) {
@@ -26,19 +27,7 @@ class Manager {
   }
 
   getUsers() {
-    // debugger;
-    // const xhr = new XMLHttpRequest();
-
-    // xhr.open("GET", "http://localhost:3000/users");
-    // xhr.send();
-    // xhr.onload = function () {
-    //   if (xhr.status != 200) {
-    //     alert(`Error ${xhr.status}: ${xhr.statusText}`);
-    //   } else {
-    //     manager.users = JSON.parse(xhr.responseText);
-    //     manager.drawTable(manager.users);
-    //   }
-    // };
+    
     fetch(baseUrl+"users")
       .then((response) => response.json())
       .then((response) => {
