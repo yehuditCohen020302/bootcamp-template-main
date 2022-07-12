@@ -28,7 +28,7 @@ module.exports.getMeetingById= async(id)=> {
 
 module.exports.addMeeting=async (meeting)=> {
    console.log( 'addMeeting');
-   debugger
+   // debugger
    let id= meeting.id;
    let weightsHistory= meeting.weightsHistory;
    const user = await Array.from(data.users).find(user => user.id === id);
@@ -47,7 +47,7 @@ module.exports.addMeeting=async (meeting)=> {
 }
 
 module.exports.updateMeeting=async (id,updateMeeting)=> {
-   debugger
+   // debugger
    let user=await Array.from(data.users).find(user => user.id === id);
    user.weightsHistory=updateMeeting.weightsHistory;
    let users=data.filter(user => user.id!=id);
