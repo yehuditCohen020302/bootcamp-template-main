@@ -1288,3 +1288,236 @@ info: 07-11-2022 23:26:36.512: Hello server, we are running on 3000
 info: 07-11-2022 23:26:54.523: Hello server, we are running on 3000 
 info: 07-11-2022 23:30:08.587: Hello server, we are running on 3000 
 info: 07-11-2022 23:32:06.657: Hello server, we are running on 3000 
+info: 07-12-2022 10:34:45.234: Hello server, we are running on 3000 
+info: 07-12-2022 10:37:32.891: Hello server, we are running on 3000 
+info: 07-12-2022 10:38:37.642: Hello server, we are running on 3000 
+info: 07-12-2022 11:08:47.125: Hello server, we are running on 3000 
+error: 07-12-2022 11:10:26.954: ENOENT: no such file or directory, stat 'C:\Users\Owner\Desktop\מיכל\לימודים\בוטקאמפ\ex1\bootcamp-server-node\static\html\404.html' 
+error: 07-12-2022 11:10:26.954: ENOENT: no such file or directory, stat 'C:\Users\Owner\Desktop\מיכל\לימודים\בוטקאמפ\ex1\bootcamp-server-node\static\html\404.html' 
+error: 07-12-2022 11:11:11.537: ENOENT: no such file or directory, stat 'C:\Users\Owner\Desktop\מיכל\לימודים\בוטקאמפ\ex1\bootcamp-server-node\static\html\404.html' 
+error: 07-12-2022 11:11:11.537: ENOENT: no such file or directory, stat 'C:\Users\Owner\Desktop\מיכל\לימודים\בוטקאמפ\ex1\bootcamp-server-node\static\html\404.html' 
+info: 07-12-2022 11:12:31.964: Hello server, we are running on 3000 
+error: 07-12-2022 11:12:34.682: ENOENT: no such file or directory, stat 'C:\Users\Owner\Desktop\מיכל\לימודים\בוטקאמפ\ex1\bootcamp-server-node\function serveStatic (req, res, next) {
+    if (req.method !== 'GET' && req.method !== 'HEAD') {
+      if (fallthrough) {
+        return next()
+      }
+
+      \ method not allowed
+      res.statusCode = 405
+      res.setHeader('Allow', 'GET, HEAD')
+      res.setHeader('Content-Length', '0')
+      res.end()
+      return
+    }
+
+    var forwardError = !fallthrough
+    var originalUrl = parseUrl.original(req)
+    var path = parseUrl(req).pathname
+
+    \ make sure redirect occurs at mount
+    if (path === '\' && originalUrl.pathname.substr(-1) !== '\') {
+      path = ''
+    }
+
+    \ create send stream
+    var stream = send(req, path, opts)
+
+    \ add directory handler
+    stream.on('directory', onDirectory)
+
+    \ add headers listener
+    if (setHeaders) {
+      stream.on('headers', setHeaders)
+    }
+
+    \ add file listener for fallthrough
+    if (fallthrough) {
+      stream.on('file', function onFile () {
+        \ once file is determined, always forward error
+        forwardError = true
+      })
+    }
+
+    \ forward errors
+    stream.on('error', function error (err) {
+      if (forwardError || !(err.statusCode < 500)) {
+        next(err)
+        return
+      }
+
+      next()
+    })
+
+    \ pipe
+    stream.pipe(res)
+  }\html\404.html' 
+error: 07-12-2022 11:12:34.682: ENOENT: no such file or directory, stat 'C:\Users\Owner\Desktop\מיכל\לימודים\בוטקאמפ\ex1\bootcamp-server-node\function serveStatic (req, res, next) {
+    if (req.method !== 'GET' && req.method !== 'HEAD') {
+      if (fallthrough) {
+        return next()
+      }
+
+      \ method not allowed
+      res.statusCode = 405
+      res.setHeader('Allow', 'GET, HEAD')
+      res.setHeader('Content-Length', '0')
+      res.end()
+      return
+    }
+
+    var forwardError = !fallthrough
+    var originalUrl = parseUrl.original(req)
+    var path = parseUrl(req).pathname
+
+    \ make sure redirect occurs at mount
+    if (path === '\' && originalUrl.pathname.substr(-1) !== '\') {
+      path = ''
+    }
+
+    \ create send stream
+    var stream = send(req, path, opts)
+
+    \ add directory handler
+    stream.on('directory', onDirectory)
+
+    \ add headers listener
+    if (setHeaders) {
+      stream.on('headers', setHeaders)
+    }
+
+    \ add file listener for fallthrough
+    if (fallthrough) {
+      stream.on('file', function onFile () {
+        \ once file is determined, always forward error
+        forwardError = true
+      })
+    }
+
+    \ forward errors
+    stream.on('error', function error (err) {
+      if (forwardError || !(err.statusCode < 500)) {
+        next(err)
+        return
+      }
+
+      next()
+    })
+
+    \ pipe
+    stream.pipe(res)
+  }\html\404.html' 
+error: 07-12-2022 11:12:37.549: ENOENT: no such file or directory, stat 'C:\Users\Owner\Desktop\מיכל\לימודים\בוטקאמפ\ex1\bootcamp-server-node\function serveStatic (req, res, next) {
+    if (req.method !== 'GET' && req.method !== 'HEAD') {
+      if (fallthrough) {
+        return next()
+      }
+
+      \ method not allowed
+      res.statusCode = 405
+      res.setHeader('Allow', 'GET, HEAD')
+      res.setHeader('Content-Length', '0')
+      res.end()
+      return
+    }
+
+    var forwardError = !fallthrough
+    var originalUrl = parseUrl.original(req)
+    var path = parseUrl(req).pathname
+
+    \ make sure redirect occurs at mount
+    if (path === '\' && originalUrl.pathname.substr(-1) !== '\') {
+      path = ''
+    }
+
+    \ create send stream
+    var stream = send(req, path, opts)
+
+    \ add directory handler
+    stream.on('directory', onDirectory)
+
+    \ add headers listener
+    if (setHeaders) {
+      stream.on('headers', setHeaders)
+    }
+
+    \ add file listener for fallthrough
+    if (fallthrough) {
+      stream.on('file', function onFile () {
+        \ once file is determined, always forward error
+        forwardError = true
+      })
+    }
+
+    \ forward errors
+    stream.on('error', function error (err) {
+      if (forwardError || !(err.statusCode < 500)) {
+        next(err)
+        return
+      }
+
+      next()
+    })
+
+    \ pipe
+    stream.pipe(res)
+  }\html\404.html' 
+error: 07-12-2022 11:12:37.549: ENOENT: no such file or directory, stat 'C:\Users\Owner\Desktop\מיכל\לימודים\בוטקאמפ\ex1\bootcamp-server-node\function serveStatic (req, res, next) {
+    if (req.method !== 'GET' && req.method !== 'HEAD') {
+      if (fallthrough) {
+        return next()
+      }
+
+      \ method not allowed
+      res.statusCode = 405
+      res.setHeader('Allow', 'GET, HEAD')
+      res.setHeader('Content-Length', '0')
+      res.end()
+      return
+    }
+
+    var forwardError = !fallthrough
+    var originalUrl = parseUrl.original(req)
+    var path = parseUrl(req).pathname
+
+    \ make sure redirect occurs at mount
+    if (path === '\' && originalUrl.pathname.substr(-1) !== '\') {
+      path = ''
+    }
+
+    \ create send stream
+    var stream = send(req, path, opts)
+
+    \ add directory handler
+    stream.on('directory', onDirectory)
+
+    \ add headers listener
+    if (setHeaders) {
+      stream.on('headers', setHeaders)
+    }
+
+    \ add file listener for fallthrough
+    if (fallthrough) {
+      stream.on('file', function onFile () {
+        \ once file is determined, always forward error
+        forwardError = true
+      })
+    }
+
+    \ forward errors
+    stream.on('error', function error (err) {
+      if (forwardError || !(err.statusCode < 500)) {
+        next(err)
+        return
+      }
+
+      next()
+    })
+
+    \ pipe
+    stream.pipe(res)
+  }\html\404.html' 
+info: 07-12-2022 11:13:40.466: Hello server, we are running on 3000 
+error: 07-12-2022 11:13:44.418: ENOENT: no such file or directory, stat 'C:\Users\Owner\Desktop\מיכל\לימודים\בוטקאמפ\ex1\bootcamp-server-node\http:\127.0.0.1:5500\src\html\404.html' 
+error: 07-12-2022 11:13:44.418: ENOENT: no such file or directory, stat 'C:\Users\Owner\Desktop\מיכל\לימודים\בוטקאמפ\ex1\bootcamp-server-node\http:\127.0.0.1:5500\src\html\404.html' 
+info: 07-12-2022 11:14:55.821: Hello server, we are running on 3000 
