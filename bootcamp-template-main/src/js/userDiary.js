@@ -75,7 +75,6 @@ function save(){
       console.log(response.status)
   }).catch(err => console.log(err));
   document.location.reload(true);
-    // showUserDiary()
 }
 
 
