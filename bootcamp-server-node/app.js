@@ -3,6 +3,7 @@ const user=require('./routes/user.routes')
 const meeting=require('./routes/meeting.routes');
 const account=require('./routes/account.routes');
 
+const mongoosedb=require('./db/mongoosedb')
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
 const cors=require('cors');

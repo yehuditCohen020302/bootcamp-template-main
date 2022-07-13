@@ -5,7 +5,6 @@ let autocomplete;
 let autocomplete_result;
 
 
-//global arr ->foods
 let foodList=[];
 
 function importAllProducts(){
@@ -56,11 +55,9 @@ function updPopup() {
     popupClearAndHide();
     return;
   }
-  // debugger
   let a = new RegExp("^" + autocomplete.value, "i");
   for(var x = 0, b = document.createDocumentFragment(), c = false; x < productsNames.length; x++) {
     if(a.test(productsNames[x])) {
-      // debugger
       c = true;
       var d = document.createElement("p");
       d.innerText = productsNames[x];
@@ -80,15 +77,10 @@ function updPopup() {
 
 function search() {
   console.log("Searching...");
-  // debugger
   const productName=document.getElementById("searchProduct").value;
   const data=productsList.filter(p=>p.shmmitzrach.includes(productName));
   foodList.push(data);
   console.log(foodList);
-
-  // foodList.forEach(food=> {
-  //   console.log(food)
-  //   addToArr(foodList);});
   
     const containered = document.querySelector(".selectFood");
     containered.innerHTML = `נמצאו ${data.length} מוצרים`;
