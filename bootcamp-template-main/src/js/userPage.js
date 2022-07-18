@@ -1,4 +1,4 @@
-const baseUrl = 'https://pacific-headland-08901.herokuapp.com/';
+const baseUrl = "https://pacific-headland-08901.herokuapp.com/";
 let currentUser;
 function loadUser(){
     const params = new URLSearchParams(window.location.search)
