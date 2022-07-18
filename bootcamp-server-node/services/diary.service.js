@@ -55,3 +55,8 @@ module.exports.removeDaySummary=async (userId,dayId)=> {
     // await fs.writeFileSync('db.json', json);
     return `deleted user day summary, now the users are : ${JSON.stringify(data.users)}`;
 }
+
+module.exports.addNewDiary = async (diaryToAdd)=>{
+    const addedDiary=await diaryToAdd.save();
+    return addedDiary;
+}
