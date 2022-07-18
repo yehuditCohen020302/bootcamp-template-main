@@ -1437,3 +1437,26 @@ info: 07-12-2022 18:11:46.172: Hello server, we are running on 3000
 
 info: 07-12-2022 18:15:09.244: Hello server, we are running on 3000 
 >>>>>>> 62eff41d509f604131ffa9e17c325ab0b0adbbdd
+info: 07-18-2022 14:20:28.975: Hello server, we are running on 3000 
+error: 07-18-2022 14:20:42.281: E11000 duplicate key error collection: Weight-project.users index: emailAddress_1 dup key: { emailAddress: "yehudit23@gmail.com" } 
+error: 07-18-2022 14:20:42.281: E11000 duplicate key error collection: Weight-project.users index: emailAddress_1 dup key: { emailAddress: "yehudit23@gmail.com" } 
+info: 07-18-2022 14:28:27.196: Hello server, we are running on 3000 
+info: 07-18-2022 14:28:43.819: Hello server, we are running on 3000 
+info: 07-18-2022 14:48:35.311: Hello server, we are running on 3000 
+info: 07-18-2022 14:48:43.459: Hello server, we are running on 3000 
+info: 07-18-2022 14:48:48.627: Hello server, we are running on 3000 
+info: 07-18-2022 14:49:14.491: Hello server, we are running on 3000 
+info: 07-18-2022 14:49:19.060: Hello server, we are running on 3000 
+info: 07-18-2022 14:49:22.197: Hello server, we are running on 3000 
+info: 07-18-2022 14:49:37.993: Hello server, we are running on 3000 
+info: 07-18-2022 14:49:44.709: Hello server, we are running on 3000 
+info: 07-18-2022 14:49:55.499: Hello server, we are running on 3000 
+info: 07-18-2022 14:49:59.886: Hello server, we are running on 3000 
+info: 07-18-2022 14:50:04.333: Hello server, we are running on 3000 
+info: 07-18-2022 14:50:16.333: Hello server, we are running on 3000 
+info: 07-18-2022 16:10:58.676: Hello server, we are running on 3000 
+info: 07-18-2022 16:11:03.476: Hello server, we are running on 3000 
+info: 07-18-2022 16:11:28.202: Hello server, we are running on 3000 
+info: 07-18-2022 16:11:58.627: Hello server, we are running on 3000 
+info: 07-18-2022 16:12:03.696: Hello server, we are running on 3000 
+info: 07-18-2022 16:12:08.274: Hello server, we are running on 3000 

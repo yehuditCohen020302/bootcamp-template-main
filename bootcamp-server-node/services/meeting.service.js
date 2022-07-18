@@ -2,18 +2,14 @@ const fs= require("fs");
 const dataFromFile= fs.readFileSync('db.json');
 let data=JSON.parse(dataFromFile);
 
-
 module.exports.getAllTheMeetings=async()=>{
 
-   console.log( 'getAllTheMeetings');
-
-   // debugger
+   console.log('getAllTheMeetings');
    let users = await Array.from(data.users);
    let meetings=[];
    users.forEach(user => {meetings.push(user.weightsHistory)})
 
-   return await meetings;
-   
+   return await meetings;   
 }
 
 module.exports.getMeetingById= async(id)=> {
@@ -40,10 +36,7 @@ module.exports.addMeeting=async (meeting)=> {
       if (err) return console.log(err);
     })
    
-   // ((data.users).find(user => user.id === id))=json;
-
    return `The new meeting add: ${JSON.parse(JSON.stringify(user))}`;
-
 }
 
 module.exports.updateMeeting=async (id,updateMeeting)=> {
@@ -54,7 +47,6 @@ module.exports.updateMeeting=async (id,updateMeeting)=> {
    users.push(user);
    data.users = users;
    const json =  JSON.stringify({  'user':user })
-   // data.users = user;
 
    return `update , now the all user: ${JSON.stringify(user)}`;
 }
