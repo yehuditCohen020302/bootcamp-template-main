@@ -1,7 +1,7 @@
 let mongoose=require('mongoose');
 const Schema=mongoose.Schema;
-const meetingSchema=require('Meeting');
-const diarySchema=require('Diary');
+// const meetingSchema=require('./meeting.model');
+// const diarySchema=require('./diary.model');
 
 const userSchema=new mongoose.Schema({
     id:String,
@@ -17,8 +17,15 @@ const userSchema=new mongoose.Schema({
         match: [/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/, 'Please fill a valid email address']
     },
     height:Number,
-    weightsHistory:[meetingSchema],
-    diary:diarySchema
+    weightsHistory:[{
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Meeting'
+    }],
+    diary:{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Diary'
+    }
  })
-
+ userSchema.set("toObject",{virtuals:true})
+ userSchema.set("toJSON",{virtuals:true})
 module.exports=mongoose.model('User',userSchema)

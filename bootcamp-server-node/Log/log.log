@@ -1227,3 +1227,151 @@ info: 07-10-2022 15:57:37.109: Hello server, we are running on 3000
 info: 07-10-2022 17:44:07.479: Hello server, we are running on 3000 
 info: 07-10-2022 17:44:17.882: Hello server, we are running on 3000 
 info: 07-10-2022 17:47:21.634: Hello server, we are running on 3000 
+info: 07-18-2022 11:11:56.755: Hello server, we are running on 3000 
+info: 07-18-2022 11:20:43.423: Hello server, we are running on 3000 
+error: 07-18-2022 11:22:33.323: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:22:33.323: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:22:51.399: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:22:51.399: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:23:05.587: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:23:05.587: Parameter "obj" to Document() must be an object, got Michal 
+info: 07-18-2022 11:23:29.200: Hello server, we are running on 3000 
+error: 07-18-2022 11:23:45.036: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:23:45.036: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:23:50.186: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:23:50.186: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:24:22.745: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:24:22.745: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:25:56.770: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:25:56.770: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:30:06.714: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:30:06.714: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:32:02.087: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:32:02.087: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:46:18.090: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:46:18.090: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:47:31.356: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:47:31.356: Parameter "obj" to Document() must be an object, got Michal 
+info: 07-18-2022 11:53:47.435: Hello server, we are running on 3000 
+error: 07-18-2022 11:54:01.334: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:54:01.334: Parameter "obj" to Document() must be an object, got Michal 
+info: 07-18-2022 11:57:16.583: Hello server, we are running on 3000 
+error: 07-18-2022 11:57:50.378: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:57:50.378: Parameter "obj" to Document() must be an object, got Michal 
+info: 07-18-2022 11:58:16.200: Hello server, we are running on 3000 
+error: 07-18-2022 11:58:40.801: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:58:40.801: Parameter "obj" to Document() must be an object, got Michal 
+info: 07-18-2022 11:59:10.814: Hello server, we are running on 3000 
+error: 07-18-2022 11:59:21.431: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:59:21.431: Parameter "obj" to Document() must be an object, got Michal 
+info: 07-18-2022 11:59:41.842: Hello server, we are running on 3000 
+error: 07-18-2022 12:00:40.403: id is not defined 
+error: 07-18-2022 12:00:40.403: id is not defined 
+error: 07-18-2022 12:04:13.671: id is not defined 
+error: 07-18-2022 12:04:13.671: id is not defined 
+info: 07-18-2022 12:04:23.009: Hello server, we are running on 3000 
+error: 07-18-2022 12:04:47.845: Parameter "obj" to Document() must be an object, got 123456789 
+error: 07-18-2022 12:04:47.845: Parameter "obj" to Document() must be an object, got 123456789 
+error: 07-18-2022 12:05:30.223: Parameter "obj" to Document() must be an object, got 123456789 
+error: 07-18-2022 12:05:30.223: Parameter "obj" to Document() must be an object, got 123456789 
+info: 07-18-2022 12:10:25.358: Hello server, we are running on 3000 
+error: 07-18-2022 12:29:52.712: Parameter "obj" to Document() must be an object, got 123456789 
+error: 07-18-2022 12:29:52.712: Parameter "obj" to Document() must be an object, got 123456789 
+error: 07-18-2022 12:33:46.966: Parameter "obj" to Document() must be an object, got 123456789 
+error: 07-18-2022 12:33:46.966: Parameter "obj" to Document() must be an object, got 123456789 
+error: 07-18-2022 12:41:17.647: Parameter "obj" to Document() must be an object, got 123456789 
+error: 07-18-2022 12:41:17.647: Parameter "obj" to Document() must be an object, got 123456789 
+info: 07-18-2022 12:45:48.465: Hello server, we are running on 3000 
+error: 07-18-2022 12:45:56.494: Parameter "obj" to Document() must be an object, got 123456789 
+error: 07-18-2022 12:45:56.494: Parameter "obj" to Document() must be an object, got 123456789 
+info: 07-18-2022 12:48:41.997: Hello server, we are running on 3000 
+error: 07-18-2022 12:49:05.453: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 12:49:05.453: Parameter "obj" to Document() must be an object, got Michal 
+info: 07-18-2022 12:49:45.140: Hello server, we are running on 3000 
+error: 07-18-2022 12:50:09.355: E11000 duplicate key error collection: Weight-project.users index: emailAddress_1 dup key: { emailAddress: null } 
+error: 07-18-2022 12:50:09.355: E11000 duplicate key error collection: Weight-project.users index: emailAddress_1 dup key: { emailAddress: null } 
+info: 07-18-2022 12:54:31.712: Hello server, we are running on 3000 
+info: 07-18-2022 12:55:06.511: Hello server, we are running on 3000 
+info: 07-18-2022 12:58:26.080: Hello server, we are running on 3000 
+error: 07-18-2022 12:58:45.994: add.save is not a function 
+error: 07-18-2022 12:58:45.994: add.save is not a function 
+error: 07-18-2022 13:02:21.037: add.save is not a function 
+error: 07-18-2022 13:02:21.037: add.save is not a function 
+info: 07-18-2022 13:02:36.955: Hello server, we are running on 3000 
+error: 07-18-2022 13:03:26.812: add.save is not a function 
+error: 07-18-2022 13:03:26.812: add.save is not a function 
+info: 07-18-2022 13:09:43.818: Hello server, we are running on 3000 
+info: 07-18-2022 13:09:51.784: Hello server, we are running on 3000 
+info: 07-18-2022 13:11:18.989: Hello server, we are running on 3000 
+info: 07-18-2022 13:11:40.587: Hello server, we are running on 3000 
+info: 07-18-2022 13:11:44.849: Hello server, we are running on 3000 
+info: 07-18-2022 13:12:31.613: Hello server, we are running on 3000 
+error: 07-18-2022 13:13:07.421: User validation failed: weightsHistory.0: Cast to [ObjectId] failed for value "[\n' +
+  "  { date: '12/03/2022', weight: 60 },\n" +
+  "  { date: '12/03/2022', weight: 61.8 },\n" +
+  "  { date: '12/03/2022', weight: 60.9 }\n" +
+  ']" (type string) at path "weightsHistory.0" because of "CastError", diary: Cast to ObjectId failed for value "{
+  days: [
+    { date: '12/03/2022', meals: [Array] },
+    { date: '18/03/2022', meals: [Array] },
+    { date: '30-5-2022', meals: [Array] },
+    { date: '30/5/122', meals: [Array] },
+    { date: '2022-07-01', meals: [Array] },
+    { date: '2022-06-30', meals: [Array] }
+  ]
+}" (type Object) at path "diary" because of "BSONTypeError" 
+error: 07-18-2022 13:13:07.421: User validation failed: weightsHistory.0: Cast to [ObjectId] failed for value "[\n' +
+  "  { date: '12/03/2022', weight: 60 },\n" +
+  "  { date: '12/03/2022', weight: 61.8 },\n" +
+  "  { date: '12/03/2022', weight: 60.9 }\n" +
+  ']" (type string) at path "weightsHistory.0" because of "CastError", diary: Cast to ObjectId failed for value "{
+  days: [
+    { date: '12/03/2022', meals: [Array] },
+    { date: '18/03/2022', meals: [Array] },
+    { date: '30-5-2022', meals: [Array] },
+    { date: '30/5/122', meals: [Array] },
+    { date: '2022-07-01', meals: [Array] },
+    { date: '2022-06-30', meals: [Array] }
+  ]
+}" (type Object) at path "diary" because of "BSONTypeError" 
+info: 07-18-2022 13:13:56.395: Hello server, we are running on 3000 
+info: 07-18-2022 13:14:00.699: Hello server, we are running on 3000 
+info: 07-18-2022 13:14:07.916: Hello server, we are running on 3000 
+error: 07-18-2022 13:14:36.177: E11000 duplicate key error collection: Weight-project.users index: emailAddress_1 dup key: { emailAddress: "michal@gmail.com" } 
+error: 07-18-2022 13:14:36.177: E11000 duplicate key error collection: Weight-project.users index: emailAddress_1 dup key: { emailAddress: "michal@gmail.com" } 
+error: 07-18-2022 13:22:33.691: E11000 duplicate key error collection: Weight-project.users index: emailAddress_1 dup key: { emailAddress: "michal@gmail.com" } 
+error: 07-18-2022 13:22:33.691: E11000 duplicate key error collection: Weight-project.users index: emailAddress_1 dup key: { emailAddress: "michal@gmail.com" } 
+error: 07-18-2022 13:25:42.409: E11000 duplicate key error collection: Weight-project.users index: emailAddress_1 dup key: { emailAddress: "michal@gmail.com" } 
+error: 07-18-2022 13:25:42.409: E11000 duplicate key error collection: Weight-project.users index: emailAddress_1 dup key: { emailAddress: "michal@gmail.com" } 
+info: 07-18-2022 13:26:04.145: Hello server, we are running on 3000 
+error: 07-18-2022 13:26:17.236: db already exists with different case already have: [Weight-project] trying to create [weight-project] 
+error: 07-18-2022 13:26:17.236: db already exists with different case already have: [Weight-project] trying to create [weight-project] 
+info: 07-18-2022 13:29:22.885: Hello server, we are running on 3000 
+info: 07-18-2022 13:34:34.383: Hello server, we are running on 3000 
+info: 07-18-2022 13:34:44.276: Hello server, we are running on 3000 
+info: 07-18-2022 13:34:51.390: Hello server, we are running on 3000 
+info: 07-18-2022 13:34:58.342: Hello server, we are running on 3000 
+info: 07-18-2022 13:45:06.691: Hello server, we are running on 3000 
+info: 07-18-2022 13:48:35.095: Hello server, we are running on 3000 
+info: 07-18-2022 13:48:39.936: Hello server, we are running on 3000 
+info: 07-18-2022 13:48:47.582: Hello server, we are running on 3000 
+info: 07-18-2022 13:48:51.844: Hello server, we are running on 3000 
+info: 07-18-2022 13:59:00.914: Hello server, we are running on 3000 
+info: 07-18-2022 13:59:05.467: Hello server, we are running on 3000 
+error: 07-18-2022 14:01:10.913: diarySchema is not defined 
+error: 07-18-2022 14:01:10.913: diarySchema is not defined 
+info: 07-18-2022 14:01:21.852: Hello server, we are running on 3000 
+info: 07-18-2022 14:01:30.647: Hello server, we are running on 3000 
+info: 07-18-2022 14:01:40.305: Hello server, we are running on 3000 
+info: 07-18-2022 14:01:53.341: Hello server, we are running on 3000 
+info: 07-18-2022 14:03:48.955: Hello server, we are running on 3000 
+error: 07-18-2022 14:04:09.886: E11000 duplicate key error collection: Weight-project.users index: emailAddress_1 dup key: { emailAddress: "yehudit@gmail.com" } 
+error: 07-18-2022 14:04:09.886: E11000 duplicate key error collection: Weight-project.users index: emailAddress_1 dup key: { emailAddress: "yehudit@gmail.com" } 
+info: 07-18-2022 14:06:04.634: Hello server, we are running on 3000 
+info: 07-18-2022 14:07:10.677: Hello server, we are running on 3000 
+info: 07-18-2022 14:07:19.190: Hello server, we are running on 3000 
+info: 07-18-2022 14:07:26.798: Hello server, we are running on 3000 
+info: 07-18-2022 14:07:37.940: Hello server, we are running on 3000 
+info: 07-18-2022 14:07:41.235: Hello server, we are running on 3000 
+error: 07-18-2022 14:08:09.194: E11000 duplicate key error collection: Weight-project.users index: emailAddress_1 dup key: { emailAddress: "yehudit2@gmail.com" } 
+error: 07-18-2022 14:08:09.194: E11000 duplicate key error collection: Weight-project.users index: emailAddress_1 dup key: { emailAddress: "yehudit2@gmail.com" } 

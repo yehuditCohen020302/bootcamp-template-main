@@ -1,5 +1,5 @@
 let mongoose = require('mongoose');
-const connectionString = proccess.env.DB_CONNECTION;
+const connectionString = process.env.DB_CONNECTION;
 
 class Database{
     constructor(){
