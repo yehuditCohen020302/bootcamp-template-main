@@ -20,11 +20,4 @@
         let currentWeight=new meeting(new Date(),newWeight)
         this.weightsHistory.push(currentWeight)
     }
-
-    calculateBMI(last){
-        if(last>this.weightsHistory.length){
-            return this.calculateBMI(1);
-        }
-        return (this.weightsHistory[this.weightsHistory.length-last].weight)/Math.pow(this.height,2);
-    }
 }

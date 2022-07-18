@@ -33,9 +33,6 @@ function loginManager() {
         console.log("you have no access to this page 😱");
     });
 
-  //hear need a fetch request
-
-  //   window.location.href = "../html/Manager.html";
 }
 
 function loginUser() {
