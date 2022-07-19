@@ -1,10 +1,11 @@
-const fs= require("fs");
-const dataFromFile= fs.readFileSync('db.json');
-let data=JSON.parse(dataFromFile);
+const {ObjectId}=require('mongodb');
+const mongoose=require('mongoose');
+const diaryModel=require('../models/diary.model');
+const userModel=require('../models/user.model');
 
 module.exports.getUsersDiary=async (userId)=>{
-    const user = await Array.from(data.users).find(user => user.id === userId);
-    return await user.diary;
+    const user = await userModel.findById(ObjectId(userId));
+    return user.diary;
 }
 
 module.exports.addNewDaySummary=async (userId, summary)=>{
