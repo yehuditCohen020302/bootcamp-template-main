@@ -2,19 +2,19 @@ const {ObjectId}=require('mongodb');
 const mongoose=require('mongoose');
 const userModel=require('../models/user.model');
 
-module.exports.getAllUsersService= async ()=>{
+module.exports.getAllUsers= async ()=>{
 
         const user=await userModel.find();
         return user;
     },
 
     module.exports.getOneUser= async(id) => {
-        const user = await userModel.findById(ObjectId(id));
+        const user = await userModel.findOne({id:id});
         return user;
     },
 
-    module.exports.updateUser= async (id, update)=> {
-        const updateUser=await userModel.updateOne({_id:ObjectId(id)},update);
+    module.exports.updateUser= async (_id,update)=> {
+        const updateUser=await userModel.updateOne({_id:ObjectId(_id)},update);
         return `update user ${update.name}`        
     },
 
