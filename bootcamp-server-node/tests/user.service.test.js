@@ -31,3 +31,5 @@ test('findOne returns an user',async () => {
     // expect(returnedUser.firstName).equal(userObject.firstName);
     // expect(returnedUser.emailAddress).toMatch(userObject.emailAddress);
 });
+
+
