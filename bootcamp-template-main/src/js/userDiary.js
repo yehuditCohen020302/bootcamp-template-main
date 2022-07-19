@@ -38,6 +38,7 @@ function drawUserDiary() {
 }
   
 function save(){
+  debugger
   let foodList=[];
   let numOfFood=1;
   while(document.getElementById(numOfFood)!=undefined && document.getElementById(numOfFood).value!=''){
