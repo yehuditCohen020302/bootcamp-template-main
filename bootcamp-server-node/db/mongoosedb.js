@@ -12,7 +12,7 @@ class Database{
             console.log('success')
         })
         .catch(err=>{
-            console.error('error')
+            console.error(err)
         })
     }
 
