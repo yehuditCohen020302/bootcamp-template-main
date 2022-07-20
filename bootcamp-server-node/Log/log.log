@@ -1436,7 +1436,17 @@ info: 07-12-2022 14:58:25.757: Hello server, we are running on 3000
 info: 07-12-2022 18:11:46.172: Hello server, we are running on 3000 
 
 info: 07-12-2022 18:15:09.244: Hello server, we are running on 3000 
->>>>>>> 62eff41d509f604131ffa9e17c325ab0b0adbbdd
+info: 07-13-2022 12:14:56.660: Hello server, we are running on 3000 
+info: 07-13-2022 21:54:30.813: Hello server, we are running on 3000 
+
+info: 07-19-2022 11:18:08.505: Hello server, we are running on 3000 
+info: 07-19-2022 11:24:23.186: Hello server, we are running on 3000 
+info: 07-19-2022 11:26:03.644: Hello server, we are running on 3000 
+info: 07-19-2022 11:42:54.476: Hello server, we are running on 3000 
+info: 07-19-2022 11:49:58.632: Hello server, we are running on 3000 
+info: 07-19-2022 11:59:25.323: Hello server, we are running on 3000 
+info: 07-19-2022 12:03:56.344: Hello server, we are running on 3000 
+
 info: 07-18-2022 14:20:28.975: Hello server, we are running on 3000 
 error: 07-18-2022 14:20:42.281: E11000 duplicate key error collection: Weight-project.users index: emailAddress_1 dup key: { emailAddress: "yehudit23@gmail.com" } 
 error: 07-18-2022 14:20:42.281: E11000 duplicate key error collection: Weight-project.users index: emailAddress_1 dup key: { emailAddress: "yehudit23@gmail.com" } 
@@ -1465,6 +1475,25 @@ info: 07-18-2022 16:17:10.145: Hello server, we are running on 3000
 info: 07-18-2022 16:17:19.585: Hello server, we are running on 3000 
 info: 07-18-2022 16:22:34.432: Hello server, we are running on 3000 
 info: 07-19-2022 11:54:14.196: Hello server, we are running on 3000 
+<<<<<<< HEAD
 info: 07-19-2022 12:44:08.932: Hello server, we are running on 3000 
 info: 07-19-2022 13:26:07.697: Hello server, we are running on 3000 
 info: 07-19-2022 13:40:10.987: Hello server, we are running on 3000 
+=======
+info: 07-19-2022 12:41:09.252: Hello server, we are running on 3000 
+info: 07-19-2022 13:00:19.731: Hello server, we are running on 3000 
+info: 07-19-2022 13:14:39.617: Hello server, we are running on 3000 
+info: 07-19-2022 13:35:00.221: Hello server, we are running on 3000 
+info: 07-19-2022 13:42:29.957: Hello server, we are running on 3000 
+info: 07-19-2022 13:43:53.917: Hello server, we are running on 3000 
+info: 07-19-2022 13:45:24.078: Hello server, we are running on 3000 
+info: 07-19-2022 13:50:49.816: Hello server, we are running on 3000 
+info: 07-19-2022 13:57:08.346: Hello server, we are running on 3000 
+error: 07-19-2022 14:01:54.780: id is not defined 
+error: 07-19-2022 14:01:54.780: id is not defined 
+info: 07-19-2022 14:06:39.411: Hello server, we are running on 3000 
+info: 07-19-2022 16:30:29.052: Hello server, we are running on 3000 
+info: 07-19-2022 16:32:23.455: Hello server, we are running on 3000 
+info: 07-19-2022 16:36:13.359: Hello server, we are running on 3000 
+info: 07-19-2022 16:59:23.703: Hello server, we are running on 3000 
+>>>>>>> 010bef6ef5f46f07a6107b2051d4c66892d39fc6
