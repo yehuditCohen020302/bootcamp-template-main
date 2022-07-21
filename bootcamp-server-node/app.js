@@ -13,6 +13,18 @@ const path = require('path');
 const dotenv = require('dotenv');
 dotenv.config();
 
+const { auth } = require('express-openid-connect');
+
+const config = {
+  authRequired: false,
+  auth0Logout: true,
+  secret: 'a long, randomly-generated string stored in env',
+  baseURL: 'http://localhost:3000',
+  clientID: 'UGB5dTkjxqFx3ZyZdvuT2wQWKRTmODve',
+  issuerBaseURL: 'https://weightwatchers.us.auth0.com'
+};
+
+
 const app = express();
 
 const port = process.env.PORT || 3000;
@@ -20,7 +32,13 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.static('Static'));
 app.use(express.json());
+// auth router attaches /login, /logout, and /callback routes to the baseURL
+app.use(auth(config));
 
+// req.isAuthenticated is provided from the auth router
+app.get('/', (req, res) => {
+  res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
+});
 
 app.use('/users', user);
 app.use('/meeting',meeting);
