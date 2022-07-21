@@ -13,9 +13,16 @@ module.exports.getAllUsers= async ()=>{
         return user;
     },
 
+<<<<<<< HEAD
     module.exports.updateUser= async (_id,userToUpdate)=> {
         const updateUser=await userModel.updateOne({_id:ObjectId(_id)},userToUpdate);
         return `update user ${update.name}`        
+=======
+    module.exports.updateUser= async (id,update)=> {
+         const updateUser=
+        await userModel.updateOne({_id:ObjectId(id)},update);
+        return `update user ${updateUser.firstName}`        
+>>>>>>> 9fcfe4d6dc239e4b82f91d5d126d6157c7576b16
     },
 
     module.exports.deleteUser=async(id)=>{

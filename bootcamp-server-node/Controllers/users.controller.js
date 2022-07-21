@@ -28,8 +28,9 @@ module.exports.getOneUser=async function(req,res, next){
 
 module.exports.updateUser=async function(req,res, next){
     try{
-        const _id = req.params.id;
-        const {firstName,lastName,city,street,houseNumber,phoneNumber,emailAddress,height,weightsHistory,diary}=req.body;
+        const id = req.params.id;
+        // ,diary,weightsHistory
+        const {firstName,lastName,city,street,houseNumber,phoneNumber,emailAddress,height}=req.body;
         const _user= {$set:{
             id,
             firstName,
@@ -40,10 +41,10 @@ module.exports.updateUser=async function(req,res, next){
             phoneNumber,
             emailAddress,
             height,
-            weightsHistory,
-            diary
+            // weightsHistory,
+            // diary
         }}
-        const user= await userService.updateUser(_id, _user);
+        const user= await userService.updateUser(id, _user);
         res.send(user);
     }
     catch (error) {
