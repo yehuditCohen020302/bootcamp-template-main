@@ -2,6 +2,7 @@
 const user=require('./routes/user.routes')
 const meeting=require('./routes/meeting.routes');
 const account=require('./routes/account.routes');
+const { requiresAuth } = require('express-openid-connect');
 
 const mongoosedb=require('./db/mongoosedb')
 const swaggerUi = require('swagger-ui-express');
@@ -39,10 +40,14 @@ app.use(auth(config));
 app.get('/', (req, res) => {
   res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
 });
+app.get('/profile', requiresAuth(), (req, res) => {
+  res.send(JSON.stringify(req.oidc.user));
+});
 
-app.use('/users', user);
-app.use('/meeting',meeting);
+app.use('/users',requiresAuth(), user);
+app.use('/meeting',requiresAuth(),meeting);
 app.use('/account',account);
+
 app.use('/api-docs', swaggerUi.serve,
  swaggerUi.setup(swaggerDocument));
 
