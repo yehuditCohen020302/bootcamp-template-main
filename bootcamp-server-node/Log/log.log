@@ -1668,3 +1668,5 @@ error: 07-25-2022 11:32:01.654: Cannot read properties of undefined (reading 'fr
 error: 07-25-2022 11:32:01.654: Cannot read properties of undefined (reading 'fromAuto0') 
 error: 07-25-2022 11:32:17.714: Cannot read properties of undefined (reading 'fromAuto0') 
 error: 07-25-2022 11:32:17.714: Cannot read properties of undefined (reading 'fromAuto0') 
+info: 07-25-2022 11:36:49.536: Hello server, we are running on 3000 
+info: 07-25-2022 12:18:24.031: Hello server, we are running on 3000 
