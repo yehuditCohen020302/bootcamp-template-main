@@ -1658,3 +1658,15 @@ error: 07-21-2022 20:35:38.839: Issuer.discover() failed.
     OPError: expected 200 OK, got: 418 I'm a Teapot 
 info: 07-21-2022 21:15:01.867: Hello server, we are running on 3000 
 info: 07-24-2022 12:12:37.251: Hello server, we are running on 3000 
+info: 07-25-2022 10:58:00.483: Hello server, we are running on 3000 
+info: 07-25-2022 11:31:00.670: Hello server, we are running on 3000 
+error: 07-25-2022 11:31:59.037: Cannot read properties of undefined (reading 'fromAuto0') 
+error: 07-25-2022 11:31:59.037: Cannot read properties of undefined (reading 'fromAuto0') 
+error: 07-25-2022 11:32:00.808: Cannot read properties of undefined (reading 'fromAuto0') 
+error: 07-25-2022 11:32:00.808: Cannot read properties of undefined (reading 'fromAuto0') 
+error: 07-25-2022 11:32:01.654: Cannot read properties of undefined (reading 'fromAuto0') 
+error: 07-25-2022 11:32:01.654: Cannot read properties of undefined (reading 'fromAuto0') 
+error: 07-25-2022 11:32:17.714: Cannot read properties of undefined (reading 'fromAuto0') 
+error: 07-25-2022 11:32:17.714: Cannot read properties of undefined (reading 'fromAuto0') 
+info: 07-25-2022 11:36:49.536: Hello server, we are running on 3000 
+info: 07-25-2022 12:18:24.031: Hello server, we are running on 3000 
