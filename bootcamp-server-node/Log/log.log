@@ -1211,9 +1211,462 @@ error: 07-07-2022 20:48:48.974: Unexpected token " in JSON at position 0
 error: 07-07-2022 20:48:48.974: Unexpected token " in JSON at position 0 
 error: 07-10-2022 13:21:42.764: Unexpected token " in JSON at position 0 
 error: 07-10-2022 13:21:42.764: Unexpected token " in JSON at position 0 
+
+info: 07-10-2022 14:27:08.473: Hello server, we are running on 3000 
+info: 07-10-2022 15:17:30.932: Hello server, we are running on 3000 
+
 info: 07-10-2022 14:27:01.516: Hello server, we are running on 3000 
 info: 07-10-2022 15:24:15.056: Hello server, we are running on 3000 
 error: 07-10-2022 15:27:19.727: undefined is not iterable (cannot read property Symbol(Symbol.iterator)) 
 error: 07-10-2022 15:27:19.727: undefined is not iterable (cannot read property Symbol(Symbol.iterator)) 
 info: 07-10-2022 15:38:16.515: Hello server, we are running on 3000 
 info: 07-10-2022 15:38:59.079: Hello server, we are running on 3000 
+
+
+info: 07-10-2022 15:57:37.109: Hello server, we are running on 3000 
+info: 07-10-2022 17:44:07.479: Hello server, we are running on 3000 
+info: 07-10-2022 17:44:17.882: Hello server, we are running on 3000 
+info: 07-10-2022 17:47:21.634: Hello server, we are running on 3000 
+<<<<<<< HEAD
+info: 07-18-2022 11:11:56.755: Hello server, we are running on 3000 
+info: 07-18-2022 11:20:43.423: Hello server, we are running on 3000 
+error: 07-18-2022 11:22:33.323: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:22:33.323: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:22:51.399: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:22:51.399: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:23:05.587: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:23:05.587: Parameter "obj" to Document() must be an object, got Michal 
+info: 07-18-2022 11:23:29.200: Hello server, we are running on 3000 
+error: 07-18-2022 11:23:45.036: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:23:45.036: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:23:50.186: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:23:50.186: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:24:22.745: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:24:22.745: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:25:56.770: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:25:56.770: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:30:06.714: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:30:06.714: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:32:02.087: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:32:02.087: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:46:18.090: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:46:18.090: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:47:31.356: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:47:31.356: Parameter "obj" to Document() must be an object, got Michal 
+info: 07-18-2022 11:53:47.435: Hello server, we are running on 3000 
+error: 07-18-2022 11:54:01.334: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:54:01.334: Parameter "obj" to Document() must be an object, got Michal 
+info: 07-18-2022 11:57:16.583: Hello server, we are running on 3000 
+error: 07-18-2022 11:57:50.378: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:57:50.378: Parameter "obj" to Document() must be an object, got Michal 
+info: 07-18-2022 11:58:16.200: Hello server, we are running on 3000 
+error: 07-18-2022 11:58:40.801: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:58:40.801: Parameter "obj" to Document() must be an object, got Michal 
+info: 07-18-2022 11:59:10.814: Hello server, we are running on 3000 
+error: 07-18-2022 11:59:21.431: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 11:59:21.431: Parameter "obj" to Document() must be an object, got Michal 
+info: 07-18-2022 11:59:41.842: Hello server, we are running on 3000 
+error: 07-18-2022 12:00:40.403: id is not defined 
+error: 07-18-2022 12:00:40.403: id is not defined 
+error: 07-18-2022 12:04:13.671: id is not defined 
+error: 07-18-2022 12:04:13.671: id is not defined 
+info: 07-18-2022 12:04:23.009: Hello server, we are running on 3000 
+error: 07-18-2022 12:04:47.845: Parameter "obj" to Document() must be an object, got 123456789 
+error: 07-18-2022 12:04:47.845: Parameter "obj" to Document() must be an object, got 123456789 
+error: 07-18-2022 12:05:30.223: Parameter "obj" to Document() must be an object, got 123456789 
+error: 07-18-2022 12:05:30.223: Parameter "obj" to Document() must be an object, got 123456789 
+info: 07-18-2022 12:10:25.358: Hello server, we are running on 3000 
+error: 07-18-2022 12:29:52.712: Parameter "obj" to Document() must be an object, got 123456789 
+error: 07-18-2022 12:29:52.712: Parameter "obj" to Document() must be an object, got 123456789 
+error: 07-18-2022 12:33:46.966: Parameter "obj" to Document() must be an object, got 123456789 
+error: 07-18-2022 12:33:46.966: Parameter "obj" to Document() must be an object, got 123456789 
+error: 07-18-2022 12:41:17.647: Parameter "obj" to Document() must be an object, got 123456789 
+error: 07-18-2022 12:41:17.647: Parameter "obj" to Document() must be an object, got 123456789 
+info: 07-18-2022 12:45:48.465: Hello server, we are running on 3000 
+error: 07-18-2022 12:45:56.494: Parameter "obj" to Document() must be an object, got 123456789 
+error: 07-18-2022 12:45:56.494: Parameter "obj" to Document() must be an object, got 123456789 
+info: 07-18-2022 12:48:41.997: Hello server, we are running on 3000 
+error: 07-18-2022 12:49:05.453: Parameter "obj" to Document() must be an object, got Michal 
+error: 07-18-2022 12:49:05.453: Parameter "obj" to Document() must be an object, got Michal 
+info: 07-18-2022 12:49:45.140: Hello server, we are running on 3000 
+error: 07-18-2022 12:50:09.355: E11000 duplicate key error collection: Weight-project.users index: emailAddress_1 dup key: { emailAddress: null } 
+error: 07-18-2022 12:50:09.355: E11000 duplicate key error collection: Weight-project.users index: emailAddress_1 dup key: { emailAddress: null } 
+info: 07-18-2022 12:54:31.712: Hello server, we are running on 3000 
+info: 07-18-2022 12:55:06.511: Hello server, we are running on 3000 
+info: 07-18-2022 12:58:26.080: Hello server, we are running on 3000 
+error: 07-18-2022 12:58:45.994: add.save is not a function 
+error: 07-18-2022 12:58:45.994: add.save is not a function 
+error: 07-18-2022 13:02:21.037: add.save is not a function 
+error: 07-18-2022 13:02:21.037: add.save is not a function 
+info: 07-18-2022 13:02:36.955: Hello server, we are running on 3000 
+error: 07-18-2022 13:03:26.812: add.save is not a function 
+error: 07-18-2022 13:03:26.812: add.save is not a function 
+info: 07-18-2022 13:09:43.818: Hello server, we are running on 3000 
+info: 07-18-2022 13:09:51.784: Hello server, we are running on 3000 
+info: 07-18-2022 13:11:18.989: Hello server, we are running on 3000 
+info: 07-18-2022 13:11:40.587: Hello server, we are running on 3000 
+info: 07-18-2022 13:11:44.849: Hello server, we are running on 3000 
+info: 07-18-2022 13:12:31.613: Hello server, we are running on 3000 
+error: 07-18-2022 13:13:07.421: User validation failed: weightsHistory.0: Cast to [ObjectId] failed for value "[\n' +
+  "  { date: '12/03/2022', weight: 60 },\n" +
+  "  { date: '12/03/2022', weight: 61.8 },\n" +
+  "  { date: '12/03/2022', weight: 60.9 }\n" +
+  ']" (type string) at path "weightsHistory.0" because of "CastError", diary: Cast to ObjectId failed for value "{
+  days: [
+    { date: '12/03/2022', meals: [Array] },
+    { date: '18/03/2022', meals: [Array] },
+    { date: '30-5-2022', meals: [Array] },
+    { date: '30/5/122', meals: [Array] },
+    { date: '2022-07-01', meals: [Array] },
+    { date: '2022-06-30', meals: [Array] }
+  ]
+}" (type Object) at path "diary" because of "BSONTypeError" 
+error: 07-18-2022 13:13:07.421: User validation failed: weightsHistory.0: Cast to [ObjectId] failed for value "[\n' +
+  "  { date: '12/03/2022', weight: 60 },\n" +
+  "  { date: '12/03/2022', weight: 61.8 },\n" +
+  "  { date: '12/03/2022', weight: 60.9 }\n" +
+  ']" (type string) at path "weightsHistory.0" because of "CastError", diary: Cast to ObjectId failed for value "{
+  days: [
+    { date: '12/03/2022', meals: [Array] },
+    { date: '18/03/2022', meals: [Array] },
+    { date: '30-5-2022', meals: [Array] },
+    { date: '30/5/122', meals: [Array] },
+    { date: '2022-07-01', meals: [Array] },
+    { date: '2022-06-30', meals: [Array] }
+  ]
+}" (type Object) at path "diary" because of "BSONTypeError" 
+info: 07-18-2022 13:13:56.395: Hello server, we are running on 3000 
+info: 07-18-2022 13:14:00.699: Hello server, we are running on 3000 
+info: 07-18-2022 13:14:07.916: Hello server, we are running on 3000 
+error: 07-18-2022 13:14:36.177: E11000 duplicate key error collection: Weight-project.users index: emailAddress_1 dup key: { emailAddress: "michal@gmail.com" } 
+error: 07-18-2022 13:14:36.177: E11000 duplicate key error collection: Weight-project.users index: emailAddress_1 dup key: { emailAddress: "michal@gmail.com" } 
+error: 07-18-2022 13:22:33.691: E11000 duplicate key error collection: Weight-project.users index: emailAddress_1 dup key: { emailAddress: "michal@gmail.com" } 
+error: 07-18-2022 13:22:33.691: E11000 duplicate key error collection: Weight-project.users index: emailAddress_1 dup key: { emailAddress: "michal@gmail.com" } 
+error: 07-18-2022 13:25:42.409: E11000 duplicate key error collection: Weight-project.users index: emailAddress_1 dup key: { emailAddress: "michal@gmail.com" } 
+error: 07-18-2022 13:25:42.409: E11000 duplicate key error collection: Weight-project.users index: emailAddress_1 dup key: { emailAddress: "michal@gmail.com" } 
+info: 07-18-2022 13:26:04.145: Hello server, we are running on 3000 
+error: 07-18-2022 13:26:17.236: db already exists with different case already have: [Weight-project] trying to create [weight-project] 
+error: 07-18-2022 13:26:17.236: db already exists with different case already have: [Weight-project] trying to create [weight-project] 
+info: 07-18-2022 13:29:22.885: Hello server, we are running on 3000 
+info: 07-18-2022 13:34:34.383: Hello server, we are running on 3000 
+info: 07-18-2022 13:34:44.276: Hello server, we are running on 3000 
+info: 07-18-2022 13:34:51.390: Hello server, we are running on 3000 
+info: 07-18-2022 13:34:58.342: Hello server, we are running on 3000 
+info: 07-18-2022 13:45:06.691: Hello server, we are running on 3000 
+info: 07-18-2022 13:48:35.095: Hello server, we are running on 3000 
+info: 07-18-2022 13:48:39.936: Hello server, we are running on 3000 
+info: 07-18-2022 13:48:47.582: Hello server, we are running on 3000 
+info: 07-18-2022 13:48:51.844: Hello server, we are running on 3000 
+info: 07-18-2022 13:59:00.914: Hello server, we are running on 3000 
+info: 07-18-2022 13:59:05.467: Hello server, we are running on 3000 
+error: 07-18-2022 14:01:10.913: diarySchema is not defined 
+error: 07-18-2022 14:01:10.913: diarySchema is not defined 
+info: 07-18-2022 14:01:21.852: Hello server, we are running on 3000 
+info: 07-18-2022 14:01:30.647: Hello server, we are running on 3000 
+info: 07-18-2022 14:01:40.305: Hello server, we are running on 3000 
+info: 07-18-2022 14:01:53.341: Hello server, we are running on 3000 
+info: 07-18-2022 14:03:48.955: Hello server, we are running on 3000 
+error: 07-18-2022 14:04:09.886: E11000 duplicate key error collection: Weight-project.users index: emailAddress_1 dup key: { emailAddress: "yehudit@gmail.com" } 
+error: 07-18-2022 14:04:09.886: E11000 duplicate key error collection: Weight-project.users index: emailAddress_1 dup key: { emailAddress: "yehudit@gmail.com" } 
+info: 07-18-2022 14:06:04.634: Hello server, we are running on 3000 
+info: 07-18-2022 14:07:10.677: Hello server, we are running on 3000 
+info: 07-18-2022 14:07:19.190: Hello server, we are running on 3000 
+info: 07-18-2022 14:07:26.798: Hello server, we are running on 3000 
+info: 07-18-2022 14:07:37.940: Hello server, we are running on 3000 
+info: 07-18-2022 14:07:41.235: Hello server, we are running on 3000 
+error: 07-18-2022 14:08:09.194: E11000 duplicate key error collection: Weight-project.users index: emailAddress_1 dup key: { emailAddress: "yehudit2@gmail.com" } 
+error: 07-18-2022 14:08:09.194: E11000 duplicate key error collection: Weight-project.users index: emailAddress_1 dup key: { emailAddress: "yehudit2@gmail.com" } 
+=======
+info: 07-10-2022 18:20:07.465: Hello server, we are running on 3000 
+info: 07-10-2022 18:22:07.721: Hello server, we are running on 3000 
+info: 07-10-2022 18:25:55.748: Hello server, we are running on 3000 
+info: 07-10-2022 18:26:31.002: Hello server, we are running on 3000 
+info: 07-11-2022 18:49:36.859: Hello server, we are running on 3000 
+info: 07-11-2022 20:28:55.258: Hello server, we are running on 3000 
+
+info: 07-10-2022 16:00:07.923: Hello server, we are running on 3000 
+info: 07-10-2022 16:09:09.547: Hello server, we are running on 3000 
+info: 07-10-2022 17:10:12.499: Hello server, we are running on 3000 
+info: 07-10-2022 17:24:24.987: Hello server, we are running on 3000 
+info: 07-10-2022 17:29:20.316: Hello server, we are running on 3000 
+info: 07-10-2022 17:30:03.493: Hello server, we are running on 3000 
+error: 07-10-2022 17:30:33.853: userService is not defined 
+error: 07-10-2022 17:30:33.853: userService is not defined 
+info: 07-10-2022 17:31:42.298: Hello server, we are running on 3000 
+info: 07-10-2022 17:33:22.034: Hello server, we are running on 3000 
+info: 07-10-2022 17:36:11.550: Hello server, we are running on 3000 
+info: 07-10-2022 17:38:06.951: Hello server, we are running on 3000 
+error: 07-10-2022 17:38:38.175: userService is not defined 
+error: 07-10-2022 17:38:38.175: userService is not defined 
+info: 07-10-2022 17:42:34.426: Hello server, we are running on 3000 
+error: 07-10-2022 17:42:41.326: userService is not defined 
+error: 07-10-2022 17:42:41.326: userService is not defined 
+error: 07-10-2022 17:42:58.797: userService is not defined 
+error: 07-10-2022 17:42:58.797: userService is not defined 
+info: 07-10-2022 17:44:48.962: Hello server, we are running on 3000 
+info: 07-10-2022 17:46:49.624: Hello server, we are running on 3000 
+
+info: 07-11-2022 21:48:42.525: Hello server, we are running on 3000 
+
+info: 07-11-2022 22:15:21.744: Hello server, we are running on 3000 
+info: 07-11-2022 22:15:26.235: Hello server, we are running on 3000 
+info: 07-11-2022 22:15:31.689: Hello server, we are running on 3000 
+info: 07-11-2022 22:15:35.897: Hello server, we are running on 3000 
+info: 07-11-2022 22:15:44.987: Hello server, we are running on 3000 
+info: 07-11-2022 22:15:50.248: Hello server, we are running on 3000 
+
+info: 07-11-2022 22:12:30.739: Hello server, we are running on 3000 
+info: 07-11-2022 22:36:42.516: Hello server, we are running on 3000 
+error: 07-11-2022 22:39:15.554: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Object 
+error: 07-11-2022 22:39:15.554: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Object 
+info: 07-11-2022 22:40:38.051: Hello server, we are running on 3000 
+error: 07-11-2022 22:40:42.448: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Object 
+error: 07-11-2022 22:40:42.448: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Object 
+error: 07-11-2022 22:42:08.572: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Object 
+error: 07-11-2022 22:42:08.572: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Object 
+info: 07-11-2022 22:42:56.421: Hello server, we are running on 3000 
+info: 07-11-2022 22:43:16.295: Hello server, we are running on 3000 
+info: 07-11-2022 22:57:27.905: Hello server, we are running on 3000 
+info: 07-11-2022 23:00:04.903: Hello server, we are running on 3000 
+info: 07-11-2022 23:35:01.852: Hello server, we are running on 3000 
+info: 07-12-2022 10:26:31.961: Hello server, we are running on 3000 
+info: 07-12-2022 10:37:14.931: Hello server, we are running on 3000 
+info: 07-12-2022 10:50:28.750: Hello server, we are running on 3000 
+info: 07-12-2022 14:58:25.757: Hello server, we are running on 3000 
+info: 07-12-2022 18:11:46.172: Hello server, we are running on 3000 
+
+info: 07-12-2022 18:15:09.244: Hello server, we are running on 3000 
+info: 07-13-2022 12:14:56.660: Hello server, we are running on 3000 
+info: 07-13-2022 21:54:30.813: Hello server, we are running on 3000 
+
+info: 07-19-2022 11:18:08.505: Hello server, we are running on 3000 
+info: 07-19-2022 11:24:23.186: Hello server, we are running on 3000 
+info: 07-19-2022 11:26:03.644: Hello server, we are running on 3000 
+info: 07-19-2022 11:42:54.476: Hello server, we are running on 3000 
+info: 07-19-2022 11:49:58.632: Hello server, we are running on 3000 
+info: 07-19-2022 11:59:25.323: Hello server, we are running on 3000 
+info: 07-19-2022 12:03:56.344: Hello server, we are running on 3000 
+
+info: 07-18-2022 14:20:28.975: Hello server, we are running on 3000 
+error: 07-18-2022 14:20:42.281: E11000 duplicate key error collection: Weight-project.users index: emailAddress_1 dup key: { emailAddress: "yehudit23@gmail.com" } 
+error: 07-18-2022 14:20:42.281: E11000 duplicate key error collection: Weight-project.users index: emailAddress_1 dup key: { emailAddress: "yehudit23@gmail.com" } 
+info: 07-18-2022 14:28:27.196: Hello server, we are running on 3000 
+info: 07-18-2022 14:28:43.819: Hello server, we are running on 3000 
+info: 07-18-2022 14:48:35.311: Hello server, we are running on 3000 
+info: 07-18-2022 14:48:43.459: Hello server, we are running on 3000 
+info: 07-18-2022 14:48:48.627: Hello server, we are running on 3000 
+info: 07-18-2022 14:49:14.491: Hello server, we are running on 3000 
+info: 07-18-2022 14:49:19.060: Hello server, we are running on 3000 
+info: 07-18-2022 14:49:22.197: Hello server, we are running on 3000 
+info: 07-18-2022 14:49:37.993: Hello server, we are running on 3000 
+info: 07-18-2022 14:49:44.709: Hello server, we are running on 3000 
+info: 07-18-2022 14:49:55.499: Hello server, we are running on 3000 
+info: 07-18-2022 14:49:59.886: Hello server, we are running on 3000 
+info: 07-18-2022 14:50:04.333: Hello server, we are running on 3000 
+info: 07-18-2022 14:50:16.333: Hello server, we are running on 3000 
+info: 07-18-2022 16:10:58.676: Hello server, we are running on 3000 
+info: 07-18-2022 16:11:03.476: Hello server, we are running on 3000 
+info: 07-18-2022 16:11:28.202: Hello server, we are running on 3000 
+info: 07-18-2022 16:11:58.627: Hello server, we are running on 3000 
+info: 07-18-2022 16:12:03.696: Hello server, we are running on 3000 
+info: 07-18-2022 16:12:08.274: Hello server, we are running on 3000 
+info: 07-18-2022 16:16:16.838: Hello server, we are running on 3000 
+info: 07-18-2022 16:17:10.145: Hello server, we are running on 3000 
+info: 07-18-2022 16:17:19.585: Hello server, we are running on 3000 
+info: 07-18-2022 16:22:34.432: Hello server, we are running on 3000 
+info: 07-19-2022 11:54:14.196: Hello server, we are running on 3000 
+info: 07-19-2022 12:41:09.252: Hello server, we are running on 3000 
+info: 07-19-2022 13:00:19.731: Hello server, we are running on 3000 
+info: 07-19-2022 13:14:39.617: Hello server, we are running on 3000 
+info: 07-19-2022 13:35:00.221: Hello server, we are running on 3000 
+info: 07-19-2022 13:42:29.957: Hello server, we are running on 3000 
+info: 07-19-2022 13:43:53.917: Hello server, we are running on 3000 
+info: 07-19-2022 13:45:24.078: Hello server, we are running on 3000 
+info: 07-19-2022 13:50:49.816: Hello server, we are running on 3000 
+info: 07-19-2022 13:57:08.346: Hello server, we are running on 3000 
+error: 07-19-2022 14:01:54.780: id is not defined 
+error: 07-19-2022 14:01:54.780: id is not defined 
+info: 07-19-2022 14:06:39.411: Hello server, we are running on 3000 
+info: 07-19-2022 16:30:29.052: Hello server, we are running on 3000 
+info: 07-19-2022 16:32:23.455: Hello server, we are running on 3000 
+info: 07-19-2022 16:36:13.359: Hello server, we are running on 3000 
+info: 07-19-2022 16:59:23.703: Hello server, we are running on 3000 
+info: 07-20-2022 10:01:48.826: Hello server, we are running on 3000 
+error: 07-20-2022 10:01:55.023: id is not defined 
+error: 07-20-2022 10:01:55.023: id is not defined 
+info: 07-20-2022 10:04:25.460: Hello server, we are running on 3000 
+error: 07-20-2022 10:06:00.241: id is not defined 
+error: 07-20-2022 10:06:00.241: id is not defined 
+info: 07-20-2022 10:06:23.181: Hello server, we are running on 3000 
+info: 07-20-2022 10:06:29.811: Hello server, we are running on 3000 
+error: 07-20-2022 10:07:53.744: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+error: 07-20-2022 10:07:53.744: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+info: 07-20-2022 10:09:55.893: Hello server, we are running on 3000 
+error: 07-20-2022 10:10:22.149: Cast to ObjectId failed for value "987654321" (type string) at path "_id" for model "User" 
+error: 07-20-2022 10:10:22.149: Cast to ObjectId failed for value "987654321" (type string) at path "_id" for model "User" 
+info: 07-20-2022 10:17:05.164: Hello server, we are running on 3000 
+info: 07-20-2022 10:18:18.548: Hello server, we are running on 3000 
+error: 07-20-2022 10:19:43.513: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+error: 07-20-2022 10:19:43.513: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+info: 07-20-2022 10:22:00.990: Hello server, we are running on 3000 
+error: 07-20-2022 10:22:19.517: Parameter "filter" to updateOne() must be an object, got 987654321 
+error: 07-20-2022 10:22:19.517: Parameter "filter" to updateOne() must be an object, got 987654321 
+info: 07-20-2022 10:23:59.344: Hello server, we are running on 3000 
+error: 07-20-2022 10:24:39.397: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+error: 07-20-2022 10:24:39.397: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+info: 07-20-2022 10:26:39.229: Hello server, we are running on 3000 
+info: 07-20-2022 10:29:12.281: Hello server, we are running on 3000 
+info: 07-20-2022 10:40:32.949: Hello server, we are running on 3000 
+info: 07-20-2022 10:42:30.230: Hello server, we are running on 3000 
+error: 07-20-2022 10:46:21.827: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+error: 07-20-2022 10:46:21.827: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+info: 07-20-2022 10:48:17.262: Hello server, we are running on 3000 
+error: 07-20-2022 10:54:58.318: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+error: 07-20-2022 10:54:58.318: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+info: 07-20-2022 11:07:44.819: Hello server, we are running on 3000 
+error: 07-20-2022 11:08:20.078: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+error: 07-20-2022 11:08:20.078: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+info: 07-20-2022 11:11:32.816: Hello server, we are running on 3000 
+error: 07-20-2022 11:12:33.849: Cast to ObjectId failed for value "{ days: [ { date: '12/03/2022', meals: [Array] } ] }" (type Object) at path "diary" because of "BSONTypeError" 
+error: 07-20-2022 11:12:33.849: Cast to ObjectId failed for value "{ days: [ { date: '12/03/2022', meals: [Array] } ] }" (type Object) at path "diary" because of "BSONTypeError" 
+info: 07-20-2022 11:15:35.910: Hello server, we are running on 3000 
+error: 07-20-2022 11:17:52.441: Cast to [ObjectId] failed for value "[\n' +
+  "  { date: '12/03/2022', weight: 72 },\n" +
+  "  { date: '12/03/2022', weight: 69.8 },\n" +
+  "  { date: '12/03/2022', weight: 71.1 }\n" +
+  ']" (type string) at path "weightsHistory.0" because of "CastError" 
+error: 07-20-2022 11:17:52.441: Cast to [ObjectId] failed for value "[\n' +
+  "  { date: '12/03/2022', weight: 72 },\n" +
+  "  { date: '12/03/2022', weight: 69.8 },\n" +
+  "  { date: '12/03/2022', weight: 71.1 }\n" +
+  ']" (type string) at path "weightsHistory.0" because of "CastError" 
+info: 07-20-2022 11:19:02.172: Hello server, we are running on 3000 
+info: 07-20-2022 11:33:03.622: Hello server, we are running on 3000 
+info: 07-20-2022 11:33:31.313: Hello server, we are running on 3000 
+error: 07-20-2022 11:34:06.036: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+error: 07-20-2022 11:34:06.036: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+info: 07-20-2022 11:36:43.588: Hello server, we are running on 3000 
+error: 07-20-2022 11:38:54.830: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+error: 07-20-2022 11:38:54.830: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+info: 07-20-2022 11:39:35.004: Hello server, we are running on 3000 
+error: 07-20-2022 11:39:48.305: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+error: 07-20-2022 11:39:48.305: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+error: 07-20-2022 11:41:46.001: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+error: 07-20-2022 11:41:46.001: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+info: 07-20-2022 11:46:43.582: Hello server, we are running on 3000 
+info: 07-20-2022 12:21:42.720: Hello server, we are running on 3000 
+info: 07-20-2022 12:22:49.062: Hello server, we are running on 3000 
+info: 07-20-2022 12:24:11.679: Hello server, we are running on 3000 
+info: 07-21-2022 13:32:20.636: Hello server, we are running on 3000 
+info: 07-21-2022 13:55:08.810: Hello server, we are running on 3000 
+info: 07-21-2022 14:05:23.206: Hello server, we are running on 3000 
+info: 07-21-2022 14:05:41.302: Hello server, we are running on 3000 
+info: 07-21-2022 14:07:54.230: Hello server, we are running on 3000 
+error: 07-21-2022 14:11:23.985: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:11:23.985: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:13:16.523: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:13:16.523: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:13:28.461: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:13:28.461: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+info: 07-21-2022 14:15:46.533: Hello server, we are running on 3000 
+error: 07-21-2022 14:16:33.313: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:16:33.313: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:16:43.469: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:16:43.469: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:19:36.664: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:19:36.664: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:21:53.827: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:21:53.827: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:22:18.097: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:22:18.097: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:34:37.594: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:34:37.594: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+info: 07-21-2022 14:43:07.758: Hello server, we are running on 3000 
+error: 07-21-2022 14:43:18.521: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:43:18.521: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 20:26:21.404: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 20:26:21.404: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+info: 07-21-2022 20:27:02.859: Hello server, we are running on 3000 
+error: 07-21-2022 20:27:20.300: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 20:27:20.300: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+info: 07-21-2022 20:31:26.914: Hello server, we are running on 3000 
+error: 07-21-2022 20:31:32.524: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 20:31:32.524: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 20:35:32.021: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 20:35:32.021: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 20:35:38.839: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 20:35:38.839: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+info: 07-21-2022 21:15:01.867: Hello server, we are running on 3000 
+info: 07-24-2022 12:12:37.251: Hello server, we are running on 3000 
+info: 07-25-2022 10:58:00.483: Hello server, we are running on 3000 
+info: 07-25-2022 11:31:00.670: Hello server, we are running on 3000 
+error: 07-25-2022 11:31:59.037: Cannot read properties of undefined (reading 'fromAuto0') 
+error: 07-25-2022 11:31:59.037: Cannot read properties of undefined (reading 'fromAuto0') 
+error: 07-25-2022 11:32:00.808: Cannot read properties of undefined (reading 'fromAuto0') 
+error: 07-25-2022 11:32:00.808: Cannot read properties of undefined (reading 'fromAuto0') 
+error: 07-25-2022 11:32:01.654: Cannot read properties of undefined (reading 'fromAuto0') 
+error: 07-25-2022 11:32:01.654: Cannot read properties of undefined (reading 'fromAuto0') 
+error: 07-25-2022 11:32:17.714: Cannot read properties of undefined (reading 'fromAuto0') 
+error: 07-25-2022 11:32:17.714: Cannot read properties of undefined (reading 'fromAuto0') 
+info: 07-25-2022 11:36:49.536: Hello server, we are running on 3000 
+info: 07-25-2022 12:18:24.031: Hello server, we are running on 3000 

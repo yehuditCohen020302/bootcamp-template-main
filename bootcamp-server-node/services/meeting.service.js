@@ -2,18 +2,14 @@ const fs= require("fs");
 const dataFromFile= fs.readFileSync('db.json');
 let data=JSON.parse(dataFromFile);
 
-
 module.exports.getAllTheMeetings=async()=>{
 
-   console.log( 'getAllTheMeetings');
-
-   // debugger
+   console.log('getAllTheMeetings');
    let users = await Array.from(data.users);
    let meetings=[];
    users.forEach(user => {meetings.push(user.weightsHistory)})
 
-   return await meetings;
-   
+   return await meetings;   
 }
 
 module.exports.getMeetingById= async(id)=> {
@@ -28,28 +24,31 @@ module.exports.getMeetingById= async(id)=> {
 
 module.exports.addMeeting=async (meeting)=> {
    console.log( 'addMeeting');
-   debugger
+   // debugger
    let id= meeting.id;
    let weightsHistory= meeting.weightsHistory;
    const user = await Array.from(data.users).find(user => user.id === id);
    user.weightsHistory.push(weightsHistory);
+   let users=data.filter(user => user.id!=id);
+   users.push(user);
+   data.users = users;
+   await fs.writeFile('db.json', JSON.stringify(data), (err)=> {
+      if (err) return console.log(err);
+    })
    
-   
-   // ((data.users).find(user => user.id === id))=json;
-
-   return await `The new meeting add: ${JSON.parse(JSON.stringify(user))}`;
-
+   return `The new meeting add: ${JSON.parse(JSON.stringify(user))}`;
 }
 
 module.exports.updateMeeting=async (id,updateMeeting)=> {
-   debugger
+   // debugger
    let user=await Array.from(data.users).find(user => user.id === id);
    user.weightsHistory=updateMeeting.weightsHistory;
-
+   let users=data.filter(user => user.id!=id);
+   users.push(user);
+   data.users = users;
    const json =  JSON.stringify({  'user':user })
-   // data.users = user;
 
-   return await`update , now the all user: ${JSON.stringify(user)}`;
+   return `update , now the all user: ${JSON.stringify(user)}`;
 }
 
 // module.exports.updateUser= async (id, update)=> {

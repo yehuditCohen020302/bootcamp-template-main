@@ -1,3 +1,5 @@
+
+const baseUrl = "https://pacific-headland-08901.herokuapp.com/";
 class Manager {
   constructor(firstName, lastName, emailAddress) {
     (this.firstName = firstName),
@@ -9,10 +11,8 @@ class Manager {
     console.log("We Entry");
     let email = sessionStorage.getItem("userEmail");
     // let email;
-    debugger;
-    fetch("http://localhost:3000/users")
+    fetch(baseUrl+"users")
       .then((response) => response.json())
-      // .then(response=> manager.users=response)
       .then((response) => manager.drawTable(manager.users))
       .then((response) => (email = response.emailAddress))
       .catch((err) => {
@@ -25,23 +25,9 @@ class Manager {
   }
 
   getUsers() {
-    // debugger;
-    // const xhr = new XMLHttpRequest();
-
-    // xhr.open("GET", "http://localhost:3000/users");
-    // xhr.send();
-    // xhr.onload = function () {
-    //   if (xhr.status != 200) {
-    //     alert(`Error ${xhr.status}: ${xhr.statusText}`);
-    //   } else {
-    //     manager.users = JSON.parse(xhr.responseText);
-    //     manager.drawTable(manager.users);
-    //   }
-    // };
-    fetch("http://localhost:3000/users")
+    fetch(baseUrl+"users")
       .then((response) => response.json())
       .then((response) => {
-      //  console.log(response);
         (manager.users = response)})
       .then((response) => manager.drawTable(manager.users))
       .catch((err) => {
@@ -51,13 +37,11 @@ class Manager {
 
 
   drawTable(users) {
-    // debugger
     const container = document.querySelector(".usersTable");
     container.innerHTML = "";
     let table = "";
 
     users.forEach((user) => {
-      // console.log(user);
       let bmi =
         user.weightsHistory[user.weightsHistory.length - 1].weight /
         Math.pow(user.height, 2);
@@ -80,7 +64,6 @@ class Manager {
   }
 
   search(data, type) {
-    debugger;
 
     if (type == "firstName")
       this.filteredUser = this.users.filter((user) => {
@@ -102,13 +85,11 @@ class Manager {
   }
 
   details(email) {
-    debugger;
     console.log("details(email)  called");
     window.location.href = "../html/userPage.html?emailAddress=" + email;
   }
 
   goodBMI(user) {
-    debugger;
     if (user.weightsHistory.length > 1) {
       if (
         user.weightsHistory[user.weightsHistory.length - 1].weight /
@@ -193,7 +174,7 @@ class Manager {
       redirect: 'follow'
     };
     
-    fetch("http://localhost:3000/users", requestOptions)
+    fetch(baseUrl+"users", requestOptions)
       .then(response => response.text())
       .then(result => console.log(result))
       .catch(error => console.log('error', error));
@@ -263,7 +244,6 @@ function search() {
   const phone = document.getElementById("searchByPhone");
   let data;
   let type;
-  debugger;
   if (firstName.checked == true) {
     data = document.getElementById("textSearchByFirstName").value;
     type = "firstName";
@@ -287,7 +267,6 @@ function Reset() {
 }
 
 function changeColor(bmiColor, id) {
-  debugger;
   if (bmiColor < 0)
     document.getElementById(id).style.backgroundColor = "lightgreen";
   else document.getElementById(id).style.backgroundColor = "red";

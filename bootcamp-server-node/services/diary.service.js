@@ -1,10 +1,11 @@
-const fs= require("fs");
-const dataFromFile= fs.readFileSync('db.json');
-let data=JSON.parse(dataFromFile);
+const {ObjectId}=require('mongodb');
+const mongoose=require('mongoose');
+const diaryModel=require('../models/diary.model');
+const userModel=require('../models/user.model');
 
 module.exports.getUsersDiary=async (userId)=>{
-    const user = await Array.from(data.users).find(user => user.id === userId);
-    return await user.diary;
+    const user = await userModel.findById(ObjectId(userId));
+    return user.diary;
 }
 
 module.exports.addNewDaySummary=async (userId, summary)=>{
@@ -16,6 +17,9 @@ module.exports.addNewDaySummary=async (userId, summary)=>{
     // 'manager': manager,
     const json =  JSON.stringify({'users':users })
     data.users = users;
+    await fs.writeFile('db.json', JSON.stringify(data), (err)=> {
+        if (err) return console.log(err);
+      })
     // await fs.writeFileSync('db.json', json);
     return `update user's diary, now the all users: ${JSON.stringify(data.users)}`;
 }
@@ -30,6 +34,9 @@ module.exports.updateDaySummary=async (userId,dayId,newDaySummary)=> {
     // 'manager': manager,
     const json =  JSON.stringify({'users':users })
     data.users = users;
+    await fs.writeFile('db.json', JSON.stringify(data), (err)=> {
+        if (err) return console.log(err);
+      })
     // await fs.writeFileSync('db.json', json);
     return `update the day summery of the user ${userId}, now the all users: ${JSON.stringify(data.users)}`;
 }
@@ -43,6 +50,14 @@ module.exports.removeDaySummary=async (userId,dayId)=> {
     // 'manager': manager,
     const json =  JSON.stringify({'users':users })
     data.users = users;
+    await fs.writeFile('db.json', JSON.stringify(data), (err)=> {
+        if (err) return console.log(err);
+      })
     // await fs.writeFileSync('db.json', json);
     return `deleted user day summary, now the users are : ${JSON.stringify(data.users)}`;
+}
+
+module.exports.addNewDiary = async (diaryToAdd)=>{
+    const addedDiary=await diaryToAdd.save();
+    return addedDiary;
 }

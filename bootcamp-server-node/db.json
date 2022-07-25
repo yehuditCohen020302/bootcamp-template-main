@@ -1,121 +1,18 @@
+
 {
-    "managers":[
-        {"id":1,
-        "emailAddress":"yehudit@gmail.com",
-        "password":"1234"
-    },
-    {"id":2,
-        "emailAddress":"michal@gmail.com",
-        "password":"4567"
-    }
+    "managers": [
+        {
+            "id": 1,
+            "emailAddress": "yehudit@gmail.com",
+            "password": "1234"
+        },
+        {
+            "id": 2,
+            "emailAddress": "michal@gmail.com",
+            "password": "4567"
+        }
     ],
     "users": [
-        {
-            "id": "123456789",
-            "firstName": "Michal",
-            "lastName": "Shmoel",
-            "city": "jerusalem",
-            "street": "hapisga",
-            "houseNumber": 12,
-            "phoneNumber": "0521369874",
-            "emailAddress": "michal@gmail.com",
-            "height": 1.7,
-            "weightsHistory": [
-                {
-                    "date": "12/03/2022",
-                    "weight": 60
-                },
-                {
-                    "date": "12/03/2022",
-                    "weight": 61.8
-                },
-                {
-                    "date": "12/03/2022",
-                    "weight": 60.9
-                }
-            ],
-            "diary": {
-                "days": [
-                    {
-                        "date": "12/03/2022",
-                        "meals": [
-                            [
-                                "גבינה לבנה",
-                                "יוגורט תות"
-                            ],
-                            [
-                                "בשר",
-                                "קישואים"
-                            ]
-                        ]
-                    },
-                    {
-                        "date": "18/03/2022",
-                        "meals": [
-                            [
-                                "בשר",
-                                "קישואים"
-                            ]
-                        ]
-                    },
-                    {
-                        "date": "30-5-2022",
-                        "meals": [
-                            [
-                                "מלפפון",
-                                "פלפל",
-                                "גזר",
-                                "עגבניה"
-                            ]
-                        ]
-                    },
-                    {
-                        "date": "30/5/122",
-                        "meals": [
-                            [
-                                "סלט חסה עם עגבניות",
-                                "יוגורט",
-                                "חביתה"
-                            ]
-                        ]
-                    },
-                    {
-                        "date": "2022-07-01",
-                        "meals": [
-                            [
-                                "לחם",
-                                "חלב"
-                            ]
-                        ]
-                    },
-                    {
-                        "date": "2022-06-30",
-                        "meals": [
-                            [
-                                "gfdgdf"
-                            ],
-                            [
-                                "sagdsfgf"
-                            ],
-                            [
-                                "חביתה",
-                                "יוגורט",
-                                "גבינה צהובה",
-                                "גבינה לבנה",
-                                "חלב",
-                                "לחם"
-                            ],
-                            [
-                                "גלידה",
-                                "ארטיק",
-                                "טילון",
-                                "לישוןןןןןןןןן"
-                            ]
-                        ]
-                    }
-                ]
-            }
-        },
         {
             "id": "587412369",
             "firstName": "Shira",
@@ -249,6 +146,152 @@
                     }
                 ]
             }
+        },
+        {
+            "id": "123456789",
+            "firstName": "Michal",
+            "lastName": "Shmoel",
+            "city": "jerusalem",
+            "street": "hapisga",
+            "houseNumber": 12,
+            "phoneNumber": "0521369874",
+            "emailAddress": "michal@gmail.com",
+            "height": 1.7,
+            "weightsHistory": [
+                {
+                    "date": "12/03/2022",
+                    "weight": 60
+                },
+                {
+                    "date": "12/03/2022",
+                    "weight": 61.8
+                },
+                {
+                    "date": "12/03/2022",
+                    "weight": 60.9
+                }
+            ],
+            "diary": {
+                "days": [
+                    {
+                        "date": "12/03/2022",
+                        "meals": [
+                            [
+                                "גבינה לבנה",
+                                "יוגורט תות"
+                            ],
+                            [
+                                "בשר",
+                                "קישואים"
+                            ]
+                        ]
+                    },
+                    {
+                        "date": "18/03/2022",
+                        "meals": [
+                            [
+                                "בשר",
+                                "קישואים"
+                            ]
+                        ]
+                    },
+                    {
+                        "date": "30-5-2022",
+                        "meals": [
+                            [
+                                "מלפפון",
+                                "פלפל",
+                                "גזר",
+                                "עגבניה"
+                            ]
+                        ]
+                    },
+                    {
+                        "date": "30/5/122",
+                        "meals": [
+                            [
+                                "סלט חסה עם עגבניות",
+                                "יוגורט",
+                                "חביתה"
+                            ]
+                        ]
+                    },
+                    {
+                        "date": "2022-07-01",
+                        "meals": [
+                            [
+                                "לחם",
+                                "חלב"
+                            ]
+                        ]
+                    },
+                    {
+                        "date": "2022-06-30",
+                        "meals": [
+                            [
+                                "gfdgdf"
+                            ],
+                            [
+                                "sagdsfgf"
+                            ],
+                            [
+                                "חביתה",
+                                "יוגורט",
+                                "גבינה צהובה",
+                                "גבינה לבנה",
+                                "חלב",
+                                "לחם"
+                            ],
+                            [
+                                "גלידה",
+                                "ארטיק",
+                                "טילון",
+                                "לישוןןןןןןןןן"
+                            ]
+                        ]
+                    },
+                    {
+                        "date": "11/07/2022",
+                        "meals": [
+                            [
+                                "גבינה לבנה",
+                                "יוגורט תות"
+                            ],
+                            [
+                                "בשר",
+                                "קישואים"
+                            ]
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "456123456",
+            "firstName": "Michal",
+            "lastName": "Soloveitchik",
+            "city": "Jerusalem",
+            "street": "Mevo-livna",
+            "houseNumber": "2",
+            "phoneNumber": "0583231859",
+            "emailAddress": "859michal@gmail.com",
+            "height": 1.6,
+            "weightsHistory": [
+                {
+                    "date": "12/03/2022",
+                    "weight": 60
+                },
+                {
+                    "date": "12/03/2022",
+                    "weight": 61.8
+                },
+                {
+                    "date": "12/03/2022",
+                    "weight": 60.9
+                }
+            ],
+            "diary": {}
         }
     ]
 }
+
