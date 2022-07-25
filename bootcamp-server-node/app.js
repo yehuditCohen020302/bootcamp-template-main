@@ -28,6 +28,7 @@ const config = {
 
 const app = express();
 
+const clientUrl='http://127.0.0.1:5500/src/html/index.html'
 const port = process.env.PORT || 3000;
 
 app.use(cors());
@@ -37,9 +38,19 @@ app.use(express.json());
 app.use(auth(config));
 
 // req.isAuthenticated is provided from the auth router
-app.get('/', (req, res) => {
-  res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
-});
+// app.get('/', (req, res) => {
+//   res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
+// });
+
+app.get('/', (req, res) => { 
+  if(req.oidc.isAuthenticated()) { 
+    // res.cookie('cookieFromAuto0',req.cookies.fromAuto0)
+    res.send(res.redirect(clientUrl));
+   } else{
+    res.send('loggedOut')
+   }
+ });
+
 app.get('/profile', requiresAuth(), (req, res) => {
   res.send(JSON.stringify(req.oidc.user));
 });
