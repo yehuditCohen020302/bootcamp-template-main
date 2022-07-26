@@ -2,6 +2,7 @@
 const user=require('./routes/user.routes')
 const meeting=require('./routes/meeting.routes');
 const account=require('./routes/account.routes');
+const { requiresAuth } = require('express-openid-connect');
 
 const mongoosedb=require('./db/mongoosedb')
 const swaggerUi = require('swagger-ui-express');
@@ -28,6 +29,7 @@ const { requiresAuth } = require('express-openid-connect');
 
 const app = express();
 
+const clientUrl='http://127.0.0.1:5500/src/html/index.html'
 const port = process.env.PORT || 3000;
 
 app.use(cors());
@@ -37,17 +39,36 @@ app.use(express.json());
 app.use(auth(config));
 
 // req.isAuthenticated is provided from the auth router
-app.get('/', (req, res) => {
-  res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
+// app.get('/', (req, res) => {
+//   res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
+// });
+
+app.get('/', (req, res) => { 
+  if(req.oidc.isAuthenticated()) { 
+    // res.cookie('cookieFromAuto0',req.cookies.fromAuto0)
+    res.send(res.redirect(clientUrl));
+   } else{
+    res.send('loggedOut')
+   }
+ });
+
+app.get('/profile', requiresAuth(), (req, res) => {
+  res.send(JSON.stringify(req.oidc.user));
 });
 
+<<<<<<< HEAD
 app.get('/profile', requiresAuth(), (req, res) => {
   res.send(JSON.stringify(req.oidc.user));
 });
 
 app.use('/users', user);
 app.use('/meeting',meeting);
+=======
+app.use('/users',requiresAuth(), user);
+app.use('/meeting',requiresAuth(),meeting);
+>>>>>>> a1fd1f67a56926f5cacb7aa98f50e28debdf5741
 app.use('/account',account);
+
 app.use('/api-docs', swaggerUi.serve,
  swaggerUi.setup(swaggerDocument));
 

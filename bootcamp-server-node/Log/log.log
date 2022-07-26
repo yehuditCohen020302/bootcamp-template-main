@@ -1638,9 +1638,58 @@ error: 07-21-2022 14:43:18.521: Issuer.discover() failed.
 error: 07-21-2022 14:43:18.521: Issuer.discover() failed.
     OPError: expected 200 OK, got: 418 I'm a Teapot
     OPError: expected 200 OK, got: 418 I'm a Teapot 
+<<<<<<< HEAD
 >>>>>>> 0f95afae37118c7a13379cdb6dd6a965fd3217e2
 info: 07-21-2022 15:20:58.391: Hello server, we are running on 3000 
 info: 07-21-2022 15:48:37.780: Hello server, we are running on 3000 
 info: 07-21-2022 15:48:44.980: Hello server, we are running on 3000 
 info: 07-21-2022 15:48:51.555: Hello server, we are running on 3000 
 info: 07-21-2022 18:34:08.703: Hello server, we are running on 3000 
+=======
+error: 07-21-2022 20:26:21.404: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 20:26:21.404: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+info: 07-21-2022 20:27:02.859: Hello server, we are running on 3000 
+error: 07-21-2022 20:27:20.300: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 20:27:20.300: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+info: 07-21-2022 20:31:26.914: Hello server, we are running on 3000 
+error: 07-21-2022 20:31:32.524: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 20:31:32.524: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 20:35:32.021: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 20:35:32.021: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 20:35:38.839: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 20:35:38.839: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+info: 07-21-2022 21:15:01.867: Hello server, we are running on 3000 
+info: 07-24-2022 12:12:37.251: Hello server, we are running on 3000 
+info: 07-25-2022 10:58:00.483: Hello server, we are running on 3000 
+info: 07-25-2022 11:31:00.670: Hello server, we are running on 3000 
+error: 07-25-2022 11:31:59.037: Cannot read properties of undefined (reading 'fromAuto0') 
+error: 07-25-2022 11:31:59.037: Cannot read properties of undefined (reading 'fromAuto0') 
+error: 07-25-2022 11:32:00.808: Cannot read properties of undefined (reading 'fromAuto0') 
+error: 07-25-2022 11:32:00.808: Cannot read properties of undefined (reading 'fromAuto0') 
+error: 07-25-2022 11:32:01.654: Cannot read properties of undefined (reading 'fromAuto0') 
+error: 07-25-2022 11:32:01.654: Cannot read properties of undefined (reading 'fromAuto0') 
+error: 07-25-2022 11:32:17.714: Cannot read properties of undefined (reading 'fromAuto0') 
+error: 07-25-2022 11:32:17.714: Cannot read properties of undefined (reading 'fromAuto0') 
+info: 07-25-2022 11:36:49.536: Hello server, we are running on 3000 
+info: 07-25-2022 12:18:24.031: Hello server, we are running on 3000 
+>>>>>>> a1fd1f67a56926f5cacb7aa98f50e28debdf5741
