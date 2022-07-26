@@ -6,8 +6,6 @@ export default function ManagerPage()
 {
     console.log("i'm in");
 
-    
-
     return (
         <div className='containers'>
             <h1>"Welcome to Manager"</h1>
