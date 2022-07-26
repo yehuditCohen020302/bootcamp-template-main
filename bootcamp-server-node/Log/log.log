@@ -1567,5 +1567,80 @@ info: 07-20-2022 11:46:43.582: Hello server, we are running on 3000
 info: 07-20-2022 12:21:42.720: Hello server, we are running on 3000 
 info: 07-20-2022 12:22:49.062: Hello server, we are running on 3000 
 info: 07-20-2022 12:24:11.679: Hello server, we are running on 3000 
+<<<<<<< HEAD
 info: 07-20-2022 12:29:43.213: Hello server, we are running on 3000 
 >>>>>>> 9fcfe4d6dc239e4b82f91d5d126d6157c7576b16
+=======
+info: 07-21-2022 13:32:20.636: Hello server, we are running on 3000 
+info: 07-21-2022 13:55:08.810: Hello server, we are running on 3000 
+info: 07-21-2022 14:05:23.206: Hello server, we are running on 3000 
+info: 07-21-2022 14:05:41.302: Hello server, we are running on 3000 
+info: 07-21-2022 14:07:54.230: Hello server, we are running on 3000 
+error: 07-21-2022 14:11:23.985: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:11:23.985: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:13:16.523: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:13:16.523: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:13:28.461: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:13:28.461: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+info: 07-21-2022 14:15:46.533: Hello server, we are running on 3000 
+error: 07-21-2022 14:16:33.313: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:16:33.313: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:16:43.469: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:16:43.469: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:19:36.664: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:19:36.664: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:21:53.827: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:21:53.827: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:22:18.097: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:22:18.097: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:34:37.594: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:34:37.594: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+info: 07-21-2022 14:43:07.758: Hello server, we are running on 3000 
+error: 07-21-2022 14:43:18.521: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+error: 07-21-2022 14:43:18.521: Issuer.discover() failed.
+    OPError: expected 200 OK, got: 418 I'm a Teapot
+    OPError: expected 200 OK, got: 418 I'm a Teapot 
+>>>>>>> 0f95afae37118c7a13379cdb6dd6a965fd3217e2
+info: 07-21-2022 15:20:58.391: Hello server, we are running on 3000 
+info: 07-21-2022 15:48:37.780: Hello server, we are running on 3000 
+info: 07-21-2022 15:48:44.980: Hello server, we are running on 3000 
+info: 07-21-2022 15:48:51.555: Hello server, we are running on 3000 
+info: 07-21-2022 18:34:08.703: Hello server, we are running on 3000 
